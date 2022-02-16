@@ -2,7 +2,6 @@ body {
    font-family: 'Poppins', sans-serif;
 }
 
-
 .container {
    width: 1170px;
    margin: 50px auto;
@@ -10,39 +9,42 @@ body {
    grid-template-columns: repeat(4, 1fr);
 }
 
+/* item ve onun hoverleri */
+
 .item {
    display: flex;
    flex-direction: column;
    padding: 10px;
    border: none;
 }
-.item:hover{
+
+.item:hover {
    border: 3px solid #ebe9eb;
-   
-}
-.item:hover .image-box{
-   background-image: url(/ProductlistUI/image/image0102.jpg);
-   
-}
-.item:hover .image-box-additional a{
-   top:100%;
 
 }
-.item:hover .btn{
+
+.item:hover .image-box-additional a {
+   top: 100%;
+
+}
+
+.item:hover .btn {
    display: block;
 }
 
-/* image box  */
+.item:hover .dropdown-content {
+   display: block;
+}
+
+/* image box ve onun hoverleri */
 
 .image-box {
-   background-image: url(/ProductlistUI/image/image01.jpg);
    width: 270px;
    height: 347px;
    background-size: cover;
    margin-bottom: 10px;
    position: relative;
 }
-
 
 .image-box-additional {
    display: flex;
@@ -51,7 +53,8 @@ body {
    top: 10px;
    right: 10px;
 }
-.image-box-additional a{
+
+.image-box-additional a {
    margin-bottom: 5px;
    top: 0%;
    width: 35px;
@@ -62,25 +65,53 @@ body {
    justify-content: center;
    align-items: center;
 }
-.image-box-additional a:hover{
+
+.image-box-additional a:hover {
    background-color: #ebb5ac;
 }
 
-.image-box-additional a i{
+.image-box-additional a i {
    font-size: 18px;
 }
 
+.dropdown-content {
+   display: none;
+}
+
+.first-item {
+   background-image: url(/ProductlistUI/image/image01.jpg);
+}
+
+.item:hover .first-item {
+   background-image: url(/ProductlistUI/image/image0102.jpg);
+}
+
+.second-item {
+   background-image: url(/ProductlistUI/image/image02.jpg);
+}
+
+.item:hover .second-item {
+   background-image: url(/ProductlistUI/image/image0202.jpg);
+}
+
+.third-item {
+   background-image: url(/ProductlistUI/image/image03.jpg);
+}
+
+.item:hover .third-item {
+   background-image: url(/ProductlistUI/image/image01.jpg);
+}
+
+.fourth-item {
+   background-image: url(/ProductlistUI/image/image04.jpg);
+}
+
+.item:hover .fourth-item {
+   background-image: url(/ProductlistUI/image/image0402.jpg);
+}
 
 
-
-
-
-
-
-
-
-
-/* info box */
+/* info box ve onun hoverleri*/
 
 .info-box {
    display: flex;
@@ -136,4 +167,3 @@ body {
    font-weight: 500;
    letter-spacing: 0.6px;
 }
-
