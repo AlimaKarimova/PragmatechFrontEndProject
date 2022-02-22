@@ -15,7 +15,7 @@ a {
 .container {
   width: 1170px;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 50px 0px;
   display: -ms-grid;
   display: grid;
   place-items: center;
@@ -24,7 +24,6 @@ a {
 
 .container h2 {
   font: 700 30px/1 droid-sans, sans-serif;
-  margin-top: 20px;
   margin-bottom: 10px;
 }
 
@@ -40,38 +39,44 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  gap: 30px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
 }
 
 .container-items .container-item {
   background-color: white;
   position: relative;
-  z-index: 2;
+  padding: 15px 0px;
   display: -ms-grid;
   display: grid;
   place-items: center;
   text-align: center;
-  margin: 40px 0;
-  padding: 10px;
-  border-top: 1px solid #19d3ca;
 }
 
-.container-items .container-item:hover i {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+.container-items .container-item .number {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  text-align: end;
+  border-bottom: 1px solid #19d3ca;
 }
 
-.container-items .container-item span {
-  display: block;
-  position: absolute;
-  top: -30px;
-  right: 10px;
+.container-items .container-item .number span {
+  position: relative;
+  top: 35px;
   font-size: 72px;
   line-height: 72px;
   color: #e9e9e9;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.container-items .container-item:hover .number span {
+  top: 10px;
 }
 
 .container-items .container-item h2 {
@@ -89,6 +94,12 @@ a {
   color: #fff;
   border-radius: 10px;
   background: #19d3ca;
+  transition: all .8s ease;
+}
+
+.container-items .container-item:hover i {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
 .container-items .container-item a {
@@ -101,6 +112,8 @@ a {
   color: #fff;
   border-radius: 40px;
   background-color: #19d3ca;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
 }
 
 .container-items .container-item a:hover {
