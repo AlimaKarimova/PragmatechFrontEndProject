@@ -1,0 +1,78 @@
+@import 'common';
+
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 100px 0;
+    @include grid-center;
+    text-align: center;
+    h2{
+        @include big-Text
+    }
+    p{
+        @include small-Text
+    }
+
+    &-items {
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+
+        .container-item {
+            background-color: white;
+            position: relative;
+            z-index: 2;
+            @include grid-center;
+            text-align: center;
+            margin: 40px 0;
+            padding: 10px;
+            border-top: 1px solid $mainColor;
+           
+        
+
+            &:hover i{
+                transform: rotateY(180deg);
+            }
+            
+            span {
+                display: block;
+                position: absolute;
+                top: -30px;
+                right: 10px;
+                font-size: 72px;
+                line-height: 72px;
+                color: #e9e9e9;
+               
+            }
+
+            h2 {
+                padding: 13px 0px;
+            }
+
+            i {
+                font-size: 52px;
+                line-height: 120px;
+                width: 130px;
+                height: 130px;
+                margin: 20px;
+                transition: all .8s ease;
+                color: #fff;
+                border-radius: 10px;
+                background: #19d3ca;
+                
+            }
+            a{
+                @include small-Text;
+                @include btn;
+
+                &:hover {
+                    background-color:$hoverColor
+                }
+
+            }
+        }
+    }
+
+}

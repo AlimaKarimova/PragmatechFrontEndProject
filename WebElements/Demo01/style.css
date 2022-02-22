@@ -1,4 +1,4 @@
-/* reset styles */
+/* reset styles*/
 
 * {
     margin: 0px;
@@ -122,4 +122,4 @@ a {
 .container-item:hover .btn {
     background-color: white;
     color: var(--main-color) !important;
-}
+} 

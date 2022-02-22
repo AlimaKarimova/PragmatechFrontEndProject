@@ -1,0 +1,46 @@
+@import 'common';
+
+.container {
+    @include grid-place;
+    width: 1140px;
+    text-align: center;
+    margin: 0% auto;
+    padding: 80px 0px;
+
+    &-items {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        margin-top: 40px;
+
+        .container-item {
+            @include grid-place;
+            position: relative;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            h2 {
+                @include bigText;
+                margin-bottom: 20px;
+            }
+
+            p {
+                @include smallText;
+                margin-bottom: 20px;
+            }
+
+            a {
+                @include btn;
+                border: 2px solid white;
+            }
+
+
+        }
+
+    }
+}
+
+}

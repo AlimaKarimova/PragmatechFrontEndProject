@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: muli, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 100px 0;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.container h2 {
+  font: 700 30px/1 droid-sans, sans-serif;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.container p {
+  font: 400 14px/1.42857143 'muli', sans-serif;
+  padding: 0px 17px 17px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.container-items {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 30px;
+}
+
+.container-items .container-item {
+  background-color: white;
+  position: relative;
+  z-index: 2;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  margin: 40px 0;
+  padding: 10px;
+  border-top: 1px solid #19d3ca;
+}
+
+.container-items .container-item:hover i {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.container-items .container-item span {
+  display: block;
+  position: absolute;
+  top: -30px;
+  right: 10px;
+  font-size: 72px;
+  line-height: 72px;
+  color: #e9e9e9;
+}
+
+.container-items .container-item h2 {
+  padding: 13px 0px;
+}
+
+.container-items .container-item i {
+  font-size: 52px;
+  line-height: 120px;
+  width: 130px;
+  height: 130px;
+  margin: 20px;
+  -webkit-transition: all .8s ease;
+  transition: all .8s ease;
+  color: #fff;
+  border-radius: 10px;
+  background: #19d3ca;
+}
+
+.container-items .container-item a {
+  font: 400 14px/1.42857143 'muli', sans-serif;
+  padding: 0px 17px 17px;
+  margin-bottom: 10px;
+  color: #333;
+  margin: 10px 0 20px;
+  padding: 12px 35px;
+  color: #fff;
+  border-radius: 40px;
+  background-color: #19d3ca;
+}
+
+.container-items .container-item a:hover {
+  background-color: #14a59e;
+}

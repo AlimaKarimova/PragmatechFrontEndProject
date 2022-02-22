@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: muli, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  width: 1140px;
+  text-align: center;
+  margin: 0% auto;
+  padding: 80px 0px;
+}
+
+.container-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.container-items .container-item {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.container-items .container-item:hover:before {
+  -webkit-transform: scale(0, 0);
+          transform: scale(0, 0);
+}
+
+.container-items .container-item:hover:after {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.container-items .container-item:hover .info {
+  opacity: 1;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.container-items .container-item::before {
+  position: absolute;
+  background: rgba(74, 98, 128, 0.44);
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.container-items .container-item::after {
+  position: absolute;
+  background: rgba(74, 98, 128, 0.66);
+  -webkit-transform: scale(0, 0);
+          transform: scale(0, 0);
+}
+
+.container-items .container-item img {
+  width: 100%;
+  height: auto;
+}
+
+.container-items .container-item .info {
+  position: absolute;
+  bottom: 20px;
+  z-index: 1;
+  color: #fff !important;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  opacity: 0;
+  -webkit-transform: scale(0, 0) h2;
+          transform: scale(0, 0) h2;
+  transform-font: 700 30px/1 droid-sans, sans-serif;
+  transform-margin-bottom: 20px;
+}
+
+.container-items .container-item .info p {
+  font: 400 14px/1.42857143 muli, sans-serif;
+  padding: 0px 17px 17px;
+  margin-bottom: 10px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.container-items .container-item .info a {
+  margin: 10px 0px 20px;
+  padding: 14px 35px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
