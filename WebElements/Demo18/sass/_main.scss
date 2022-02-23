@@ -1,0 +1,123 @@
+@import 'common';
+
+.container {
+    @include grid-place;
+    width: 1140px;
+    text-align: center;
+    margin: 0% auto;
+    padding: 80px 0px;
+
+    &-header {
+        h2 {
+            @include bigText;
+            color: $textColor;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            @include smallText;
+            color: $textColor;
+            margin-bottom: 60px;
+        }
+    }
+
+    &-items {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+
+        .container-item {
+            @include grid-place;
+            position: relative;
+
+            &:hover p {
+                display: inline-block;
+            }
+
+            &:hover a {
+                display: inline-block;
+            }
+
+            &:hover::after {
+                height: 100%;
+            }
+
+
+            &::before {
+                position: absolute;
+                background: rgba(66, 65, 16, .44);
+                transform: translateY(0);
+                content: '';
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                transition: all .4s ease;
+                z-index: 0;
+            }
+
+
+            &::after {
+                position: absolute;
+                content: '';
+                background: rgba(66, 65, 16, .66);
+                height: 0%;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                transition: all .4s ease;
+                z-index: 0;
+            }
+
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            .info {
+                position: absolute;
+                z-index: 1;
+                bottom: 20px;
+                color: #fff;
+                padding: 0px 20px;
+            }
+
+            h2 {
+                display: block;
+                color: white;
+                @include bigText;
+                margin-bottom: 20px;
+            }
+
+            p {
+                display: none;
+                color: white !important;
+                @include smallText;
+                margin-bottom: 20px;
+            }
+
+            a {
+                display: none;
+                @include smallText;
+                @include btn;
+                position: relative;
+                top: 0;
+                left: 0;
+                right: 0;
+                transform: translateY(0);
+
+                &:hover{
+                    background-color: white;
+                    color: $textColor;
+
+                }
+            }
+
+
+
+        }
+    }
+
+}

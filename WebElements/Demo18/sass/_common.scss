@@ -1,3 +1,6 @@
+
+$textColor: #333;
+
 @mixin bigText {
     font: 700 30px/1 droid-sans, sans-serif;
 
@@ -5,9 +8,6 @@
 
 @mixin smallText {
     font: 400 14px/1.42857143 muli, sans-serif;
-    padding: 0px 17px 17px;
-    margin-bottom: 10px;
-    color: #333;
 }
 
 @mixin grid-place {
@@ -17,9 +17,9 @@
 }
 
 @mixin btn {
-    margin: 10px 0px 20px;
-    padding: 14px 35px;
-    background-color:transparent;
+    padding: 10px 35px;
+    background-color: transparent;
     color: white;
-
+    border: 2px solid white;
+    border-radius: 40px;
 }
