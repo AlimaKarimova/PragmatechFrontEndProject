@@ -1,0 +1,81 @@
+@import 'common';
+
+.container {
+
+    @include grid-place;
+
+    &-header {
+        margin-bottom: 100px;
+
+        h2 {
+            @include bigText
+        }
+
+        p {
+            @include smallText
+            color: #333;
+        }
+
+    }
+
+    &-items {
+        width: 1170px;
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+
+        .container-item {
+            @include grid-place;
+            position: relative;
+            margin: 40px 0 100px;
+            padding: 0;
+
+            h2 {
+                @include bigText;
+                color: #ff408f;
+                padding: 20px;
+                margin-bottom: 18px;
+            }
+
+            i {
+                width: 110px;
+                height: 110px;
+                margin: 20px 0;
+                color: #fff;
+                border-radius: 100%;
+                background: #fd6faa;
+                font-size: 52px;
+                line-height: 107px;
+                text-align: center;
+            }
+
+            p {
+                @include smallText;
+                padding: 20px 20px 17px;
+                margin-bottom: 10px;
+                text-align: left;
+            }
+
+            a {
+                margin: 10px 20px 20px;
+                padding: 14px 35px;
+                @include smallText;
+                background: #fd6faa;
+            }
+
+            &::before {
+                content: '';
+                z-index: -1;
+                right: 0;
+                left: 0;
+                position: absolute;
+                bottom: -30px;
+                height: 345px;
+                transform: skewY(5deg);
+                background: #ff408f;
+            }
+
+
+        }
+    }
+}
