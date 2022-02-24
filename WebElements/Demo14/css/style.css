@@ -12,6 +12,72 @@ a {
   color: black;
 }
 
+@-webkit-keyframes flipZoomOut {
+  0%, 100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  20% {
+    -webkit-transform: scale(0.8, 0.8);
+            transform: scale(0.8, 0.8);
+  }
+}
+
+@keyframes flipZoomOut {
+  0%, 100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  20% {
+    -webkit-transform: scale(0.8, 0.8);
+            transform: scale(0.8, 0.8);
+  }
+}
+
+@-webkit-keyframes ripple {
+  0%, 80% {
+    -webkit-box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.5);
+            box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+  100%, 40% {
+    -webkit-box-shadow: 0 0 0 15px rgba(255, 255, 255, 0.4);
+            box-shadow: 0 0 0 15px rgba(255, 255, 255, 0.4);
+  }
+}
+
+@keyframes ripple {
+  0%, 80% {
+    -webkit-box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.5);
+            box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+  100%, 40% {
+    -webkit-box-shadow: 0 0 0 15px rgba(255, 255, 255, 0.4);
+            box-shadow: 0 0 0 15px rgba(255, 255, 255, 0.4);
+  }
+}
+
+@keyframes flipZoomOut {
+  0%, 100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  20% {
+    -webkit-transform: scale(0.8, 0.8);
+            transform: scale(0.8, 0.8);
+  }
+}
+
+@keyframes ripple {
+  0%, 80% {
+    -webkit-box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.5);
+            box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+  100%, 40% {
+    -webkit-box-shadow: 0 0 0 15px rgba(255, 255, 255, 0.4);
+            box-shadow: 0 0 0 15px rgba(255, 255, 255, 0.4);
+  }
+}
+
 .container {
   display: -ms-grid;
   display: grid;
@@ -20,16 +86,19 @@ a {
 
 .container-header {
   margin-bottom: 100px;
+  text-align: center;
 }
 
 .container-header h2 {
   font: 700 30px/1 droid-sans, sans-serif;
+  margin-top: 50px;
 }
 
 .container-header p {
   font: 400 14px/1.42857143 muli, sans-serif;
   color: white;
   color: #333;
+  margin: 20px 0px 10px;
 }
 
 .container-items {
@@ -48,8 +117,18 @@ a {
   display: grid;
   place-items: center;
   position: relative;
-  margin: 40px 0 100px;
+  margin: 0px 0 30px;
   padding: 0;
+}
+
+.container-items .container-item:hover {
+  -webkit-animation: flipZoomOut 1s forwards 1;
+          animation: flipZoomOut 1s forwards 1;
+}
+
+.container-items .container-item:hover i {
+  -webkit-animation: ripple 1s infinite;
+          animation: ripple 1s infinite;
 }
 
 .container-items .container-item h2 {
@@ -69,6 +148,8 @@ a {
   font-size: 52px;
   line-height: 107px;
   text-align: center;
+  -webkit-box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.12);
+          box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.12);
 }
 
 .container-items .container-item p {
@@ -85,6 +166,12 @@ a {
   font: 400 14px/1.42857143 muli, sans-serif;
   color: white;
   background: #fd6faa;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.container-items .container-item a:hover {
+  background: #e03079;
 }
 
 .container-items .container-item::before {

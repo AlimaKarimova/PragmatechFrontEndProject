@@ -6,14 +6,17 @@
 
     &-header {
         margin-bottom: 100px;
+        text-align: center;
 
         h2 {
-            @include bigText
+            @include bigText;
+            margin-top: 50px;
         }
 
         p {
-            @include smallText
+            @include smallText;
             color: #333;
+            margin: 20px 0px 10px;
         }
 
     }
@@ -27,8 +30,17 @@
         .container-item {
             @include grid-place;
             position: relative;
-            margin: 40px 0 100px;
+            margin: 0px 0 30px;
             padding: 0;
+
+            &:hover {
+                animation: flipZoomOut 1s forwards 1;
+            }
+
+            &:hover i {
+                animation: ripple 1s infinite;
+            }
+
 
             h2 {
                 @include bigText;
@@ -47,6 +59,8 @@
                 font-size: 52px;
                 line-height: 107px;
                 text-align: center;
+                box-shadow: 0 0 0 10px rgba(255,255,255,.12)
+
             }
 
             p {
@@ -61,6 +75,11 @@
                 padding: 14px 35px;
                 @include smallText;
                 background: #fd6faa;
+                transition: all 0.3s linear;
+
+                &:hover {
+                    background: #e03079;
+                }
             }
 
             &::before {
