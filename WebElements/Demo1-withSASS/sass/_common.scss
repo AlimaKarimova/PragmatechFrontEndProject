@@ -1,0 +1,19 @@
+
+$mainColor:orange;
+
+
+
+@mixin bigText {
+    font: 700 30px/1 droid-sans, sans-serif;
+}
+
+@mixin smallText {
+    font: 300 14px/1.42857143 muli, sans-serif;
+    color: #919191;
+}
+
+@mixin grid-center {
+    display: grid;
+    place-items: center;
+}
+

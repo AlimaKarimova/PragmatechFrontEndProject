@@ -1,0 +1,25 @@
+@mixin bigText {
+    font: 700 30px/1 droid-sans, sans-serif;
+
+}
+
+@mixin smallText {
+    font: 400 14px/1.42857143 muli, sans-serif;
+    color: #333;
+}
+
+@mixin grid-place {
+    display: grid;
+    place-items: center;
+
+}
+
+@keyframes hinge {
+    0%,100% {
+        transform: translateY(-5px)
+    }
+
+    50% {
+        transform: translateY(5px)
+    }
+}
