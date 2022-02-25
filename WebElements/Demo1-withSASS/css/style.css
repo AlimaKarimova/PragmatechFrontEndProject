@@ -15,8 +15,17 @@ a {
 .container {
   width: 1140px;
   text-align: center;
-  margin: 0% auto;
-  padding: 80px 0px;
+  margin: 0 auto;
+}
+
+.container h2 {
+  font: 700 30px/1 droid-sans, sans-serif;
+  margin-bottom: 10px;
+}
+
+.container p {
+  font: 300 14px/1.42857143 muli, sans-serif;
+  color: #919191;
 }
 
 .container-items {
@@ -24,26 +33,72 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  gap: 30px;
 }
 
 .container-items .container-item {
   display: -ms-grid;
   display: grid;
   place-items: center;
-  text-align: center;
   position: relative;
+  padding: 20px;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.container-items .container-item:hover {
+  color: white;
+}
+
+.container-items .container-item:hover p {
+  color: white;
+}
+
+.container-items .container-item:hover i {
+  color: white;
+}
+
+.container-items .container-item::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: orange;
+  z-index: -1;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.container-items .container-item:hover::after {
+  height: 100%;
 }
 
 .container-items .container-item i {
-  width: 126px;
-  height: 126px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  width: 130px;
+  height: 130px;
   margin: 20px;
-  font-size: 48px;
-  background-color: white;
   color: orange;
-  border: 2px solid orange;
-  border-radius: 50%;
+  border: solid;
+  border-radius: 100%;
+  font-size: 52px;
+}
+
+.container-items .container-item h2 {
+  margin-bottom: 15px;
+  padding: 13px 0;
+}
+
+.container-items .container-item a {
+  font: 300 14px/1.42857143 muli, sans-serif;
+  color: #919191;
+  margin: 10px 0 20px;
+  padding: 14px 35px;
+  color: #fff;
+  background-color: orange;
 }
