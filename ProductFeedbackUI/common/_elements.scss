@@ -1,0 +1,48 @@
+.high-element_basic {
+    width: 40px;
+    height: 53px;
+    border-radius: $radius-x;
+}
+
+.element-99 {
+    @extend .high-element_basic;
+    background-color: #F2F4FE;
+}
+
+.element-99_hover {
+    @extend .high-element_basic;
+    background-color: #CFD7FF;
+}
+
+.element-100 {
+    @extend .high-element_basic;
+    background-color: $blue-dark;
+}
+
+.element_basic {
+    width: 48px;
+    height: 30px;
+    border-radius: $radius-x;
+}
+
+.element-ux {
+    @extend .element_basic;
+    background-color: #F2F4FF;
+}
+
+.element-ux_hover {
+    @extend .element_basic;
+    background-color: #CFD7FF;
+}
+
+.element-ux-dark {
+    @extend .element_basic;
+    background-color: $blue-dark;
+}
+
+.sort{
+    width: 194px;
+    height: 72px;
+    border-radius:$radius-x;
+    background-color: $grey-small-text;
+}
