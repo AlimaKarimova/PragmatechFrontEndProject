@@ -1,0 +1,24 @@
+.feedback-board {
+    height: 137px;
+    border-radius: $radius-x;
+    background: rgb(40, 167, 237);
+    background: linear-gradient(96deg, rgba(40, 167, 237, 1) 0%, rgba(232, 77, 112, 1) 100%);
+    position: relative;
+    margin-bottom: 30px;
+
+    h3 {
+        @extend .title-20;
+        color: $white;
+        position: absolute;
+        left: 25px;
+        bottom: 50px;
+    }
+
+    p {
+        @extend .text-15;
+        color: $white;
+        position: absolute;
+        left: 25px;
+        bottom: 30px;
+    }
+}

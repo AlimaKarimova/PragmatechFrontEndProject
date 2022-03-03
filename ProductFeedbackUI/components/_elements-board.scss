@@ -1,0 +1,17 @@
+.elements-board {
+    background-color: $white;
+    padding: 24px;
+    margin-bottom: 30px;
+    border-radius: $radius-x;
+
+    .row {
+        display: flex;
+        justify-content: start;
+        margin-bottom: 14px;
+
+        a {
+            margin-right: 8px;
+        }
+    }
+
+}

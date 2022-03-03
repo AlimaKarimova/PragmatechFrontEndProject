@@ -1,48 +1,40 @@
-.high-element_basic {
-    width: 40px;
-    height: 53px;
+.element-high {
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 5px;
     border-radius: $radius-x;
-}
-
-.element-99 {
-    @extend .high-element_basic;
     background-color: #F2F4FE;
+
+    &:hover {
+        background-color: #CFD7FF;
+    }
+
+    &:active {
+        background-color: $blue-dark;
+        color: $white;
+    }
 }
 
-.element-99_hover {
-    @extend .high-element_basic;
-    background-color: #CFD7FF;
-}
-
-.element-100 {
-    @extend .high-element_basic;
-    background-color: $blue-dark;
-}
-
-.element_basic {
-    width: 48px;
-    height: 30px;
+.element {
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
     border-radius: $radius-x;
-}
-
-.element-ux {
-    @extend .element_basic;
     background-color: #F2F4FF;
-}
+    color: $blue-dark;
+    @extend .text-13-700;
 
-.element-ux_hover {
-    @extend .element_basic;
-    background-color: #CFD7FF;
-}
+    &:hover {
+        background-color: #CFD7FF;
+        color: $blue-dark;
+    }
 
-.element-ux-dark {
-    @extend .element_basic;
-    background-color: $blue-dark;
-}
-
-.sort{
-    width: 194px;
-    height: 72px;
-    border-radius:$radius-x;
-    background-color: $grey-small-text;
+    &:active {
+        background-color: $blue-dark;
+        color: $white;
+    }
 }

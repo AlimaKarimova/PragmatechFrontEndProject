@@ -1,0 +1,51 @@
+.roadmap-board {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    border-radius: $radius-x;
+    background-color: $white;
+    padding: 25px;
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+
+        h3 {
+            display: inline-block;
+            @extend .title-18;
+            color: #3A4374;
+
+        }
+
+        a {
+            color: #4661E6;
+            text-decoration: underline;
+            @extend .text-13-700;
+        }
+
+        ul {
+            display: inline-block;
+            @extend .text-16-400;
+            color: $grey;
+
+            li {
+                margin-bottom: 8px;
+            }
+
+        }
+
+        ol {
+            display: inline-block;
+            list-style: none;
+            @extend .text-16-700;
+            color: $grey;
+
+            li {
+                margin-bottom: 8px;
+            }
+        }
+
+
+
+    }
+}
