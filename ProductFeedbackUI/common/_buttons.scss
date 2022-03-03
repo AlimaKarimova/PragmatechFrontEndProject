@@ -1,63 +1,71 @@
 @import 'colors';
 
 .button-basic {
-    width: 158px;
-    height: 44px;
-    border-radius:$radius-x;
+    padding: 12px 25px;
+    border-radius: $radius-x;
 }
 
 .button_purple {
     @extend .button-basic;
     background-color: $purple;
-}
 
-.button_purple_hover {
-    @extend .button-basic;
-    background-color: $purple-light;
+    &:hover {
+        background-color: $purple-light;
+    }
 }
 
 .button_blue {
     @extend .button-basic;
     background-color: $blue-dark;
+
+    &:hover {
+        background-color: $blue-light;
+    }
 }
 
-.button-blue_hover {
-    @extend .button-basic;
-    background-color: $blue-light;
-}
 
 .button-grey {
     @extend .button-basic;
     background-color: $grey-big-text;
+
+    &:hover {
+        background-color: $grey-button-hover;
+    }
 }
 
-.button-grey_hover {
-    @extend .button-basic;
-    background-color: $grey-button-hover;
-}
 
 .button-red {
     @extend .button-basic;
     background-color: $red;
+
+    &:hover {
+        background-color: $red-light;
+    }
 }
 
-.button-red_hover {
-    @extend .button-basic;
-    background-color: $red-light;
-}
+
 
 .go-back_basic {
     width: 158px;
     height: 53px;
-    border-radius: $radius-x
+    border-radius: $radius-x;
 }
 
 .go-back_transparent {
     @extend .go-back_basic;
     color: $grey;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
-.go-back_dark{
+
+.go-back_dark {
     @extend .go-back_basic;
     background-color: $grey-small-text;
+
+    &:hover {
+        text-decoration: underline;
+    }
 
 }

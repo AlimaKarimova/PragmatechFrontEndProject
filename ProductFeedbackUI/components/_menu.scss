@@ -10,39 +10,40 @@
     .menu-nav {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        gap: 10px;
         margin-left: 30px;
 
         i {
             color: $white;
-            position: relative;
-            top: 6px;
-            left: 3px;
-            margin-right: 15px;
             font-size: 14px;
+            &:last-child{
+                position: relative;
+                top: 4px;
+            }
         }
 
         h3 {
             @extend .title-18;
             color: $white;
-            margin-right: 30px
         }
 
         span {
             @extend .text-14-400;
             color: $white;
+            position: relative;
+            top: 2px;
         }
 
     }
 
     .menu-btn {
-
         margin-right: 15px;
 
         a {
             @extend .button_purple;
             color: $white;
             @extend .text-14-700;
-            padding: 12px 25px;
         }
     }
 
