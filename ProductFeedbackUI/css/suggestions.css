@@ -169,8 +169,6 @@ ul {
 }
 
 .go-back_basic, .go-back_transparent, .form-box .btn a, .go-back_dark {
-  width: 158px;
-  height: 53px;
   border-radius: 10px;
 }
 
@@ -183,6 +181,7 @@ ul {
 }
 
 .go-back_dark {
+  padding: 15px 40px 15px 60px;
   background-color: #373f68;
 }
 

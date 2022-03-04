@@ -1,0 +1,40 @@
+@import 'common//reset';
+@import 'common/variables';
+@import 'common/colors';
+@import 'common/buttons';
+@import 'common/elements';
+
+// components
+@import 'components/elements-board';
+@import 'components/empty-feedback';
+@import 'components/feedback-board';
+@import 'components/form';
+@import 'components/list';
+@import 'components/menu';
+@import 'components/roadmap-board';
+
+.wrapper {
+    width: 825px;
+    margin: 50px auto;
+
+    .menu {
+
+        .menu-nav {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            a {
+                @extend .go-back_transparent;
+                color: white;
+            }
+        }
+
+    }
+
+    .columns{
+        margin-top: 50px;
+        display: flex;
+        gap: 30px;
+    }
+
+}

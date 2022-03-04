@@ -55,8 +55,6 @@
 
 
 .go-back_basic {
-    width: 158px;
-    height: 53px;
     border-radius: $radius-x;
 }
 
@@ -71,6 +69,7 @@
 }
 
 .go-back_dark {
+    padding: 15px 40px 15px 60px;
     @extend .go-back_basic;
     background-color: $grey-small-text;
 

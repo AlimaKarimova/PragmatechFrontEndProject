@@ -53,7 +53,7 @@ ul {
   font-size: 15px;
 }
 
-.text-14-700, .button_purple, .empty-box-inner a, .form-box .button-box a:nth-child(2), .menu .menu-btn a, .button_blue, .button_grey, .form-box .button-box a:nth-child(1), .button_red, .go-back_transparent, .form-box .btn a, .form-box form h4 {
+.text-14-700, .button_purple, .empty-box-inner a, .form-box .button-box a:nth-child(2), .menu .menu-btn a, .button_blue, .button_grey, .form-box .button-box a:nth-child(1), .button_red, .go-back_transparent, .form-box .btn a, .wrapper .menu .menu-nav a, .form-box form h4 {
   font-weight: 700;
   font-size: 14px;
 }
@@ -107,7 +107,7 @@ ul {
   font-size: 15px;
 }
 
-.text-14-700, .button_purple, .empty-box-inner a, .form-box .button-box a:nth-child(2), .menu .menu-btn a, .button_blue, .button_grey, .form-box .button-box a:nth-child(1), .button_red, .go-back_transparent, .form-box .btn a, .form-box form h4 {
+.text-14-700, .button_purple, .empty-box-inner a, .form-box .button-box a:nth-child(2), .menu .menu-btn a, .button_blue, .button_grey, .form-box .button-box a:nth-child(1), .button_red, .go-back_transparent, .form-box .btn a, .wrapper .menu .menu-nav a, .form-box form h4 {
   font-weight: 700;
   font-size: 14px;
 }
@@ -168,15 +168,15 @@ ul {
   background-color: #E98888;
 }
 
-.go-back_basic, .go-back_transparent, .form-box .btn a, .go-back_dark {
+.go-back_basic, .go-back_transparent, .form-box .btn a, .wrapper .menu .menu-nav a, .go-back_dark {
   border-radius: 10px;
 }
 
-.go-back_transparent, .form-box .btn a {
+.go-back_transparent, .form-box .btn a, .wrapper .menu .menu-nav a {
   color: #647196;
 }
 
-.go-back_transparent:hover, .form-box .btn a:hover {
+.go-back_transparent:hover, .form-box .btn a:hover, .wrapper .menu .menu-nav a:hover {
   text-decoration: underline;
 }
 
@@ -565,4 +565,32 @@ ul {
 
 .roadmap-board .row ol li {
   margin-bottom: 8px;
+}
+
+.wrapper {
+  width: 825px;
+  margin: 50px auto;
+}
+
+.wrapper .menu .menu-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0;
+}
+
+.wrapper .menu .menu-nav a {
+  color: white;
+}
+
+.wrapper .columns {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
 }
