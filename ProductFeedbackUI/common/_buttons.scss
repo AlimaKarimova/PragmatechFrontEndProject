@@ -24,7 +24,7 @@
 }
 
 
-.button-grey {
+.button_grey {
     @extend .button-basic;
     background-color: $grey-big-text;
 
@@ -53,7 +53,16 @@
 
 .go-back_transparent {
     @extend .go-back_basic;
+    @extend .text-14-700;
     color: $grey;
+
+    a::before{
+        content: '\276E';
+        width: 8px;
+        height: 8px;
+        margin-right: 15px;
+        text-decoration: none;
+    }
 
     &:hover {
         text-decoration: underline;

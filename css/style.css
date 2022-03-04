@@ -18,7 +18,7 @@ ul {
   list-style: none;
 }
 
-.title-24, .empty-box-inner h2 {
+.title-24, .empty-box-inner h2, .form-box h3 {
   font-weight: 700;
   font-size: 24px;
 }
@@ -47,16 +47,17 @@ ul {
   font-size: 16px;
 }
 
-.text-15, .feedback-board p {
-  font: 500 15px/normal inherit;
+.text-15-400, .feedback-board p {
+  font-weight: 400;
+  font-size: 15px;
 }
 
-.text-14-700, .menu .menu-btn a, .empty-box-inner a {
+.text-14-700, .go-back_transparent, .form-box .btn a, .menu .menu-btn a, .empty-box-inner a, .form-box form h4, .form-box .button-box a:nth-child(1), .form-box .button-box a:nth-child(2) {
   font-weight: 700;
   font-size: 14px;
 }
 
-.text-14-400, .menu .menu-nav span {
+.text-14-400, .menu .menu-nav span, .form-box form label {
   font-weight: 400;
   font-size: 14px;
 }
@@ -123,16 +124,16 @@ ul {
   color: #ffffff;
 }
 
-.button-basic, .button_purple, .menu .menu-btn a, .empty-box-inner a, .button_blue, .button-grey, .button-red {
+.button-basic, .button_purple, .menu .menu-btn a, .empty-box-inner a, .form-box .button-box a:nth-child(2), .button_blue, .button_grey, .form-box .button-box a:nth-child(1), .button-red {
   padding: 12px 25px;
   border-radius: 10px;
 }
 
-.button_purple, .menu .menu-btn a, .empty-box-inner a {
+.button_purple, .menu .menu-btn a, .empty-box-inner a, .form-box .button-box a:nth-child(2) {
   background-color: #ad1fea;
 }
 
-.button_purple:hover, .menu .menu-btn a:hover, .empty-box-inner a:hover {
+.button_purple:hover, .menu .menu-btn a:hover, .empty-box-inner a:hover, .form-box .button-box a:hover:nth-child(2) {
   background-color: #C75AF6;
 }
 
@@ -144,11 +145,11 @@ ul {
   background-color: #7C91F9;
 }
 
-.button-grey {
+.button_grey, .form-box .button-box a:nth-child(1) {
   background-color: #3a4374;
 }
 
-.button-grey:hover {
+.button_grey:hover, .form-box .button-box a:hover:nth-child(1) {
   background-color: #656EA3;
 }
 
@@ -160,17 +161,25 @@ ul {
   background-color: #E98888;
 }
 
-.go-back_basic, .go-back_transparent, .go-back_dark {
+.go-back_basic, .go-back_transparent, .form-box .btn a, .go-back_dark {
   width: 158px;
   height: 53px;
   border-radius: 10px;
 }
 
-.go-back_transparent {
+.go-back_transparent, .form-box .btn a {
   color: #647196;
 }
 
-.go-back_transparent:hover {
+.go-back_transparent a::before, .form-box .btn a a::before {
+  content: '\276E';
+  width: 8px;
+  height: 8px;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+.go-back_transparent:hover, .form-box .btn a:hover {
   text-decoration: underline;
 }
 
@@ -180,12 +189,6 @@ ul {
 
 .go-back_dark:hover {
   text-decoration: underline;
-}
-
-.field_basic {
-  width: 255px;
-  height: 48px;
-  border-radius: 5px;
 }
 
 body {
@@ -213,7 +216,7 @@ body {
   height: 137px;
   border-radius: 10px;
   background: #28a7ed;
-  background: linear-gradient(96deg, #28a7ed 0%, #e84d70 100%);
+  background: radial-gradient(128.88% 128.88% at 103.9% -10.39%, #E84D70 0%, #A337F6 53.09%, #28A7ED 100%);
   position: relative;
   margin-bottom: 30px;
 }
@@ -450,4 +453,87 @@ body {
 
 .empty-box-inner a {
   color: #ffffff;
+}
+
+.form-box {
+  width: 540px;
+  background-color: #ffffff;
+  margin: 180px auto;
+  padding: 50px 40px 40px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.form-box .btn {
+  position: absolute;
+  top: -90px;
+  left: -5px;
+}
+
+.form-box .btn a::before {
+  content: '\276E';
+  width: 8px;
+  height: 8px;
+  margin-right: 15px;
+  text-decoration: none;
+  color: #4661E6;
+}
+
+.form-box::before {
+  content: "\002B";
+  position: absolute;
+  top: -28px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: radial-gradient(128.88% 128.88% at 103.9% -10.39%, #E84D70 0%, #A337F6 53.09%, #28A7ED 100%);
+  text-align: center;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 35px;
+}
+
+.form-box h3 {
+  color: #3a4374;
+  margin-bottom: 40px;
+}
+
+.form-box form h4 {
+  color: #3a4374;
+}
+
+.form-box form label {
+  color: #647196;
+}
+
+.form-box form input,
+.form-box form textarea,
+.form-box form select {
+  width: 100%;
+  padding: 15px 0px 15px 25px;
+  background-color: #f7f8fd;
+  margin-top: 15px;
+  margin-bottom: 24px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  resize: none;
+}
+
+.form-box .button-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin-top: 30px;
+}
+
+.form-box .button-box a:nth-child(1) {
+  color: #ffffff;
+}
+
+.form-box .button-box a:nth-child(2) {
+  color: #ffffff;
+  margin-left: 15px;
 }
