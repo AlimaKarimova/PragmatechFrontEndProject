@@ -12,7 +12,26 @@
 @import 'components/menu';
 @import 'components/roadmap-board';
 
-.button-box{
+.buttons {
     display: flex;
     justify-content: space-between;
+
+    a:nth-child(1) {
+        @extend .button_red;
+    }
+
+    .row{
+        display: flex;
+        gap: 15px;
+
+        a:nth-child(1) {
+            @extend .button_grey;
+        
+        }
+        a:nth-child(2) {
+            @extend .button_purple;
+        }
+    }
+
+
 }

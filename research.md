@@ -142,3 +142,26 @@ Uniform Resource Locator (унифицированный определител�
 - Основная цель - получить адрес или местоположение ресурса.
 - URİ Используется в файлах HTML, XML и библиотек тегов, таких как XSLT и jstl, для идентификации ресурсов и двоичных файлов.
 - URL используется для поиска только веб-страниц
+
+
+#### Javascript
+
+### interpreter və compiler dillər arasındakı fərqləri haqqında araşdırma edərək öz anladığınız formada yazın
+
+- Interpreter dillerinde yazilan kod masin diline tercume olunan zaman setir-setir tercume olunur ve eger her hansi bir setirde error olsa is dayanir.Error cixan setre kimi olan kod tercume olunur.Ustunlukleri:dinamik tipizasiya, programin icrasinin addim-addim izlenilmesi, icra zamani deyisiklik etmek imkani.
+- Kompayler dillerinde yazilan kod tercume olunan zaman kod butovlukde tercume olunur.Eger bir yerde sehv olsa kod tercume olunmayacaq.Kompayler dillerin kod tercumesi daha suretle bas verir.
+
+
+### dəyişən və məlumat növləri arasındakı fərq nədir? Bunlar nə üçün istifadə olunur?
+
+Deyisenler vasitesile biz yaddasin mueyyen hissesine muraciet edirik.Melumat novu ise deyisen ustunde hansi emeliyyat novlerini apara bilerik onu gosterir.Meselen number melumat novleri ile muxtelif riyazi hesablamalari apara bilerik.
+
+### hər dilin özünə məxsus məlumat növləri mövcuddur. Bu məlumat növlərin dillərə görə fərqlənməsinin səbəbləri sizcə nədir?
+
+Ferqlenme sebebi dillerin evvelceden hansi meqsedle yaradilmasi  ve hansi sahelerde daha cox istifade olunmasidir.Misal ucun JS frontendde, Python Suni itellekt sahesinde, oyunlari yazilmasi ve ya programlasdirma dilinin yazilmasi ucun C ve C++ dillerinden daha cox istifade olunur.
+
+### javascriptdə dəyişən təyin edilmək üçün əsas üç açar söz var . let,var,const. Bu açar sözlərin vəzifələri arasındakı fərqlər nələrdir?
+- var scopa malik deyil, yeni funksiya icerisinde deyisen var vasitesile  teyin olunsa funksiya xaricinde de istifade olunacak.var vasitesile tekraren eyni deyisen teyin olunsa error olmayacak.
+- let vasitesile sonradan deyeri deyisile bilen deyisenler teyin olunur.local ve global scopa malikdir.
+- const vasitesile  teyin olunan deyisenlerin deyeri sonradan deyisilmir.local ve global scopa malikdir.
+### Proqramçı olaraq bir proqram yazarkən işi görmə addımlarımız necə olmalıdır?
