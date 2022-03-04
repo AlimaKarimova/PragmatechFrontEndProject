@@ -165,3 +165,6 @@ Ferqlenme sebebi dillerin evvelceden hansi meqsedle yaradilmasi  ve hansi sahele
 - let vasitesile sonradan deyeri deyisile bilen deyisenler teyin olunur.local ve global scopa malikdir.
 - const vasitesile  teyin olunan deyisenlerin deyeri sonradan deyisilmir.local ve global scopa malikdir.
 ### Proqramçı olaraq bir proqram yazarkən işi görmə addımlarımız necə olmalıdır?
+- output teyin olunur 
+- input teyin olunur
+- inputa catmaq ucun alqoritm qurulur
