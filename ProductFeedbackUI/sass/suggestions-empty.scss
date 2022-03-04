@@ -1,0 +1,32 @@
+@import 'common//reset';
+@import 'common/variables';
+@import 'common/colors';
+@import 'common/buttons';
+@import 'common/elements';
+
+// components
+@import 'components/elements-board';
+@import 'components/empty-feedback';
+@import 'components/feedback-board';
+@import 'components/form';
+@import 'components/list';
+@import 'components/menu';
+@import 'components/roadmap-board';
+
+
+
+.wrapper{
+    width: 1110px;
+    margin: 90px auto;
+    display: flex;
+    gap:30px;
+
+    .side-boxs{
+        width: 255px;
+    }
+    .main-boxs{
+        width: 825px;
+    }
+    
+
+}

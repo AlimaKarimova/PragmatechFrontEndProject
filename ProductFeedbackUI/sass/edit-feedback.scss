@@ -1,0 +1,18 @@
+@import 'common//reset';
+@import 'common/variables';
+@import 'common/colors';
+@import 'common/buttons';
+@import 'common/elements';
+// components
+@import 'components/elements-board';
+@import 'components/empty-feedback';
+@import 'components/feedback-board';
+@import 'components/form';
+@import 'components/list';
+@import 'components/menu';
+@import 'components/roadmap-board';
+
+.button-box{
+    display: flex;
+    justify-content: space-between;
+}

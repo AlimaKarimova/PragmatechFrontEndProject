@@ -1,4 +1,5 @@
 @import 'colors';
+@import 'variables';
 
 .button-basic {
     padding: 12px 25px;
@@ -8,6 +9,8 @@
 .button_purple {
     @extend .button-basic;
     background-color: $purple;
+    color: $white;
+    @extend .text-14-700;
 
     &:hover {
         background-color: $purple-light;
@@ -17,6 +20,8 @@
 .button_blue {
     @extend .button-basic;
     background-color: $blue-dark;
+    color: white;
+    @extend .text-14-700;
 
     &:hover {
         background-color: $blue-light;
@@ -27,6 +32,8 @@
 .button_grey {
     @extend .button-basic;
     background-color: $grey-big-text;
+    color: $white;
+    @extend .text-14-700;
 
     &:hover {
         background-color: $grey-button-hover;
@@ -34,9 +41,11 @@
 }
 
 
-.button-red {
+.button_red {
     @extend .button-basic;
     background-color: $red;
+    color: $white;
+    @extend .text-14-700;
 
     &:hover {
         background-color: $red-light;
@@ -55,14 +64,6 @@
     @extend .go-back_basic;
     @extend .text-14-700;
     color: $grey;
-
-    a::before{
-        content: '\276E';
-        width: 8px;
-        height: 8px;
-        margin-right: 15px;
-        text-decoration: none;
-    }
 
     &:hover {
         text-decoration: underline;
