@@ -23,6 +23,7 @@
             display: flex;
             flex-direction: column;
             gap: 0;
+
             a {
                 @extend .go-back_transparent;
                 color: white;
@@ -31,10 +32,57 @@
 
     }
 
-    .columns{
+    .columns {
         margin-top: 50px;
         display: flex;
         gap: 30px;
+
+        .column {
+
+            h4 {
+                @extend .title-18;
+                color: $grey-big-text;
+            }
+
+            span {
+                @extend .text-16-400;
+                color: $grey;
+            }
+
+
+
+            .info-box {
+                margin-top: 30px;
+                background-color: white;
+                border-radius: $radius-x;
+                padding: 30px;
+
+                .btn {
+                    display: flex;
+                    justify-content: start;
+                    a {
+                        @extend .element;
+                        margin: 5px 0;
+                    }
+                }
+
+
+            }
+
+            .orange-board {
+                border-top: 5px solid #F49F85;
+            }
+
+            .purple-board {
+                border-top: 5px solid $purple;
+            }
+
+            .blue-board {
+                border-top: 5px solid $blue;
+            }
+        }
+
+
     }
 
 }
