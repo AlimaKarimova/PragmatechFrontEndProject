@@ -19,7 +19,7 @@ ul {
   list-style: none;
 }
 
-.title-24, .empty-box-inner h2, .form-box h3 {
+.title-24, .form-box h3 {
   font-weight: 700;
   font-size: 24px;
 }
@@ -34,7 +34,7 @@ ul {
   color: #3a4374;
 }
 
-.text-16-400, .empty-box-inner p, .list .list-text p, .roadmap-board .row ul, .wrapper .columns .column span, .wrapper .columns .column .info-box ul li, .wrapper .columns .column .info-box p {
+.text-16-400, .list .list-text p, .roadmap-board .row ul, .wrapper .columns .column span, .wrapper .columns .column .info-box ul li, .wrapper .columns .column .info-box p {
   font-weight: 400;
   font-size: 16px;
   color: #647196;
@@ -55,7 +55,7 @@ ul {
   font-size: 15px;
 }
 
-.text-14-700, .button_purple, .empty-box-inner a, .form-box .button-box a:nth-child(2), .menu .menu-btn a, .button_blue, .button_grey, .form-box .button-box a:nth-child(1), .button_red, .go-back_transparent, .form-box .btn a, .wrapper .menu .menu-nav a, .form-box form h4 {
+.text-14-700, .button_purple, .form-box .button-box a:nth-child(2), .menu .menu-btn a, .button_blue, .button_grey, .form-box .button-box a:nth-child(1), .button_red, .go-back_transparent, .form-box .btn a, .wrapper .menu .menu-nav a, .form-box form h4 {
   font-weight: 700;
   font-size: 14px;
 }
@@ -75,7 +75,7 @@ ul {
   font-size: 13px;
 }
 
-.title-24, .empty-box-inner h2, .form-box h3 {
+.title-24, .form-box h3 {
   font-weight: 700;
   font-size: 24px;
 }
@@ -90,7 +90,7 @@ ul {
   color: #3a4374;
 }
 
-.text-16-400, .empty-box-inner p, .list .list-text p, .roadmap-board .row ul, .wrapper .columns .column span, .wrapper .columns .column .info-box ul li, .wrapper .columns .column .info-box p {
+.text-16-400, .list .list-text p, .roadmap-board .row ul, .wrapper .columns .column span, .wrapper .columns .column .info-box ul li, .wrapper .columns .column .info-box p {
   font-weight: 400;
   font-size: 16px;
   color: #647196;
@@ -111,7 +111,7 @@ ul {
   font-size: 15px;
 }
 
-.text-14-700, .button_purple, .empty-box-inner a, .form-box .button-box a:nth-child(2), .menu .menu-btn a, .button_blue, .button_grey, .form-box .button-box a:nth-child(1), .button_red, .go-back_transparent, .form-box .btn a, .wrapper .menu .menu-nav a, .form-box form h4 {
+.text-14-700, .button_purple, .form-box .button-box a:nth-child(2), .menu .menu-btn a, .button_blue, .button_grey, .form-box .button-box a:nth-child(1), .button_red, .go-back_transparent, .form-box .btn a, .wrapper .menu .menu-nav a, .form-box form h4 {
   font-weight: 700;
   font-size: 14px;
 }
@@ -131,17 +131,17 @@ ul {
   font-size: 13px;
 }
 
-.button-basic, .button_purple, .empty-box-inner a, .form-box .button-box a:nth-child(2), .menu .menu-btn a, .button_blue, .button_grey, .form-box .button-box a:nth-child(1), .button_red {
+.button-basic, .button_purple, .form-box .button-box a:nth-child(2), .menu .menu-btn a, .button_blue, .button_grey, .form-box .button-box a:nth-child(1), .button_red {
   padding: 12px 25px;
   border-radius: 10px;
 }
 
-.button_purple, .empty-box-inner a, .form-box .button-box a:nth-child(2), .menu .menu-btn a {
+.button_purple, .form-box .button-box a:nth-child(2), .menu .menu-btn a {
   background-color: #ad1fea;
   color: white;
 }
 
-.button_purple:hover, .empty-box-inner a:hover, .form-box .button-box a:hover:nth-child(2), .menu .menu-btn a:hover {
+.button_purple:hover, .form-box .button-box a:hover:nth-child(2), .menu .menu-btn a:hover {
   background-color: #C75AF6;
 }
 
@@ -236,40 +236,6 @@ ul {
 
 .elements-board .row a {
   margin-right: 8px;
-}
-
-.empty-box {
-  margin-top: 30px;
-  height: 600px;
-  background: white url(/ProductFeedbackUI/background.png) top no-repeat;
-  border-radius: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  position: relative;
-}
-
-.empty-box-inner {
-  position: absolute;
-  bottom: 120px;
-}
-
-.empty-box-inner h2 {
-  color: #3a4374;
-  margin-bottom: 20px;
-}
-
-.empty-box-inner p {
-  color: #647196;
-  margin-bottom: 50px;
-}
-
-.empty-box-inner a {
-  color: white;
 }
 
 .feedback-board {

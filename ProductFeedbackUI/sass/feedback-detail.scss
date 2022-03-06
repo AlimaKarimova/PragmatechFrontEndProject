@@ -1,0 +1,52 @@
+@import 'common//reset';
+@import 'common/variables';
+@import 'common/colors';
+@import 'common/buttons';
+@import 'common/elements';
+// components
+@import 'components/elements-board';
+@import 'components/feedback-board';
+@import 'components/form';
+@import 'components/list';
+@import 'components/menu';
+@import 'components/roadmap-board';
+
+.wrapper {
+    width: 730px;
+    margin: 150px auto;
+
+    .btn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a:nth-child(1) {
+            @extend .go-back_transparent;
+
+            i {
+                color: $blue-dark;
+            }
+        }
+
+        a:nth-child(2) {
+            @extend .button_blue;
+        }
+    }
+
+    .main-box {
+        background: white;
+        margin-top: 25px;
+        padding: 25px 35px;
+
+        .title {
+            span {
+                @extend .title-18;
+
+            }
+        }
+        .comments-box> .comments-box{
+            margin-left: 25px;
+        }
+
+    }
+}

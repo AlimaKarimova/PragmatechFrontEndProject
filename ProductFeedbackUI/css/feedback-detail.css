@@ -28,7 +28,7 @@ ul {
   font: 700 20px/normal inherit;
 }
 
-.title-18, .list .list-text h4, .menu .menu-nav h3, .roadmap-board .row h3 {
+.title-18, .list .list-text h4, .menu .menu-nav h3, .roadmap-board .row h3, .wrapper .main-box .title span {
   font-weight: 700;
   font-size: 18px;
   color: #3a4374;
@@ -55,7 +55,7 @@ ul {
   font-size: 15px;
 }
 
-.text-14-700, .button_purple, .form-box .button-box a:nth-child(2), .menu .menu-btn a, .buttons .row a:nth-child(2), .button_blue, .button_grey, .form-box .button-box a:nth-child(1), .buttons .row a:nth-child(1), .button_red, .buttons a:nth-child(1), .go-back_transparent, .form-box .btn a, .form-box form h4 {
+.text-14-700, .button_purple, .form-box .button-box a:nth-child(2), .menu .menu-btn a, .button_blue, .wrapper .btn a:nth-child(2), .button_grey, .form-box .button-box a:nth-child(1), .button_red, .go-back_transparent, .form-box .btn a, .wrapper .btn a:nth-child(1), .form-box form h4 {
   font-weight: 700;
   font-size: 14px;
 }
@@ -84,7 +84,7 @@ ul {
   font: 700 20px/normal inherit;
 }
 
-.title-18, .list .list-text h4, .menu .menu-nav h3, .roadmap-board .row h3 {
+.title-18, .list .list-text h4, .menu .menu-nav h3, .roadmap-board .row h3, .wrapper .main-box .title span {
   font-weight: 700;
   font-size: 18px;
   color: #3a4374;
@@ -111,7 +111,7 @@ ul {
   font-size: 15px;
 }
 
-.text-14-700, .button_purple, .form-box .button-box a:nth-child(2), .menu .menu-btn a, .buttons .row a:nth-child(2), .button_blue, .button_grey, .form-box .button-box a:nth-child(1), .buttons .row a:nth-child(1), .button_red, .buttons a:nth-child(1), .go-back_transparent, .form-box .btn a, .form-box form h4 {
+.text-14-700, .button_purple, .form-box .button-box a:nth-child(2), .menu .menu-btn a, .button_blue, .wrapper .btn a:nth-child(2), .button_grey, .form-box .button-box a:nth-child(1), .button_red, .go-back_transparent, .form-box .btn a, .wrapper .btn a:nth-child(1), .form-box form h4 {
   font-weight: 700;
   font-size: 14px;
 }
@@ -131,56 +131,56 @@ ul {
   font-size: 13px;
 }
 
-.button-basic, .button_purple, .form-box .button-box a:nth-child(2), .menu .menu-btn a, .buttons .row a:nth-child(2), .button_blue, .button_grey, .form-box .button-box a:nth-child(1), .buttons .row a:nth-child(1), .button_red, .buttons a:nth-child(1) {
+.button-basic, .button_purple, .form-box .button-box a:nth-child(2), .menu .menu-btn a, .button_blue, .wrapper .btn a:nth-child(2), .button_grey, .form-box .button-box a:nth-child(1), .button_red {
   padding: 12px 25px;
   border-radius: 10px;
 }
 
-.button_purple, .form-box .button-box a:nth-child(2), .menu .menu-btn a, .buttons .row a:nth-child(2) {
+.button_purple, .form-box .button-box a:nth-child(2), .menu .menu-btn a {
   background-color: #ad1fea;
   color: white;
 }
 
-.button_purple:hover, .form-box .button-box a:hover:nth-child(2), .menu .menu-btn a:hover, .buttons .row a:hover:nth-child(2) {
+.button_purple:hover, .form-box .button-box a:hover:nth-child(2), .menu .menu-btn a:hover {
   background-color: #C75AF6;
 }
 
-.button_blue {
+.button_blue, .wrapper .btn a:nth-child(2) {
   background-color: #4661e6;
   color: white;
 }
 
-.button_blue:hover {
+.button_blue:hover, .wrapper .btn a:hover:nth-child(2) {
   background-color: #7C91F9;
 }
 
-.button_grey, .form-box .button-box a:nth-child(1), .buttons .row a:nth-child(1) {
+.button_grey, .form-box .button-box a:nth-child(1) {
   background-color: #3a4374;
   color: white;
 }
 
-.button_grey:hover, .form-box .button-box a:hover:nth-child(1), .buttons .row a:hover:nth-child(1) {
+.button_grey:hover, .form-box .button-box a:hover:nth-child(1) {
   background-color: #656EA3;
 }
 
-.button_red, .buttons a:nth-child(1) {
+.button_red {
   background-color: #D73737;
   color: white;
 }
 
-.button_red:hover, .buttons a:hover:nth-child(1) {
+.button_red:hover {
   background-color: #E98888;
 }
 
-.go-back_basic, .go-back_transparent, .form-box .btn a, .go-back_dark {
+.go-back_basic, .go-back_transparent, .form-box .btn a, .wrapper .btn a:nth-child(1), .go-back_dark {
   border-radius: 10px;
 }
 
-.go-back_transparent, .form-box .btn a {
+.go-back_transparent, .form-box .btn a, .wrapper .btn a:nth-child(1) {
   color: #647196;
 }
 
-.go-back_transparent:hover, .form-box .btn a:hover {
+.go-back_transparent:hover, .form-box .btn a:hover, .wrapper .btn a:hover:nth-child(1) {
   text-decoration: underline;
 }
 
@@ -496,39 +496,33 @@ ul {
   margin-bottom: 8px;
 }
 
-.form-box > i {
-  position: relative;
-  top: -62px;
-  left: 18px;
-  color: white;
-  font-size: 25px;
+.wrapper {
+  width: 730px;
+  margin: 150px auto;
 }
 
-.form-box::before {
-  content: " ";
-  position: absolute;
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  background: radial-gradient(128.88% 128.88% at 103.9% -10.39%, #E84D70 0%, #A337F6 53.09%, #28A7ED 100%);
-  text-align: center;
-  color: white;
-  font-weight: 700;
-  font-size: 35px;
-}
-
-.buttons {
+.wrapper .btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.buttons .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 15px;
+.wrapper .btn a:nth-child(1) i {
+  color: #4661e6;
+}
+
+.wrapper .main-box {
+  background: white;
+  margin-top: 25px;
+  padding: 25px 35px;
+}
+
+.wrapper .main-box .comments-box > .comments-box {
+  margin-left: 25px;
 }

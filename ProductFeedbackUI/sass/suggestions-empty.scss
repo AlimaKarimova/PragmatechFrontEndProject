@@ -6,7 +6,6 @@
 
 // components
 @import 'components/elements-board';
-@import 'components/empty-feedback';
 @import 'components/feedback-board';
 @import 'components/form';
 @import 'components/list';
@@ -28,5 +27,44 @@
         width: 825px;
     }
     
+    .empty-box {
+        background-color: white;
+        margin-top: 30px;
+        padding: 110px 200px;
+        height: 600px;
+        border-radius: $radius-x;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+    
+        &-inner {
+            img{
+                margin-bottom: 60px
+            }
+    
+    
+            h2 {
+                @extend .title-24;
+                color: $grey-big-text;
+                margin-bottom: 20px;
+            }
+    
+            p {
+                @extend .text-16-400;
+                color: $grey;
+                margin-bottom: 50px;
+            }
+    
+            a {
+                @extend .button_purple;
+                color: white;
+                @extend .text-14-700;
+            }
+    
+        }
+    
+    
+    }
 
 }
