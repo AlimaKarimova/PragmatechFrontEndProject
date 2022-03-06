@@ -3,7 +3,7 @@
     flex-direction: column;
     gap: 25px;
     border-radius: $radius-x;
-    background-color: $white;
+    background-color: white;
     padding: 25px;
 
     .row {
@@ -18,7 +18,8 @@
         }
 
         a {
-            color: #4661E6;
+            color: $blue-dark;
+            ;
             text-decoration: underline;
             @extend .text-13-700;
         }

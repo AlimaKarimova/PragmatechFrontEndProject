@@ -9,7 +9,7 @@
 .button_purple {
     @extend .button-basic;
     background-color: $purple;
-    color: $white;
+    color: white;
     @extend .text-14-700;
 
     &:hover {
@@ -32,7 +32,7 @@
 .button_grey {
     @extend .button-basic;
     background-color: $grey-big-text;
-    color: $white;
+    color: white;
     @extend .text-14-700;
 
     &:hover {
@@ -44,7 +44,7 @@
 .button_red {
     @extend .button-basic;
     background-color: $red;
-    color: $white;
+    color: white;
     @extend .text-14-700;
 
     &:hover {

@@ -15,18 +15,20 @@
 
 
 
-.wrapper{
+.wrapper {
     width: 1110px;
     margin: 50px auto;
     display: flex;
-    gap:30px;
+    gap: 30px;
 
-    .side-boxs{
+    .side-boxs {
         width: 255px;
     }
-    .main-boxs{
+
+    .main-boxs {
         width: 825px;
+
     }
-    
+
 
 }

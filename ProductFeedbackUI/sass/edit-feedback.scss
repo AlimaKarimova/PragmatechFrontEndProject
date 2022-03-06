@@ -12,6 +12,30 @@
 @import 'components/menu';
 @import 'components/roadmap-board';
 
+
+.form-box{
+  &>i{
+      position: relative;
+      top: -62px;
+      left: 18px;
+      color: white;
+      font-size: 25px;
+  }  
+}
+
+.form-box::before {
+    content: " ";
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: radial-gradient(128.88% 128.88% at 103.9% -10.39%, #E84D70 0%, #A337F6 53.09%, #28A7ED 100%);
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 35px;
+}
+
 .buttons {
     display: flex;
     justify-content: space-between;
@@ -20,14 +44,15 @@
         @extend .button_red;
     }
 
-    .row{
+    .row {
         display: flex;
         gap: 15px;
 
         a:nth-child(1) {
             @extend .button_grey;
-        
+
         }
+
         a:nth-child(2) {
             @extend .button_purple;
         }

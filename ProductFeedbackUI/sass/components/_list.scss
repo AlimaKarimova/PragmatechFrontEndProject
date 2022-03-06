@@ -1,7 +1,7 @@
 .list {
     position: relative;
     margin-top: 30px;
-    background-color: $white;
+    background-color: white;
     border-radius: $radius-x;
     padding: 30px;
     display: flex;
@@ -10,20 +10,11 @@
     .count {
 
         span {
-            @extend .element-high;
+            @extend .element;
             @extend .text-13-700;
-            color: $grey-big-text;
-            padding: 25px 8px 8px;
+            color: #3A4374;
         }
 
-        i {
-            position: relative;
-            top: 25px;
-            left: 12px;
-            color: #4661E6;
-            z-index: 2;
-            margin-bottom: 5px;
-        }
     }
 
     .list-text {
@@ -32,13 +23,11 @@
 
         h4 {
             @extend .title-18;
-            color: $grey-big-text;
             margin-bottom: 8px;
         }
 
         p {
             @extend .text-16-400;
-            color: $grey;
             margin-bottom: 8px;
 
         }
@@ -52,10 +41,12 @@
     .comments {
         position: absolute;
         right: 10px;
+
         i {
             color: #CDD2EE;
         }
-        span{
+
+        span {
             @extend .text-16-700;
         }
     }

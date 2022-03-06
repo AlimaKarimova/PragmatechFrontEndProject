@@ -1,7 +1,7 @@
 .empty-box {
     margin-top: 30px;
     height: 600px;
-    background: $white url(/ProductFeedbackUI/background.png) top no-repeat;
+    background: white url(/ProductFeedbackUI/background.png) top no-repeat;
     border-radius: $radius-x;
     display: flex;
     justify-content: center;
@@ -26,7 +26,7 @@
 
         a {
             @extend .button_purple;
-            color: $white;
+            color: white;
             @extend .text-14-700;
         }
 

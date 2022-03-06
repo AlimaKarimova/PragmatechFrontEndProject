@@ -31,11 +31,13 @@ ul {
 .title-18, .list .list-text h4, .menu .menu-nav h3, .roadmap-board .row h3 {
   font-weight: 700;
   font-size: 18px;
+  color: #3a4374;
 }
 
 .text-16-400, .empty-box-inner p, .list .list-text p, .roadmap-board .row ul {
   font-weight: 400;
   font-size: 16px;
+  color: #647196;
 }
 
 .text-16-600 {
@@ -68,7 +70,7 @@ ul {
   font-size: 13px;
 }
 
-.text-13-700, .element, .list .list-text a, .list .count span, .roadmap-board .row a {
+.text-13-700, .element, .list .count span, .list .list-text a, .roadmap-board .row a {
   font-weight: 700;
   font-size: 13px;
 }
@@ -85,11 +87,13 @@ ul {
 .title-18, .list .list-text h4, .menu .menu-nav h3, .roadmap-board .row h3 {
   font-weight: 700;
   font-size: 18px;
+  color: #3a4374;
 }
 
 .text-16-400, .empty-box-inner p, .list .list-text p, .roadmap-board .row ul {
   font-weight: 400;
   font-size: 16px;
+  color: #647196;
 }
 
 .text-16-600 {
@@ -122,7 +126,7 @@ ul {
   font-size: 13px;
 }
 
-.text-13-700, .element, .list .list-text a, .list .count span, .roadmap-board .row a {
+.text-13-700, .element, .list .count span, .list .list-text a, .roadmap-board .row a {
   font-weight: 700;
   font-size: 13px;
 }
@@ -134,7 +138,7 @@ ul {
 
 .button_purple, .empty-box-inner a, .form-box .button-box a:nth-child(2), .menu .menu-btn a {
   background-color: #ad1fea;
-  color: #ffffff;
+  color: white;
 }
 
 .button_purple:hover, .empty-box-inner a:hover, .form-box .button-box a:hover:nth-child(2), .menu .menu-btn a:hover {
@@ -152,7 +156,7 @@ ul {
 
 .button_grey, .form-box .button-box a:nth-child(1) {
   background-color: #3a4374;
-  color: #ffffff;
+  color: white;
 }
 
 .button_grey:hover, .form-box .button-box a:hover:nth-child(1) {
@@ -161,7 +165,7 @@ ul {
 
 .button_red {
   background-color: #D73737;
-  color: #ffffff;
+  color: white;
 }
 
 .button_red:hover {
@@ -189,60 +193,32 @@ ul {
   text-decoration: underline;
 }
 
-.element-high, .list .count span {
+.element, .list .count span, .list .list-text a {
+  min-width: 20px;
   display: inline-block;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 10px 5px;
-  border-radius: 10px;
-  background-color: #F2F4FE;
-}
-
-.element-high:hover, .list .count span:hover {
-  background-color: #CFD7FF;
-}
-
-.element-high:active, .list .count span:active {
-  background-color: #4661e6;
-  color: #ffffff;
-}
-
-.element, .list .list-text a {
-  display: inline-block;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding: 5px 10px;
+  text-align: center;
   border-radius: 10px;
   background-color: #F2F4FF;
   color: #4661e6;
 }
 
-.element:hover, .list .list-text a:hover {
+.element i, .list .count span i, .list .list-text a i {
+  color: #4661E6;
+}
+
+.element:hover, .list .count span:hover, .list .list-text a:hover {
   background-color: #CFD7FF;
   color: #4661e6;
 }
 
-.element:active, .list .list-text a:active {
+.element:active, .list .count span:active, .list .list-text a:active {
   background-color: #4661e6;
-  color: #ffffff;
+  color: white;
 }
 
 .elements-board {
-  background-color: #ffffff;
+  background-color: white;
   padding: 24px;
   margin-bottom: 30px;
   border-radius: 10px;
@@ -265,7 +241,7 @@ ul {
 .empty-box {
   margin-top: 30px;
   height: 600px;
-  background: #ffffff url(/ProductFeedbackUI/background.png) top no-repeat;
+  background: white url(/ProductFeedbackUI/background.png) top no-repeat;
   border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -293,7 +269,7 @@ ul {
 }
 
 .empty-box-inner a {
-  color: #ffffff;
+  color: white;
 }
 
 .feedback-board {
@@ -306,14 +282,14 @@ ul {
 }
 
 .feedback-board h3 {
-  color: #ffffff;
+  color: white;
   position: absolute;
   left: 25px;
   bottom: 50px;
 }
 
 .feedback-board p {
-  color: #ffffff;
+  color: white;
   position: absolute;
   left: 25px;
   bottom: 30px;
@@ -321,7 +297,7 @@ ul {
 
 .form-box {
   width: 540px;
-  background-color: #ffffff;
+  background-color: white;
   margin: 180px auto;
   padding: 50px 40px 40px;
   border-radius: 10px;
@@ -334,13 +310,8 @@ ul {
   left: -5px;
 }
 
-.form-box .btn a::before {
-  content: '\276E';
-  width: 8px;
-  height: 8px;
-  margin-right: 15px;
-  text-decoration: none;
-  color: #4661E6;
+.form-box .btn a i {
+  color: #4661e6;
 }
 
 .form-box::before {
@@ -352,7 +323,7 @@ ul {
   border-radius: 50%;
   background: radial-gradient(128.88% 128.88% at 103.9% -10.39%, #E84D70 0%, #A337F6 53.09%, #28A7ED 100%);
   text-align: center;
-  color: #ffffff;
+  color: white;
   font-weight: 700;
   font-size: 35px;
 }
@@ -383,6 +354,10 @@ ul {
   resize: none;
 }
 
+.form-box form input:focus {
+  border: 1px solid blue;
+}
+
 .form-box .button-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -394,18 +369,18 @@ ul {
 }
 
 .form-box .button-box a:nth-child(1) {
-  color: #ffffff;
+  color: white;
 }
 
 .form-box .button-box a:nth-child(2) {
-  color: #ffffff;
+  color: white;
   margin-left: 15px;
 }
 
 .list {
   position: relative;
   margin-top: 30px;
-  background-color: #ffffff;
+  background-color: white;
   border-radius: 10px;
   padding: 30px;
   display: -webkit-box;
@@ -417,17 +392,7 @@ ul {
 }
 
 .list .count span {
-  color: #3a4374;
-  padding: 25px 8px 8px;
-}
-
-.list .count i {
-  position: relative;
-  top: 25px;
-  left: 12px;
-  color: #4661E6;
-  z-index: 2;
-  margin-bottom: 5px;
+  color: #3A4374;
 }
 
 .list .list-text {
@@ -435,12 +400,10 @@ ul {
 }
 
 .list .list-text h4 {
-  color: #3a4374;
   margin-bottom: 8px;
 }
 
 .list .list-text p {
-  color: #647196;
   margin-bottom: 8px;
 }
 
@@ -488,7 +451,7 @@ ul {
 }
 
 .menu .menu-nav i {
-  color: #ffffff;
+  color: white;
   font-size: 14px;
 }
 
@@ -498,11 +461,11 @@ ul {
 }
 
 .menu .menu-nav h3 {
-  color: #ffffff;
+  color: white;
 }
 
 .menu .menu-nav span {
-  color: #ffffff;
+  color: white;
   position: relative;
   top: 2px;
 }
@@ -512,7 +475,7 @@ ul {
 }
 
 .menu .menu-btn a {
-  color: #ffffff;
+  color: white;
 }
 
 .roadmap-board {
@@ -525,7 +488,7 @@ ul {
           flex-direction: column;
   gap: 25px;
   border-radius: 10px;
-  background-color: #ffffff;
+  background-color: white;
   padding: 25px;
 }
 
@@ -544,7 +507,7 @@ ul {
 }
 
 .roadmap-board .row a {
-  color: #4661E6;
+  color: #4661e6;
   text-decoration: underline;
 }
 

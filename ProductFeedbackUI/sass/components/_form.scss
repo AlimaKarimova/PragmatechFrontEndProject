@@ -1,6 +1,6 @@
 .form-box {
     width: 540px;
-    background-color: $white;
+    background-color: white;
     margin: 180px auto;
     padding: 50px 40px 40px;
     border-radius: $radius-x;
@@ -13,16 +13,12 @@
 
         a {
             @extend .go-back_transparent;
+            i{
+                color: $blue-dark;
+            }
         }
 
-        a::before {
-            content: '\276E';
-            width: 8px;
-            height: 8px;
-            margin-right: 15px;
-            text-decoration: none;
-            color: #4661E6;
-        }
+        
     }
 
     &::before {
@@ -34,7 +30,7 @@
         border-radius: 50%;
         background: radial-gradient(128.88% 128.88% at 103.9% -10.39%, #E84D70 0%, #A337F6 53.09%, #28A7ED 100%);
         text-align: center;
-        color: $white;
+        color: white;
         font-weight: 700;
         font-size: 35px;
     }
@@ -58,6 +54,8 @@
             color: $grey;
         }
 
+        
+
         input,
         textarea,
         select {
@@ -70,6 +68,9 @@
             border-radius: $radius-x/2;
             resize: none;
         }
+        input:focus{
+            border: 1px solid blue;
+        }
 
     }
 
@@ -80,13 +81,13 @@
 
         a:nth-child(1) {
             @extend .button_grey;
-            color: $white;
+            color: white;
             @extend .text-14-700;
         }
 
         a:nth-child(2) {
             @extend .button_purple;
-            color: $white;
+            color: white;
             @extend .text-14-700;
             margin-left: 15px;
         }

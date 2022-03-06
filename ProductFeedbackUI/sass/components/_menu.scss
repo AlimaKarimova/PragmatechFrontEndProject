@@ -15,7 +15,7 @@
         margin-left: 30px;
 
         i {
-            color: $white;
+            color: white;
             font-size: 14px;
             &:last-child{
                 position: relative;
@@ -25,12 +25,12 @@
 
         h3 {
             @extend .title-18;
-            color: $white;
+            color: white;
         }
 
         span {
             @extend .text-14-400;
-            color: $white;
+            color: white;
             position: relative;
             top: 2px;
         }
@@ -42,7 +42,7 @@
 
         a {
             @extend .button_purple;
-            color: $white;
+            color: white;
             @extend .text-14-700;
         }
     }

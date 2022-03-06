@@ -14,10 +14,11 @@
 @import 'components/roadmap-board';
 
 .wrapper {
-    width: 825px;
+    width: 1110px;
     margin: 50px auto;
 
     .menu {
+        width: 100%;
 
         .menu-nav {
             display: flex;
@@ -27,6 +28,12 @@
             a {
                 @extend .go-back_transparent;
                 color: white;
+                i{
+                    position: relative;
+                    top: 0;
+                    left: -4px;
+                }
+
             }
         }
 
@@ -54,16 +61,41 @@
             .info-box {
                 margin-top: 30px;
                 background-color: white;
-                border-radius: $radius-x;
+                border-radius: $radius-x/2;
                 padding: 30px;
+
+                ul {
+                    li {
+                        @extend .text-16-400;
+                        color: $grey;
+                        list-style: none;
+                    }
+                }
+
+                h3 {
+                    @extend .title-18;
+                    color: #3A4374;
+                }
+
+                p {
+                    @extend .text-16-400;
+                    color: $grey;
+                }
 
                 .btn {
                     display: flex;
                     justify-content: start;
+
                     a {
                         @extend .element;
                         margin: 5px 0;
+                        color: $grey-big-text;
+                        i{
+                            color: $blue-dark;
+
+                        }
                     }
+
                 }
 
 
