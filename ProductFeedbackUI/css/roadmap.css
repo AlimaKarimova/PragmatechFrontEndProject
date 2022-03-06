@@ -45,7 +45,7 @@ ul {
   font-size: 16px;
 }
 
-.text-16-700, .list .comments span, .roadmap-board .row ol {
+.text-16-700, .list .comments span, .roadmap-board .row ol, .wrapper .columns .column .info-box .text-info .comments span {
   font-weight: 700;
   font-size: 16px;
 }
@@ -70,7 +70,7 @@ ul {
   font-size: 13px;
 }
 
-.text-13-700, .element, .list .count span, .list .list-text a, .wrapper .columns .column .info-box .btn a, .roadmap-board .row a {
+.text-13-700, .element, .list .count span, .list .list-text a, .wrapper .columns .column .info-box .text-info a, .roadmap-board .row a {
   font-weight: 700;
   font-size: 13px;
 }
@@ -101,7 +101,7 @@ ul {
   font-size: 16px;
 }
 
-.text-16-700, .list .comments span, .roadmap-board .row ol {
+.text-16-700, .list .comments span, .roadmap-board .row ol, .wrapper .columns .column .info-box .text-info .comments span {
   font-weight: 700;
   font-size: 16px;
 }
@@ -126,7 +126,7 @@ ul {
   font-size: 13px;
 }
 
-.text-13-700, .element, .list .count span, .list .list-text a, .wrapper .columns .column .info-box .btn a, .roadmap-board .row a {
+.text-13-700, .element, .list .count span, .list .list-text a, .wrapper .columns .column .info-box .text-info a, .roadmap-board .row a {
   font-weight: 700;
   font-size: 13px;
 }
@@ -193,7 +193,7 @@ ul {
   text-decoration: underline;
 }
 
-.element, .list .count span, .list .list-text a, .wrapper .columns .column .info-box .btn a {
+.element, .list .count span, .list .list-text a, .wrapper .columns .column .info-box .text-info a {
   min-width: 20px;
   display: inline-block;
   padding: 5px 10px;
@@ -203,16 +203,16 @@ ul {
   color: #4661e6;
 }
 
-.element i, .list .count span i, .list .list-text a i, .wrapper .columns .column .info-box .btn a i {
+.element i, .list .count span i, .list .list-text a i, .wrapper .columns .column .info-box .text-info a i {
   color: #4661E6;
 }
 
-.element:hover, .list .count span:hover, .list .list-text a:hover, .wrapper .columns .column .info-box .btn a:hover {
+.element:hover, .list .count span:hover, .list .list-text a:hover, .wrapper .columns .column .info-box .text-info a:hover {
   background-color: #CFD7FF;
   color: #4661e6;
 }
 
-.element:active, .list .count span:active, .list .list-text a:active, .wrapper .columns .column .info-box .btn a:active {
+.element:active, .list .count span:active, .list .list-text a:active, .wrapper .columns .column .info-box .text-info a:active {
   background-color: #4661e6;
   color: white;
 }
@@ -596,22 +596,29 @@ ul {
   color: #647196;
 }
 
-.wrapper .columns .column .info-box .btn {
+.wrapper .columns .column .info-box .text-info {
+  margin-top: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
-.wrapper .columns .column .info-box .btn a {
-  margin: 5px 0;
+.wrapper .columns .column .info-box .text-info a:first-child {
+  margin-bottom: 15px;
+}
+
+.wrapper .columns .column .info-box .text-info .comments i {
+  color: #CDD2EE;
+}
+
+.wrapper .columns .column .info-box .text-info .comments span {
   color: #3a4374;
-}
-
-.wrapper .columns .column .info-box .btn a i {
-  color: #4661e6;
 }
 
 .wrapper .columns .column .orange-board {

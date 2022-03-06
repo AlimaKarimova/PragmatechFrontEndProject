@@ -28,7 +28,8 @@
             a {
                 @extend .go-back_transparent;
                 color: white;
-                i{
+
+                i {
                     position: relative;
                     top: 0;
                     left: -4px;
@@ -82,21 +83,36 @@
                     color: $grey;
                 }
 
-                .btn {
+                .text-info {
+                    margin-top: 15px;
                     display: flex;
-                    justify-content: start;
+                    justify-content: space-between;
+                    align-items: flex-end;
 
                     a {
                         @extend .element;
-                        margin: 5px 0;
-                        color: $grey-big-text;
-                        i{
-                            color: $blue-dark;
 
+                        &:first-child {
+                            margin-bottom: 15px;
                         }
+
                     }
 
+                    .comments {
+
+                        i {
+                            color: #CDD2EE;
+                        }
+
+                        span {
+                            @extend .text-16-700;
+                            color: $grey-big-text;
+                        }
+                    }
                 }
+
+
+
 
 
             }
