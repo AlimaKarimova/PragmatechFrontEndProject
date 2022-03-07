@@ -1,0 +1,59 @@
+@import 'colors';
+
+$radius-x:10px;
+
+.title-24{
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.title-20 {
+    font: 700 20px/normal inherit;
+}
+
+.title-18 {
+    font-weight: 700;
+    font-size: 18px;
+    color: $grey-big-text;
+}
+
+.text-16-400 {
+    font-weight: 400;
+    font-size: 16px;
+    color: $grey;
+}
+.text-16-600 {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.text-16-700 {
+    font-weight: 700;
+    font-size: 16px;
+
+}
+
+.text-15-400 {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.text-14-700 {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.text-14-400 {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.text-13-600 {
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.text-13-700 {
+    font-weight: 700;
+    font-size: 13px;
+}

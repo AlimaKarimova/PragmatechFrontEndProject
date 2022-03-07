@@ -1,0 +1,26 @@
+
+
+.element {
+    min-width: 20px;
+    display: inline-block;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: $radius-x;
+    background-color: #F2F4FF;
+    @extend .text-13-700;
+    color: $blue-dark;
+
+    i{
+        color:#4661E6;
+    }
+
+    &:hover {
+        background-color: #CFD7FF;
+        color: $blue-dark;
+    }
+
+    &:active {
+        background-color: $blue-dark;
+        color: white;
+    }
+}

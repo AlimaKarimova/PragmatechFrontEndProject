@@ -1,0 +1,43 @@
+@import 'colors';
+@import 'variables';
+
+.button-basic {
+    padding: 12px 25px;
+    border-radius: $radius-x;
+}
+
+.button_purple {
+    @extend .button-basic;
+    background-color: $purple;
+    color: white;
+    @extend .text-14-700;
+
+    &:hover {
+        background-color: $purple-light;
+    }
+}
+
+.go-back_basic {
+    border-radius: $radius-x;
+}
+
+.go-back_transparent {
+    @extend .go-back_basic;
+    @extend .text-14-700;
+    color: $grey;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.go-back_dark {
+    padding: 15px 40px 15px 60px;
+    @extend .go-back_basic;
+    background-color: $grey-small-text;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+}
