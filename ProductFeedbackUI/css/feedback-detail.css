@@ -28,7 +28,7 @@ ul {
   font: 700 20px/normal inherit;
 }
 
-.title-18, .list .list-text h4, .menu .menu-nav h3, .roadmap-board .row h3, .wrapper .main-box .title span {
+.title-18, .list .list-text h4, .menu .menu-nav h3, .roadmap-board .row h3, .wrapper .main-box .title span, .wrapper .add-comment .title span {
   font-weight: 700;
   font-size: 18px;
   color: #3a4374;
@@ -50,17 +50,17 @@ ul {
   font-size: 16px;
 }
 
-.text-15-400, .feedback-board p {
+.text-15-400, .feedback-board p, .wrapper .main-box .comment-box p, .wrapper .add-comment .button span {
   font-weight: 400;
   font-size: 15px;
 }
 
-.text-14-700, .button_purple, .form-box .button-box a:nth-child(2), .menu .menu-btn a, .button_blue, .wrapper .btn a:nth-child(2), .button_grey, .form-box .button-box a:nth-child(1), .button_red, .go-back_transparent, .form-box .btn a, .wrapper .btn a:nth-child(1), .form-box form h4 {
+.text-14-700, .button_purple, .form-box .button-box a:nth-child(2), .menu .menu-btn a, .wrapper .add-comment .button a, .button_blue, .wrapper .btn a:nth-child(2), .button_grey, .form-box .button-box a:nth-child(1), .button_red, .go-back_transparent, .form-box .btn a, .wrapper .btn a:nth-child(1), .form-box form h4, .wrapper .main-box .comment-box .personal-info h5 {
   font-weight: 700;
   font-size: 14px;
 }
 
-.text-14-400, .form-box form label, .menu .menu-nav span {
+.text-14-400, .form-box form label, .menu .menu-nav span, .wrapper .main-box .comment-box .personal-info span {
   font-weight: 400;
   font-size: 14px;
 }
@@ -70,7 +70,7 @@ ul {
   font-size: 13px;
 }
 
-.text-13-700, .element, .list .count span, .list .list-text a, .roadmap-board .row a {
+.text-13-700, .element, .list .count span, .list .list-text a, .wrapper .main-box .comment-box .personal-info a, .roadmap-board .row a {
   font-weight: 700;
   font-size: 13px;
 }
@@ -84,7 +84,7 @@ ul {
   font: 700 20px/normal inherit;
 }
 
-.title-18, .list .list-text h4, .menu .menu-nav h3, .roadmap-board .row h3, .wrapper .main-box .title span {
+.title-18, .list .list-text h4, .menu .menu-nav h3, .roadmap-board .row h3, .wrapper .main-box .title span, .wrapper .add-comment .title span {
   font-weight: 700;
   font-size: 18px;
   color: #3a4374;
@@ -106,17 +106,17 @@ ul {
   font-size: 16px;
 }
 
-.text-15-400, .feedback-board p {
+.text-15-400, .feedback-board p, .wrapper .main-box .comment-box p, .wrapper .add-comment .button span {
   font-weight: 400;
   font-size: 15px;
 }
 
-.text-14-700, .button_purple, .form-box .button-box a:nth-child(2), .menu .menu-btn a, .button_blue, .wrapper .btn a:nth-child(2), .button_grey, .form-box .button-box a:nth-child(1), .button_red, .go-back_transparent, .form-box .btn a, .wrapper .btn a:nth-child(1), .form-box form h4 {
+.text-14-700, .button_purple, .form-box .button-box a:nth-child(2), .menu .menu-btn a, .wrapper .add-comment .button a, .button_blue, .wrapper .btn a:nth-child(2), .button_grey, .form-box .button-box a:nth-child(1), .button_red, .go-back_transparent, .form-box .btn a, .wrapper .btn a:nth-child(1), .form-box form h4, .wrapper .main-box .comment-box .personal-info h5 {
   font-weight: 700;
   font-size: 14px;
 }
 
-.text-14-400, .form-box form label, .menu .menu-nav span {
+.text-14-400, .form-box form label, .menu .menu-nav span, .wrapper .main-box .comment-box .personal-info span {
   font-weight: 400;
   font-size: 14px;
 }
@@ -126,22 +126,22 @@ ul {
   font-size: 13px;
 }
 
-.text-13-700, .element, .list .count span, .list .list-text a, .roadmap-board .row a {
+.text-13-700, .element, .list .count span, .list .list-text a, .wrapper .main-box .comment-box .personal-info a, .roadmap-board .row a {
   font-weight: 700;
   font-size: 13px;
 }
 
-.button-basic, .button_purple, .form-box .button-box a:nth-child(2), .menu .menu-btn a, .button_blue, .wrapper .btn a:nth-child(2), .button_grey, .form-box .button-box a:nth-child(1), .button_red {
+.button-basic, .button_purple, .form-box .button-box a:nth-child(2), .menu .menu-btn a, .wrapper .add-comment .button a, .button_blue, .wrapper .btn a:nth-child(2), .button_grey, .form-box .button-box a:nth-child(1), .button_red {
   padding: 12px 25px;
   border-radius: 10px;
 }
 
-.button_purple, .form-box .button-box a:nth-child(2), .menu .menu-btn a {
+.button_purple, .form-box .button-box a:nth-child(2), .menu .menu-btn a, .wrapper .add-comment .button a {
   background-color: #ad1fea;
   color: white;
 }
 
-.button_purple:hover, .form-box .button-box a:hover:nth-child(2), .menu .menu-btn a:hover {
+.button_purple:hover, .form-box .button-box a:hover:nth-child(2), .menu .menu-btn a:hover, .wrapper .add-comment .button a:hover {
   background-color: #C75AF6;
 }
 
@@ -193,7 +193,7 @@ ul {
   text-decoration: underline;
 }
 
-.element, .list .count span, .list .list-text a {
+.element, .list .count span, .list .list-text a, .wrapper .main-box .comment-box .personal-info a {
   min-width: 20px;
   display: inline-block;
   padding: 5px 10px;
@@ -203,16 +203,16 @@ ul {
   color: #4661e6;
 }
 
-.element i, .list .count span i, .list .list-text a i {
+.element i, .list .count span i, .list .list-text a i, .wrapper .main-box .comment-box .personal-info a i {
   color: #4661E6;
 }
 
-.element:hover, .list .count span:hover, .list .list-text a:hover {
+.element:hover, .list .count span:hover, .list .list-text a:hover, .wrapper .main-box .comment-box .personal-info a:hover {
   background-color: #CFD7FF;
   color: #4661e6;
 }
 
-.element:active, .list .count span:active, .list .list-text a:active {
+.element:active, .list .count span:active, .list .list-text a:active, .wrapper .main-box .comment-box .personal-info a:active {
   background-color: #4661e6;
   color: white;
 }
@@ -523,6 +523,87 @@ ul {
   padding: 25px 35px;
 }
 
-.wrapper .main-box .comments-box > .comments-box {
+.wrapper .main-box hr {
+  width: 100%;
+  height: 1px;
+  margin: 30px 0;
+  background-color: #8C92B3;
+  opacity: 25%;
+}
+
+.wrapper .main-box .comment-box {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 30px;
+}
+
+.wrapper .main-box .comment-box .personal-info {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.wrapper .main-box .comment-box .personal-info h5 {
+  color: #3a4374;
+}
+
+.wrapper .main-box .comment-box .personal-info span {
+  color: #647196;
+}
+
+.wrapper .main-box .comment-box .personal-info a {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.wrapper .main-box .comment-box p {
+  color: #647196;
+}
+
+.wrapper .main-box .sub-comment-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   margin-left: 25px;
+}
+
+.wrapper .add-comment {
+  background-color: white;
+  margin-top: 25px;
+  padding: 25px 30px 30px;
+  height: 246px;
+}
+
+.wrapper .add-comment .title {
+  margin-bottom: 25px;
+}
+
+.wrapper .add-comment form textarea {
+  width: 100%;
+  height: 80px;
+  resize: none;
+  background-color: #F7F8FD;
+}
+
+.wrapper .add-comment .button {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper .add-comment .button span {
+  color: #647196;
 }
