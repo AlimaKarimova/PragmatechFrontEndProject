@@ -23,3 +23,24 @@ $main-width: 1170px;
 
 
 }
+@media (max-width:373px) and (min-width:313px){
+    .wrapper {
+        margin: 0 !important;
+        padding:0 !important;
+        .menu{
+            border-radius: 0;
+            flex-shrink: 0;
+        }
+
+        .columns {
+            flex-wrap: wrap;
+
+            .column {
+                margin: 0 auto;
+                width: 90%;
+                flex-shrink: 0; //bu kod ekran kicilende sutunun kicilmesini qoymur ve bir sutun qalir
+            }
+        }
+    }
+
+}

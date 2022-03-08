@@ -268,6 +268,28 @@ ul {
   }
 }
 
+@media (max-width: 373px) and (min-width: 313px) {
+  .wrapper {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .wrapper .menu {
+    border-radius: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+  .wrapper .columns {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .wrapper .columns .column {
+    margin: 0 auto;
+    width: 90%;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+}
+
 .wrapper {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
