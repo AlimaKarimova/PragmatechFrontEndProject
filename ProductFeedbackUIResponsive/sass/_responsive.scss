@@ -1,3 +1,25 @@
+$main-width: 1170px;
 // figmada verilen tablet versiyasi min 707px-le qeder duzgun sekilde eks olunur elave kod yazamaga ehtiyac olmadi.707px-den etibaren dizayn qirilir
 
 // mobil versiyada elave bir setir var. setirde her sutunun adina vuranda sadece hemin sutun acilir.
+@media (max-width:706px) and (min-width:373px) {
+    .wrapper {
+        margin: 0 !important;
+        padding:0 !important;
+        .menu{
+            border-radius: 0;
+        }
+
+        .columns {
+            flex-wrap: wrap;
+
+            .column {
+                margin: 0 auto;
+                width: 90%;
+                flex-shrink: 0; //bu kod ekran kicilende sutunun kicilmesini qoymur ve bir sutun qalir
+            }
+        }
+    }
+
+
+}

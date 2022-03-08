@@ -6,19 +6,19 @@
 @import 'menu';
 @import 'responsive';
 
-body{
-    padding:0 30px !important;
-}
+
 .wrapper {
     box-sizing: border-box;
-    max-width: 1110px;
+    max-width: 1170px;
     margin: 50px auto;
+    padding: 0 30px ;
     display: flex;
     flex-direction: column;
 
     .menu {
         width: 100%;
         display: flex;
+        gap: 30px;
 
         .menu-nav {
             display: flex;
@@ -49,8 +49,7 @@ body{
         .column {
             display: flex;
             flex-direction: column;
-            flex: 1;
-
+            
             h4 {
                 @extend .title-18;
                 color: $grey-big-text;
