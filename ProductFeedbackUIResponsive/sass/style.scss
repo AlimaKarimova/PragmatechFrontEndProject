@@ -4,14 +4,21 @@
 @import 'buttons';
 @import 'elements';
 @import 'menu';
+@import 'responsive';
 
-
+body{
+    padding:0 30px !important;
+}
 .wrapper {
-    width: 1110px;
+    box-sizing: border-box;
+    max-width: 1110px;
     margin: 50px auto;
+    display: flex;
+    flex-direction: column;
 
     .menu {
         width: 100%;
+        display: flex;
 
         .menu-nav {
             display: flex;
@@ -34,11 +41,15 @@
     }
 
     .columns {
-        margin-top: 50px;
+        width: 100%;
         display: flex;
         gap: 30px;
+        margin-top: 50px;
 
         .column {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
 
             h4 {
                 @extend .title-18;
@@ -119,5 +130,7 @@
 
 
     }
+
+
 
 }
