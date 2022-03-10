@@ -4,14 +4,13 @@
 @import 'buttons';
 @import 'elements';
 @import 'menu';
-@import 'responsive';
 
 
 .wrapper {
     box-sizing: border-box;
     max-width: 1170px;
     margin: 50px auto;
-    padding: 0 30px ;
+    padding: 0 30px;
     display: flex;
     flex-direction: column;
 
@@ -46,10 +45,14 @@
         gap: 30px;
         margin-top: 50px;
 
+        .title-list {
+            display: none;
+        }
+
         .column {
             display: flex;
             flex-direction: column;
-            
+
             h4 {
                 @extend .title-18;
                 color: $grey-big-text;
@@ -131,5 +134,85 @@
     }
 
 
+
+}
+
+$main-width: 1170px;
+// figmada verilen tablet versiyasi min 707px-le qeder duzgun sekilde eks olunur elave kod yazamaga ehtiyac olmadi.707px-den etibaren dizayn qirilir
+
+// mobil versiyada elave bir setir var. setirde her sutunun adina vuranda sadece hemin sutun acilir.
+@media (max-width:706px) and (min-width:576px) {
+    .wrapper {
+        margin: 0 !important;
+        padding: 0 !important;
+
+        .menu {
+            border-radius: 0;
+        }
+
+        .columns {
+            flex-wrap: wrap;
+
+            .column {
+                margin: auto;
+                width: 90%;
+                flex-shrink: 0; //bu kod ekran kicilende sutunun kicilmesini qoymur ve bir sutun qalir
+            }
+        }
+    }
+
+
+}
+
+@media (max-width:576px) and (min-width:313px) {
+    .wrapper {
+        margin: 0 !important;
+        padding: 0 !important;
+
+        .menu {
+            border-radius: 0;
+            flex-shrink: 0;
+        }
+
+        .columns {
+            flex-wrap: wrap;
+
+            .title-list {
+                display: block;  //elave sutun
+                display: flex;
+                justify-content: space-between;
+                width: 90%;
+                margin: auto;
+
+
+                &-item{
+                   font-size: 13px;
+                   font-weight: 700;
+                   color: #647196;
+                   opacity: 40&;
+                   &:active{
+                    font-size: 13px;
+                    font-weight: 700;
+                    color: #3A4374;
+                   }
+                   
+                }
+            }
+
+            hr{
+                margin-top:-15px;
+                width: 100%;
+                height: 1px;
+                background-color: #8C92B3;
+                opacity: 25%;
+            }
+
+            .column {
+                margin: 0 auto;
+                width: 90%;
+                flex-shrink: 0; //bu kod ekran kicilende sutunun kicilmesini qoymur ve bir sutun qalir
+            }
+        }
+    }
 
 }

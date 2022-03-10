@@ -168,3 +168,32 @@ Ferqlenme sebebi dillerin evvelceden hansi meqsedle yaradilmasi  ve hansi sahele
 - output teyin olunur 
 - input teyin olunur
 - inputa catmaq ucun alqoritm qurulur
+
+##### Javascript
+
+### Javascript kodları necə formada yazıla bilər?
+Script taginin icinde yazila biler html faylinin head ve ya body hissesinda ve ya ayrica fayl yaradib o fayli html-e import etmek olar.
+### Javascript kodlarının script tagları daxilində yazmaqla ayrı fayl formatında yazıb import etmek arasında nə fərq var?
+Js kodlari azdisa script taginda yazila biler, lakin Js kodlari coxdusa ayrica fayla yazmaq daha meqsedeuygundu kodun oxunaqligi baximindan.
+### Madem mənim brauzerimdə V8-Engine yüklüdür niyə html kodu daxilində yazılan javascript kodları işləmir.
+cunki brauzer onlari js kimi yox html-in bir hissesi kimi qebul edir.
+### ";" hansı hallarda istifadə edilir?
+bir statement bitende.istifadesi bezi hallarda mecburi deyil lakin her statement bitende qoymaq meslehet gorurlur.Bu halda brauzer terefinden kodun oxunaqligi artir.Bezi hallarda ise ; qoyulmamagi errora sebeb olur.meselen [] moterizelerin qabagina js ; avtomatik elave etmir bu da errora sebeb olur
+### Javascript-də comment yazmaq üçün neçə üsul var.
+iki: bir setirli comment // vasitesile multiply lines comment ise /* */ vasitesile yazilir.
+### let,var,const ifadələri arasında fərqlər nədir?
+- var scopa malik deyil, yeni funksiya icerisinde deyisen var vasitesile  teyin olunsa funksiya xaricinde de istifade olunacak.var vasitesile tekraren eyni deyisen teyin olunsa error olmayacak.
+- let vasitesile sonradan deyeri deyisile bilen deyisenler teyin olunur.local ve global scopa malikdir.
+- const vasitesile  teyin olunan deyisenlerin deyeri sonradan deyisilmir.local ve global scopa malikdir.
+### dəyişən təyin edərkən adlandırma qaydaları nələrdir?
+Deyisen bir reqemle baslaya bilmez." _ ", " $ ", ve herflerle baslaya biler.adlandirma zamani herf, reqem ve " _ ", " $ " isarelerinden istifade etmek olar.JS deyisenleri registra hessasdir.Meselen: var car ve var Car eyni deyisen qebul olunmur.en cox istifade olunan usullar CamelCase, lower CamelCase
+### let x=5;x=7 yazıldığı zaman nəticə 7 olur.Belə olan halda 5 dəyərinin aqibəti nə olur? Yaddaşda yer tutur mu 5 dəyəri yoxsa başqa proses mi gedir?
+ yaddasdan silinir
+### 5 dəyəri yaddasa yazılarkən 2-li say sisteminə çevrilir və ona görə yaddaşda tutduğu yer hesablanır.Bəs 5.34 dəyərinin yaddaşda tutduğu yeri necə hesablamaq olar?
+### undefined, NaN və null dəyərlərinin yaddaşda nə qədər yer tutduğunu araşdırın
+### let a; bu formada dəyişən təyin etmişəm.Bu dəyişən yaddaşda stack-da mı yoxsa heap-də mi yerləşirBu dəyişən yaddaşda yer tuturmu? Tutursa nə qədər yer tutur?
+### Template Literals bu linkdə Javascript-də stringlərin neçə fərqli formada yazıla biləcəyi haqqında informasiya var
+### Ümumiyyətlə sizə görə bir məlumat növünü başqa məlumat növünə çevirmək nəyə lazımdır?
+bu meqsedimizden asilidi.Misal ucun prompt vaitesile string data tipinde  daxil olunan melumat uzerinde riyazi emel aparmaq isteyirikse onu mutleq numbere cevirmeliyik.
+### Type Conversion necə formada həyata keçirilir?
+### Type Conversion metodlarının siyahısını çıxarın
