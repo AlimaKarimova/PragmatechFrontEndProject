@@ -313,6 +313,7 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 350px;
 }
 
 .wrapper .columns .column h4 {
@@ -380,7 +381,7 @@ ul {
   border-top: 5px solid #62bcfa;
 }
 
-@media (max-width: 706px) and (min-width: 576px) {
+@media (max-width: 736px) and (min-width: 576px) {
   .wrapper {
     margin: 0 !important;
     padding: 0 !important;

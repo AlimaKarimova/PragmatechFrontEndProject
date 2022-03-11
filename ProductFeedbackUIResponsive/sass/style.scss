@@ -52,6 +52,7 @@
         .column {
             display: flex;
             flex-direction: column;
+            width: 350px;
 
             h4 {
                 @extend .title-18;
@@ -141,7 +142,7 @@ $main-width: 1170px;
 // figmada verilen tablet versiyasi min 707px-le qeder duzgun sekilde eks olunur elave kod yazamaga ehtiyac olmadi.707px-den etibaren dizayn qirilir
 
 // mobil versiyada elave bir setir var. setirde her sutunun adina vuranda sadece hemin sutun acilir.
-@media (max-width:706px) and (min-width:576px) {
+@media (max-width:736px) and (min-width:576px) {
     .wrapper {
         margin: 0 !important;
         padding: 0 !important;
