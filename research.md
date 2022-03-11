@@ -191,9 +191,16 @@ Deyisen bir reqemle baslaya bilmez." _ ", " $ ", ve herflerle baslaya biler.adla
  yaddasdan silinir
 ### 5 dəyəri yaddasa yazılarkən 2-li say sisteminə çevrilir və ona görə yaddaşda tutduğu yer hesablanır.Bəs 5.34 dəyərinin yaddaşda tutduğu yeri necə hesablamaq olar?
 ### undefined, NaN və null dəyərlərinin yaddaşda nə qədər yer tutduğunu araşdırın
-### let a; bu formada dəyişən təyin etmişəm.Bu dəyişən yaddaşda stack-da mı yoxsa heap-də mi yerləşirBu dəyişən yaddaşda yer tuturmu? Tutursa nə qədər yer tutur?
-### Template Literals bu linkdə Javascript-də stringlərin neçə fərqli formada yazıla biləcəyi haqqında informasiya var
+### let a; bu formada dəyişən təyin etmişəm.Bu dəyişən yaddaşda stack-da mı yoxsa heap-də mi yerləşir.Bu dəyişən yaddaşda yer tuturmu? Tutursa nə qədər yer tutur?
+primitiv deyerler stack yaddasda, obyekt ve funksiyalar ise heap yaddasda yer tutur.bu primit deyisen oldugu ucun stack yaddasda yer tutacaq.deyeri ise undefined oldugu ucun undefined ne qeder yer tutursa o qeder yer tutacaq.
 ### Ümumiyyətlə sizə görə bir məlumat növünü başqa məlumat növünə çevirmək nəyə lazımdır?
 bu meqsedimizden asilidi.Misal ucun prompt vaitesile string data tipinde  daxil olunan melumat uzerinde riyazi emel aparmaq isteyirikse onu mutleq numbere cevirmeliyik.
 ### Type Conversion necə formada həyata keçirilir?
+Implicit Conversion - automatic type conversion
+Explicit Conversion - manual type conversion
+Implicit Conversion-avtomatik formada bas vere biler, misal ucun string ve numberi toplayanda number avtomatik stringe cevrilir.ve ya number ve boolean deyisenleri toplasaq, boolean avtomatik numbere cevrilecek.Explicit Conversion-ozumuz ceviririk.
 ### Type Conversion metodlarının siyahısını çıxarın
+Number()
+String()
+Boolean() 
+
