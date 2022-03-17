@@ -1,21 +1,35 @@
-// Görüləcək işlər
+
 
 // 1. a b və c ədədləri verilir. a və b ədədlərindən hansının c ədədinə daha yaxın olduğunu tapmağınız tələb olunur.
-let a=10;
-let b=20;
-let c=15;
-if (c!==a && c!==b){
-    if (c>a && c>b){
-        if(a>b){
-            console.log('a c-ye daha yaxindir')
-        }
-        else {
-            console.log('b c-ye daha yaxindir')
-        }
-    }
-    else if()
+// let a = 230;
+// let b = 23;
+// let c = 13;
+// if(c!=a && c!=b && a!=b){
+//     if (c-a>0 && c-b>0){
+//         if (c-a>c-b){
+//             console.log('b c-ye yaxindir')
+//         }
+//         else {
+//             console.log('a c-ye yaxindir')
+        
+//         }
+//     }
+//     else {
+//         if (c-a>c-b){
+//             console.log('a c-ye yaxindir')
+//         }
+//         else {
+//             console.log('b c-ye yaxindir')
+        
+//         }
+//     }
+// }
+// else{
+//     console.log('beraberlik sertini pozmusuz')
     
-}
+// }
+
+
 
 // 2.  x adında dəyişən təyin edin. bu dəyişənə istənilən tipdə data təyin edilə bilər.Sizdən tələb olununan daxil edilən dəyərin növünü tapmaq və ona uyğun ekrana mesaj yazdırmaqdır. (Nümunə: Daxil etdiyini dəyər rəqəmdir)
 // prompt vasitesile daxil olunan her deyer string qebul olunur deye bu usulla yazdim.
@@ -23,12 +37,16 @@ if (c!==a && c!==b){
 // let netice= typeof x;
 // alert(`daxil etdiyiniz deyerin data tipi ${netice}`)
 
+
+
 // 3. verilən x ədədinin rəqəmlərini ekrana çap edən proqram yazın
 // let x = 625;
 // let y = String(x);
 // for (let i = 0; i < y.length; i++) {
 //     console.log(y[i])
 // }
+
+
 
 // 4. verilən 4 ədədi böyükdən kiçiyə doğru ekrana çap edən program yazın
 
