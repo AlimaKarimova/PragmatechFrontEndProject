@@ -68,19 +68,19 @@
 // b_x=230,b_y=400
 // c_x=210,c_y=345
 
-let a_x=120;
-let a_y=200;
-let b_x=230;
-let b_y=400;
-let c_x=210;
-let c_y=345;
+// let a_x=120;
+// let a_y=200;
+// let b_x=230;
+// let b_y=400;
+// let c_x=210;
+// let c_y=345;
 
-let b_a_ferqi= Math.sqrt((b_x-a_x)**2+(b_y-a_y)**2);
-let c_a_ferqi= Math.sqrt((c_x-a_x)**2+(c_y-a_y)**2);
-if (b_a_ferqi>c_a_ferqi){
-    console.log('c a-ya daha yaxindir')
-}
-else {
-    console.log('b a-ya daha yaxindir')
+// let b_a_ferqi= Math.sqrt((b_x-a_x)**2+(b_y-a_y)**2);
+// let c_a_ferqi= Math.sqrt((c_x-a_x)**2+(c_y-a_y)**2);
+// if (b_a_ferqi>c_a_ferqi){
+//     console.log('c a-ya daha yaxindir')
+// }
+// else {
+//     console.log('b a-ya daha yaxindir')
 
-}
+// }
