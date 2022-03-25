@@ -13,7 +13,7 @@ Deklarativ yanasmada: axsama et yemeyi bisirilmelidi.
 
 ### Deklarativ yanaşma və funksiyalar arasında əlaqəni necə qura bilərsiniz?
 
-Tutaq ki hazir metodlardan istifade edirik.Bu metodlar imperativ yanasma ile yazilibç lakin biz onlari hazir metod seklinde istifade edirik ve qurdugumuz funksiya deklarativ yanasma ile qurulmus olur. 
+Tutaq ki hazir metodlardan istifade edirik.Bu metodlar imperativ yanasma ile yazilib lakin biz onlari hazir metod seklinde istifade edirik ve qurdugumuz funksiya deklarativ yanasma ile qurulmus olur. 
 
 ### imperative və deklarative yanaşmaya aid kod nümunələri yazın özünüz üçün. Düzgün olub olmadığını yoldaşlarınızla analiz edin
 
@@ -28,6 +28,7 @@ function onlyOdd(array) {
 
   return result
 }
+
 Bu imperativ yanasmadi.prosesin nece bas verdiyini xirdaliqlara qeder gosterilib.
 
 
@@ -46,9 +47,11 @@ function makePair(num1, num2) {
 }
 
 function expression ile funksiya yaradilan zaman bir deyisen yaradilir ve funksiya ona menimsenilir.
+
 var a = function() { 
     return 10; 
 }
+
 f.declaration vasitesile funksiya yaradilan zaman o kodun istenilen yerinde istifade oluna biler.F.expression ile yaradilan zaman ise yalniz teyin olunandan sonra istifade oluna biler.
 
 ### Fərqli formada function təyin etmə sizcə hansı hallarda lazım ola bilər?
@@ -59,10 +62,10 @@ amma eger f.expressiondan istifade olunsa evvelceden deyiseni elan edib sonra ko
 
 ### function scope və global scope arasında fərqlər nədir?
 
-global scope-da teyin olunan deyisenler kodun her yerinde funksiya daxilinde de istifade oluna biler.Funksiya daxilinde teyin olunan deyisenler ise yalniz funksiya daxilinde istifade oluna biler.  
+global scope-da teyin olunan deyisenler kodun her yerinde funksiya daxilinde de istifade oluna biler,hem globalda hem de funksiyada deyisile biler.Funksiya daxilinde teyin olunan deyisenler ise yalniz funksiya daxilinde istifade oluna biler ve deyisile biler.  
 
 ### function ramdə necə yer tutur?
-Куча (Heap) — это распределение динамической памяти. Объекты, функции и массивы в JavaScript размещаются в куче. Размер кучи определяется во время выполнения программы (а не во время компиляции), что делает ее динамической.
+
 Funksiyalar, obyektler ve massivler heapde yer tutur.Onlarin tutdugu yer programm icra olunan zaman mueyyen ounur(kompilyasiya zamani yox),
 
 
