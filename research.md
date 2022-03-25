@@ -205,7 +205,7 @@ String()
 Boolean() 
 
 
-##### 19 mart task
+# 19 mart task
 
 ### Imperative and Declarative Approach in programming
 - Imperativ yanasma zamani yaddasa/melumata tesir etmek, onlarin veziyyetini deyismek ucun hereket alqoritmasi qurulur.Bu paradiqmaya esaslanan ilk proqramlasdirma dilleri masin kodlari ve assember olub.Yuksek dillere ise C, C++, Python, JavaScript, Java-ni misal getirmek olar.
