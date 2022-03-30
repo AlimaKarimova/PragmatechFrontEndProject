@@ -8,18 +8,18 @@
 // Ad: Eli,Soyad:Piriyev,Yas:23
 // Ad: Ehmed,Soyad:Memmedov,Yas:34
 
-// function inf() {
+// function info() {
 //     let uzunluq=names.length;
 
 //     for (let i = 0; i < uzunluq; i++ ) {      
 //         console.log(`Ad: ${names[i]},Soyad:${surnames[i]},Yas:${ages[i]}`)
 //     }
 // }
-// inf()
+// info()
 
 
 
-// 3 tapsiriq - tezeden baxilmalidi keys values bunlara bax 
+// 3 tapsiriq - yazildi
 
 // let names = ['Eli', 'Ehmed', 'Sara', 'Sevda', 'Qurban'];
 // let surnames = ['Piriyev', 'Memmedov', 'Qurbanova', 'Ezizova', 'Sadiqzade'];
@@ -30,19 +30,19 @@
 //     yaslar: ages
 // }
 
-// function Info() {
+// function info() {
+//     for (let i = 0; i <5; i++) {
+//         console.log(`Ad: ${students.adlar[i]},Soyad:${students.soyadlar[i]},Yas:${students.yaslar[i]}`)
+//     }
 
-//         for (let i = 0; i < names.length; i++) {
-//             console.log(`Ad: ${names[i]},Soyad:${surnames[i]},Yas:${ages[i]}`)
-//         }
 // }
-// Info()
+// info()
 
 // //expected output
 // // Ad: Eli,Soyad:Piriyev,Yas:23
 // // Ad: Ehmed,Soyad:Memmedov,Yas:34
 
-// inputs
+// 4tapsiriq - yazildi
 
 // let students = [{
 //     ad: 'Eli',
