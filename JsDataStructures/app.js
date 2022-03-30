@@ -1,33 +1,27 @@
-// 1. (function() {
-//     // sadəcə burda kod yazmağınıza icaze verilir
-//     // teleb olunan 1-100 arasındakı ədədlərin ekrana cap edilməsini təmin etməkdir
-//     // while for və digər loop expressionları istifadə etmək olmaz
-// })()
+// 2 tapsiriq - yazildi
+// let names = ['Eli', 'Ehmed', 'Sara', 'Sevda', 'Qurban'];
+// let surnames = ['Piriyev', 'Memmedov', 'Qurbanova', 'Ezizova', 'Sadiqzade'];
+// let ages = [23, 34, 40, 58, 60];
+// let students = [names, surnames, ages]
 
-// inputs
+//expected output
+// Ad: Eli,Soyad:Piriyev,Yas:23
+// Ad: Ehmed,Soyad:Memmedov,Yas:34
 
-let names = ['Eli', 'Ehmed', 'Sara', 'Sevda', 'Qurban'];
-let surnames = ['Piriyev', 'Memmedov', 'Qurbanova', 'Ezizova', 'Sadiqzade'];
-let ages = [23, 34, 40, 58, 60];
-let students = [names, surnames, ages]
+// function inf() {
+//     let uzunluq=names.length;
 
-// //expected output
-// // Ad: Eli,Soyad:Piriyev,Yas:23
-// // Ad: Ehmed,Soyad:Memmedov,Yas:34
-
-function inf() {
-    const info = students.length;
-    if (x = 0, x < info.length, x++) {
-        console.log(`"Ad:"+ ${names} + ","+ "Soyad:"+${surnames}+ ","+"Yas:"+${ages}`)
-    }
-}
-inf()
+//     for (let i = 0; i < uzunluq; i++ ) {      
+//         console.log(`Ad: ${names[i]},Soyad:${surnames[i]},Yas:${ages[i]}`)
+//     }
+// }
+// inf()
 
 
 
-// inputs
+// 3 tapsiriq - tezeden baxilmalidi keys values bunlara bax 
 
-// 3. let names = ['Eli', 'Ehmed', 'Sara', 'Sevda', 'Qurban'];
+// let names = ['Eli', 'Ehmed', 'Sara', 'Sevda', 'Qurban'];
 // let surnames = ['Piriyev', 'Memmedov', 'Qurbanova', 'Ezizova', 'Sadiqzade'];
 // let ages = [23, 34, 40, 58, 60];
 // let students = {
@@ -36,13 +30,21 @@ inf()
 //     yaslar: ages
 // }
 
+// function Info() {
+
+//         for (let i = 0; i < names.length; i++) {
+//             console.log(`Ad: ${names[i]},Soyad:${surnames[i]},Yas:${ages[i]}`)
+//         }
+// }
+// Info()
+
 // //expected output
 // // Ad: Eli,Soyad:Piriyev,Yas:23
 // // Ad: Ehmed,Soyad:Memmedov,Yas:34
 
 // inputs
 
-// 4.  let students = [{
+// let students = [{
 //     ad: 'Eli',
 //     soyad: 'Piriyev',
 //     yas: 23
@@ -63,6 +65,12 @@ inf()
 //     soyad: 'Sadiqzade',
 //     yas: 60
 // }]
+
+// function info() {
+//     students.map(student => console.log(`Ad: ${student.ad},Soyad:${student.soyad},Yas:${student.yas}`))    
+// }
+// info()
+
 
 // //expected output
 // // Ad: Eli,Soyad:Piriyev,Yas:23
