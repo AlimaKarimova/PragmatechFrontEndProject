@@ -285,4 +285,5 @@ Static allocation vs dynamic allocation
 garbage collection nədir?
 hoisting nədir?
 scope və hoisting ifadələri arasında fərq nədir? -->
+![https://felixgerschau.com/static/79486d91b22a7c1b4044fce88a4cae20/5a190/js-event-loop-explained.png]
 
