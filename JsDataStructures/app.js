@@ -75,3 +75,14 @@
 // //expected output
 // // Ad: Eli,Soyad:Piriyev,Yas:23
 // // Ad: Ehmed,Soyad:Memmedov,Yas:34
+
+(function () {
+    let i=1
+    if (i < 100) {
+        console.log(i);
+        i++;
+        return i;  
+    }
+    console.log(arguments.callee(i))
+
+})()
