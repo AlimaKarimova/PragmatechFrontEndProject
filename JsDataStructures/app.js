@@ -4,7 +4,7 @@
 // let ages = [23, 34, 40, 58, 60];
 // let students = [names, surnames, ages]
 
-//expected output
+// expected output
 // Ad: Eli,Soyad:Piriyev,Yas:23
 // Ad: Ehmed,Soyad:Memmedov,Yas:34
 
@@ -31,7 +31,8 @@
 // }
 
 // function info() {
-//     for (let i = 0; i <5; i++) {
+//     let uzunluq=names.length;
+//     for (let i = 0; i <uzunluq; i++) {
 //         console.log(`Ad: ${students.adlar[i]},Soyad:${students.soyadlar[i]},Yas:${students.yaslar[i]}`)
 //     }
 
@@ -66,23 +67,12 @@
 //     yas: 60
 // }]
 
+// //expected output
+// // Ad: Eli,Soyad:Piriyev,Yas:23
+// // Ad: Ehmed,Soyad:Memmedov,Yas:34
+
 // function info() {
 //     students.map(student => console.log(`Ad: ${student.ad},Soyad:${student.soyad},Yas:${student.yas}`))    
 // }
 // info()
 
-
-// //expected output
-// // Ad: Eli,Soyad:Piriyev,Yas:23
-// // Ad: Ehmed,Soyad:Memmedov,Yas:34
-
-(function () {
-    let i=1
-    if (i < 100) {
-        console.log(i);
-        i++;
-        return i;  
-    }
-    console.log(arguments.callee(i))
-
-})()
