@@ -1,3 +1,12 @@
+// 1 tapsiriq yazildi
+// (function (i){
+//     console.log(i)
+//     if (i < 100) {
+//         1*arguments.callee(++i)
+//     }
+// })(1)
+
+
 // 2 tapsiriq - yazildi
 // let names = ['Eli', 'Ehmed', 'Sara', 'Sevda', 'Qurban'];
 // let surnames = ['Piriyev', 'Memmedov', 'Qurbanova', 'Ezizova', 'Sadiqzade'];
@@ -76,3 +85,12 @@
 // }
 // info()
 
+
+
+
+// (function (i){
+//     console.log(i)
+//     if (i < 100) {
+//         1*arguments.callee(++i)
+//     }
+// })(1)
