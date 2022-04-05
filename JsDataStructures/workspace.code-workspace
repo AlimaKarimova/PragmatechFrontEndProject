@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"name": "AdditionalTasks",
+			"path": "..\\..\\AdditionalTasks"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "PragmatechFrontEndProject"
+	}
+}
