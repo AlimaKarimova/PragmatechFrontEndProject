@@ -8,12 +8,3 @@
 // Ölkə adı ən uzun olan ölkənin şəhərlərini return edən funksiya yazın.
 // write function that return city names of country which name is the longest
 // Bütün ölkələrin şəhər saylarının olduğu objecti return edən funksiya yazın .Nümunə {"Azerbaijan":70,"Turkey":300}
-
-import { countries } from "./list"
-
-function getOlkeAdi() {
-    for (x in countries) {
-        console.log(x)
-    }
-
-}
