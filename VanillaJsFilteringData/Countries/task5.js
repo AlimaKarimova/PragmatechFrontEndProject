@@ -84144,52 +84144,14 @@ const countries = {
         "Victoria Falls"
     ]
 }
+// Bütün ölkələrin şəhər saylarının olduğu objecti return edən funksiya yazın .Nümunə {"Azerbaijan":70,"Turkey":300}
+// write function that return object of country names as key and count of cities of country as value
 
-// 2. Hərfə görə ölkə sayının olduğu object return edən funksiya yazın. Nümunə {"A":20,"B":15}
-// 3. Ən çox şəhəri olan ölkə adını return edən funksiya yazın
-// 4. Ölkə adı ən uzun olan ölkənin şəhərlərini return edən funksiya yazın.
+function countCity(arr) {
+    for (let key in arr) {
+        let cityName = arr[key]
+        console.log(`${key}:${cityName.length}`)
+    }
 
-// 1. Sadəcə ölkə adlarının olduğu array-ı return edən funksiya yazın
-
-// function getOlkeAdi(arr) {
-//     const adlar = Object.keys(arr)
-//     return adlar
-// }
-
-// getOlkeAdi(countries)
-
-
-// 5. Bütün ölkələrin şəhər saylarının olduğu objecti return edən funksiya yazın .Nümunə {"Azerbaijan":70,"Turkey":300}
-// yazildi amma dirnaq icerisinde yox bir de baxarsan
-
-// function countCity(arr) {
-//     for (let key in arr) {
-//         let cityName = arr[key]
-//         console.log(`${key}:${cityName.length}`)
-//     }
-
-// }
-// countCity(countries)
-
-// 4. Ölkə adı ən uzun olan ölkənin şəhərlərini return edən funksiya yazın.
-
-// function cityNames(arr) {
-//     let olkeler = Object.keys(arr);
-//     for (let i = 0;i<olkeler.length; i++) {
-       
-//     }
-// }
-// cityNames(countries)
-
-// # list = [110, 773, 322, 63, 1, 34, 5, 10]
-// # maximum =list [0]
-// # for i in list:
-// #    if i > maximum:
-// #     maximum = i
-
-// #    for x,y in olkeler.items():
-// #       if len(x)>max:
-// #          maxolke=max
-// #          max=len(x)
-// #          maxolke=x
-// #    print(maxolke)     
+}
+countCity(countries) 
