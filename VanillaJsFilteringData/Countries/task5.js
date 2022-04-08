@@ -84147,11 +84147,25 @@ const countries = {
 // Bütün ölkələrin şəhər saylarının olduğu objecti return edən funksiya yazın .Nümunə {"Azerbaijan":70,"Turkey":300}
 // write function that return object of country names as key and count of cities of country as value
 
-function countCity(arr) {
-    for (let key in arr) {
-        let cityName = arr[key]
-        console.log(`${key}:${cityName.length}`)
-    }
+// function countCity(arr) {
+//     for (let key in arr) {
+//         let cityName = arr[key]
+//         console.log(`${key}:${cityName.length}`)
+//     }
 
-}
-countCity(countries) 
+// }
+// countCity(countries) 
+
+function countryLetterCount(object) {
+    let obj = {};
+    let country = Object.keys(object);
+    for (let i = 0; i < country.length; i++)
+      if (obj[`"${country[i][0]}"`]) {
+        obj[`"${country[i][0]}"`]++;
+      } else {
+        obj[`"${country[i][0]}"`] = 1;
+      }
+    return console.log(obj);
+  }
+  countryLetterCount(countries);
+

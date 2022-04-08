@@ -4,18 +4,19 @@ const sampleNews = `As software developers, the natural tendency is to start dev
 // Mətn daxilində böyük hərflə başlayan sözlərin olduğu arrayı return edən funksiya yazın  
 function firstCappital(metn) {
     let words = metn.split(" ");
+    let arr = []
     let capitalLetter = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
     for (let x in words) {
         for (let y in capitalLetter) {
-            let arr = []
+
             if (words[x][0] == capitalLetter[y]) {
                 arr.push(words[x])
                 // return arr
-                console.log(arr)
+
 
             }
         }
-
     }
+    console.log(arr)
 }
 firstCappital(sampleNews)
