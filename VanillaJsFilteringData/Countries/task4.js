@@ -84145,33 +84145,21 @@ const countries = {
     ]
 }
 // Ölkə adı ən uzun olan ölkənin şəhərlərini return edən funksiya yazın.
-// write function that return city names of country which name is the longest
 
-function uzunAd(obj) {
+
+function task(obj) {
+    let cutler = Object.entries(obj);
     let max = 0;
-    for (let key in obj) {
-        let cityName = key
-        if (max < cityName.length) {
-            max = cityName.length
+    let maxolke;
+    for (cut of cutler) {
+        if (max < cut[0].length) {
+            max = cut[0].length
+            maxolke = cut[1]
 
         }
-
     }
-    console.log(max)
-
-
+    console.log(maxolke)
 }
+task(countries)
 
-uzunAd(countries)
 
-// function getMaxValue(arr) {
-//     let max = arr[0].length
-//     for (var i = 0; i < arr.length; i++) {
-//         if (max < arr[i].length) {
-//             max = arr[i].length
-//             console.log(max = arr[i])
-//         }
-
-//     }
-
-// }

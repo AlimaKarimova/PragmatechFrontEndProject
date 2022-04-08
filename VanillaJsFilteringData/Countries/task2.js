@@ -84144,6 +84144,18 @@ const countries = {
         "Victoria Falls"
     ]
 }
-bunun sertini basa dusmedim
+// bunun sertini basa dusmedim
 // Hərfə görə ölkə sayının olduğu object return edən funksiya yazın. Nümunə {"A":20,"B":15}
 // write function that return object of Letter as key and value as country count like in example {"A":20,"B":15}
+
+
+
+?????????/
+
+function olkeSayi(obj) {
+    let olkeler = Object.keys(obj);
+    let arr = {}
+    for (let i = 0; i < olkeler.length; i++) {
+    }
+}
+olkeSayi(countries)

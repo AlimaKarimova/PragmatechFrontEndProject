@@ -8,6 +8,6 @@ function sentenceCount(metn) {
     const noqteler = metn.split(".")
     const nidalar = metn.split("!")
     const suallar = metn.split("?")
-    console.log(noqteler.length+nidalar.length+suallar.length)
+    return noqteler.length+nidalar.length+suallar.length
 }
 sentenceCount(sampleNews)

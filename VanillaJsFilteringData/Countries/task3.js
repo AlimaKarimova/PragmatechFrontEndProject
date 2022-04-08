@@ -84146,29 +84146,18 @@ const countries = {
 }
 // Ən çox şəhəri olan ölkə adını return edən funksiya yazın
 // write function that return name of country which have max number of cities
-function enCoxSeher(obj) {
-    for (let [key, value] of Object.entries(obj)){
-        let olkeler=key;
-        let seherler=value;
 
-        console.log(Array.isArray(seherler))
+function task(obj) {
+    let cutler = Object.entries(obj);
+    let max = 0;
+    let maxolke;
+    for (cut of cutler) {
+        if (max < cut[1].length) {
+            max = cut[1].length
+            maxolke = cut[0]
 
+        }
     }
+    console.log(maxolke)
 }
-enCoxSeher(countries)
-
-
-// let arr = ['salam', 'hs', 'ggffv', 'cvvgf', 'fvgfff']
-
-// function getMaxValue(arr) {
-//     let max = arr[0].length
-//     for (var i = 0; i < arr.length; i++) {
-//         if (max < arr[i].length) {
-//             max = arr[i].length
-//             console.log(max = arr[i])
-//         }
-
-//     }
-
-// }
-// getMaxValue(arr)
+task(countries)
