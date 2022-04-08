@@ -10,7 +10,8 @@ function firstCappital(metn) {
             let arr = []
             if (words[x][0] == capitalLetter[y]) {
                 arr.push(words[x])
-                return arr
+                // return arr
+                console.log(arr)
 
             }
         }

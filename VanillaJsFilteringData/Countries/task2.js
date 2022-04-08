@@ -84144,18 +84144,21 @@ const countries = {
         "Victoria Falls"
     ]
 }
-// bunun sertini basa dusmedim
 // Hərfə görə ölkə sayının olduğu object return edən funksiya yazın. Nümunə {"A":20,"B":15}
 // write function that return object of Letter as key and value as country count like in example {"A":20,"B":15}
 
-
-
-?????????/
+//bunu yaza bilmedim arrayin icindeki eyni elementleri nece toplamaq olar ona aid funksiy yaza bilmedim
 
 function olkeSayi(obj) {
-    let olkeler = Object.keys(obj);
-    let arr = {}
-    for (let i = 0; i < olkeler.length; i++) {
+    let sum=0;
+    for (let key in obj) {
+        let basHerfler = key[0] //butun bas herfleri qaytarir
+        for (herf of basHerfler){
+
+        }
+
     }
+
 }
 olkeSayi(countries)
+

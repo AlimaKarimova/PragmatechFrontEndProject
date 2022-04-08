@@ -4,7 +4,8 @@ Although the SOLID design principles were first introduced by the famous Compute
 // Mətndəki hərf sayını return edən funksiya yazın
 function wordCount(metn) {
     let array = metn.match(/[A-Z]/gi);
-    return array.length
+    // return array.length
+    console.log(array.length)
 
 }
 wordCount(sampleNews)

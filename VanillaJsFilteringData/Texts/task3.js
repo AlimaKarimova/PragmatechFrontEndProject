@@ -4,6 +4,7 @@ Although the SOLID design principles were first introduced by the famous Compute
 
 //  Mətndəki xarakter sayını return edən funksiya yazın
 function returnLength(str){
-    return str.length
+    // return str.length
+    console.log(str.length)
 }
 returnLength(sampleNews)

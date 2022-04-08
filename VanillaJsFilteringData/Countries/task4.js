@@ -84147,19 +84147,19 @@ const countries = {
 // Ölkə adı ən uzun olan ölkənin şəhərlərini return edən funksiya yazın.
 
 
-function task(obj) {
-    let cutler = Object.entries(obj);
+function getCities(obj) {
+    let countriesCities= Object.entries(obj);
     let max = 0;
     let maxolke;
-    for (cut of cutler) {
-        if (max < cut[0].length) {
-            max = cut[0].length
-            maxolke = cut[1]
+    for (x of countriesCities) {
+        if (max < x[0].length) {
+            max = x[0].length
+            maxolke = x[1]
 
         }
     }
     console.log(maxolke)
 }
-task(countries)
+getCities(countries)
 
 

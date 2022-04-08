@@ -4,10 +4,15 @@ Although the SOLID design principles were first introduced by the famous Compute
 
 //5. Mətndəki cümlə sayını return edən funksiya yazın
 
+//C. Martin (a.k.a. Uncle Bob)  bu hissede noqteler qisaltmalara aiddir amma onlari istisna ede bilen funksiya yaza bilmedim
+
 function sentenceCount(metn) {
     const noqteler = metn.split(".")
     const nidalar = metn.split("!")
     const suallar = metn.split("?")
-    return noqteler.length+nidalar.length+suallar.length
+    // return noqteler.length+nidalar.length+suallar.length
+    console.log(noqteler.length+nidalar.length+suallar.length)
+
+
 }
 sentenceCount(sampleNews)

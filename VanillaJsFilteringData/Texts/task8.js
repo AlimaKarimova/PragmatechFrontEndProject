@@ -7,14 +7,9 @@ Although the SOLID design principles were first introduced by the famous Compute
 // Mətn daxilindən uzunluğu 40-50 xarakter arasında olan təsadüfi mətni return edən funksiya yazın
 // Seçilən mətn uzunluğu sözü bölürsə o sözü silməlisiniz.Məsələn seçilən mətnin sonu developers sözünün deve hissəsində bitirsə developers sözü silinməlidir
 
+//bunu da yaza bilmedim 40-50 xarakter uzunlugunu random funksiyaya nece vere bilerem basa dusmedim
+
 function randomMetn(metn) {
-
-    let result = '';
-    var metnLength = metn.length;
-    for (var i = 0; i>metnLength; i++) {
-        result += metn.charAt(Math.floor(Math.random() *50));
-        console.log(result)
-    }
-
+    
 }
 randomMetn(sampleNews)

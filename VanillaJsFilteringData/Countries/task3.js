@@ -84148,13 +84148,13 @@ const countries = {
 // write function that return name of country which have max number of cities
 
 function task(obj) {
-    let cutler = Object.entries(obj);
+    let countriesCities = Object.entries(obj);
     let max = 0;
     let maxolke;
-    for (cut of cutler) {
-        if (max < cut[1].length) {
-            max = cut[1].length
-            maxolke = cut[0]
+    for (x of countriesCities) {
+        if (max < x[1].length) {
+            max = x[1].length
+            maxolke = x[0]
 
         }
     }

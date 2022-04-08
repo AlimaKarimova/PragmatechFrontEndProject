@@ -84151,7 +84151,8 @@ const countries = {
 
 function getOlkeAdi(arr) {
     const adlar = Object.keys(arr)
-    return adlar
+    // return adlar
+    console.log(adlar)
 }
 
 getOlkeAdi(countries)

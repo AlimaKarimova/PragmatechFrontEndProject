@@ -8,7 +8,8 @@ Although the SOLID design principles were first introduced by the famous Compute
 // Mətndə olan bütün böyük hərflərin olduğu arrayı return edən funksiya yazın
 function getCapitalLetter(metn) {
     let array = metn.match(/[A-Z]/g);
-    return array
+    // return array
+    console.log(array)
 
 }
 getCapitalLetter(sampleNews)
