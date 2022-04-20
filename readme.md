@@ -1,2 +1,2 @@
 [məqaləm](https://medium.com/@sunnyway1992)
-HackerRank hesabim AlimaKarimova
+[HackerRank hesabim] (https://www.hackerrank.com/AlimaKarimova/hackos)
