@@ -10,24 +10,27 @@ function randomCirclePlacement(_radius) {
     let daireler = [];
     while (i < 16) {
         let daire = document.createElement('div');
-        let randX = Math.random() * 1000;
+        let randX = Math.random() * 400;
         let randY = Math.random() * 1000;
         daire.style.width = `${_radius*2}px`;
         daire.style.height = `${_radius*2}px`;
         daire.className = 'circle';
         daire.style.top = `${randX}px`;
         daire.style.left = `${randY}px`;
-        document.body.append(daire);
-        i++
+        document.body.querySelector(".box").append(daire);
+        i++;
         daireler.push(daire);
         for (let i in daireler) {
             if (i >= 0 && i < 7) {
                 daireler[i].style.backgroundColor = 'blue';
+                daireler[i].textContent=`${++i}`;
             } else if (i >= 7 && i < 14) {
                 daireler[i].style.backgroundColor = 'red';
+                daireler[i].textContent=`${++i}`;
 
             } else if (i == 14) {
                 daireler[i].style.backgroundColor = 'black';
+                daireler[i].textContent=`${++i}`;
 
             } else {
                 daireler[i].style.backgroundColor = 'white';

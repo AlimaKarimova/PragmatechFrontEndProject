@@ -1,11 +1,16 @@
-body{
+.box{
+    width: 100%;
+    height:100vh;
     background-image: url(./American-style_pool_table_diagram_\(empty\).png);
-    background-repeat: no-repeat;
-    background-size: 100% 100vh;
+    background-size: 100% 100%;
 }
 
 .circle {
     position:absolute ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
+    color:white;
 }
 
