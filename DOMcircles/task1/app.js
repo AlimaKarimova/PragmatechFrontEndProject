@@ -1,11 +1,13 @@
-function createCircle(_selector, _radius, _backgroundColor) {
-  let daire=document.createElement('div');
-  daire.style.width=`${_radius}px`;
-  daire.style.height=`${_radius}px`;
-  daire.style.backgroundColor=`${_backgroundColor}`;
-  daire.style.border='1px solid black';
-  daire.style.borderRadius=`50%`;
+
+ // Verilən parametrlərə əsasən dairə yaradan metod yazın
+function createCircle(_radius, _backgroundColor) {
+  let daire = document.createElement('div');
+  daire.style.width = `${_radius*2}px`;
+  daire.style.height = `${_radius*2}px`;
+  daire.style.backgroundColor = `${_backgroundColor}`;
+  daire.className = 'circle';
   document.body.append(daire)
 
 }
-createCircle();
+createCircle(100, 'white');
+
