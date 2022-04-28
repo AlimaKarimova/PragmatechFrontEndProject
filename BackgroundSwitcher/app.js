@@ -1,14 +1,11 @@
-// function on() {
-//     document.getElementById("picture").src = "lampa.jpg"
-// };
+let switchButton = document.querySelector('input[type="checkbox"]');
+let light = document.querySelector('.light');
+let dark = document.querySelector('.dark');
 
-// function off() {
-//     document.getElementById("picture").src = "lampa_sonulu.jpg"
-// }
-let btn=document.get('.btn i');
-function abc(){
-    btn.className
-}
-abc();
-btn.addEventListener('click',abc );
 
+switchButton.addEventListener('click', () => {
+    document.body.classList.toggle('dark-theme');
+    light.classList.toggle('light-text-night');
+    dark.classList.toggle('dark-text-night');
+
+});
