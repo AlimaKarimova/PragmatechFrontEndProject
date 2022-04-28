@@ -1,15 +1,12 @@
 .box{
-    margin: 0 auto;
+    position: relative;
     width: 1000px;
     height: 500px;
+    margin: 0 auto;
     border:1px solid black;
 }
 
 .circle {
-    position: absolute;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     border-radius: 50%;
     border: 1px solid red;
 }

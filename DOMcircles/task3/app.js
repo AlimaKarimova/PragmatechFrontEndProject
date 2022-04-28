@@ -9,11 +9,12 @@ function createMultipleCircle(_circleCount, _radius, _backgroundColor) {
       daire.style.height = `${_radius*2}px`;
       daire.style.backgroundColor = `${_backgroundColor}`;
       daire.className = 'circle';
-      document.body.append(daire);
+      daire.style.position = "absolute";
+      daire.style.bottom = "0";
       _radius-=20;
+      document.querySelector('.box').appendChild(daire);
     }
   }
-  document.querySelector('.box').innerHTML=daire;
 
 }
 createMultipleCircle(10, 200, 'white');
