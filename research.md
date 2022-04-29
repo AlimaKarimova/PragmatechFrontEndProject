@@ -1,4 +1,4 @@
-# Sual 1.Javascript proqramlaşdırma dili hansı sahələrdə istifadə olunur?
+## Sual 1.Javascript proqramlaşdırma dili hansı sahələrdə istifadə olunur?
 
 В первую очередь JavaScript широко используется во фронтенд-разработке. Этот язык вместе с HTML и CSS входит в базовый набор инструментов фронтендера. На JavaScript создаются приложения, которые исполняются в браузере на стороне клиента. Они обеспечивают интерактивность сайтов. Например, когда пользователь заполняет форму и нажимает кнопку «Подписаться», мгновенная реакция на это действие обычно обеспечивается кодом, написанным на JavaScript.Сегодня сфера *применения JavaScript не ограничиваются браузерами и веб-приложениями. На этом языке. например, можно:*
 -Разрабатывать нативные приложения. Например, с помощью фреймворка React Native создаются приложения для Android и iOS.
@@ -6,7 +6,7 @@
 -Десктопные приложения. JS применяется в офисных пакетах Microsoft и OpenOffice, в приложениях компании Adobe.
 -Программировать оборудование и бытовую технику, например, платёжные терминалы и телевизионные приставки.
 
-# Sual 2. Aşağıdakı proqramlaşdırma terminlərinin qısa acıqlamasını yazın:
+## Sual 2. Aşağıdakı proqramlaşdırma terminlərinin qısa acıqlamasını yazın:
 
 ### Compilers
 
@@ -105,7 +105,7 @@ Boolean — *примитивный тип данных в программир�
 - Язык контентной разметки (Content Markup) обеспечивает разметку, определяющую семантическую структуру документа. SGML (Standard Generalized Markup Language), XML(eXtensible Markup Language). 
 
 
-# Sual03: Veb səhifəsinin işləmə prinsipini anlayabilmək üçün aşağıdakı mövhumları araşdıraraq yazın
+## Sual03: Veb səhifəsinin işləmə prinsipini anlayabilmək üçün aşağıdakı mövhumları araşdıraraq yazın
 
 ### İnternet ve intranet arasındakı fərqlər nədir?
 
@@ -144,68 +144,75 @@ Uniform Resource Locator (унифицированный определител�
 - URL используется для поиска только веб-страниц
 
 
-#### Javascript
-
 ### interpreter və compiler dillər arasındakı fərqləri haqqında araşdırma edərək öz anladığınız formada yazın
 
 - Interpreter dillerinde yazilan kod masin diline tercume olunan zaman setir-setir tercume olunur ve eger her hansi bir setirde error olsa is dayanir.Error cixan setre kimi olan kod tercume olunur.Ustunlukleri:dinamik tipizasiya, programin icrasinin addim-addim izlenilmesi, icra zamani deyisiklik etmek imkani.
 - Kompayler dillerinde yazilan kod tercume olunan zaman kod butovlukde tercume olunur.Eger bir yerde sehv olsa kod tercume olunmayacaq.Kompayler dillerin kod tercumesi daha suretle bas verir.
 
 
-### dəyişən və məlumat növləri arasındakı fərq nədir? Bunlar nə üçün istifadə olunur?
+### Dəyişən və məlumat növləri arasındakı fərq nədir? Bunlar nə üçün istifadə olunur?
 
 Deyisenler vasitesile biz yaddasin mueyyen hissesine muraciet edirik.Melumat novu ise deyisen ustunde hansi emeliyyat novlerini apara bilerik onu gosterir.Meselen number melumat novleri ile muxtelif riyazi hesablamalari apara bilerik.
 
-### hər dilin özünə məxsus məlumat növləri mövcuddur. Bu məlumat növlərin dillərə görə fərqlənməsinin səbəbləri sizcə nədir?
+### Hər dilin özünə məxsus məlumat növləri mövcuddur. Bu məlumat növlərin dillərə görə fərqlənməsinin səbəbləri sizcə nədir?
 
 Ferqlenme sebebi dillerin evvelceden hansi meqsedle yaradilmasi  ve hansi sahelerde daha cox istifade olunmasidir.Misal ucun JS frontendde, Python Suni itellekt sahesinde, oyunlari yazilmasi ve ya programlasdirma dilinin yazilmasi ucun C ve C++ dillerinden daha cox istifade olunur.
 
-### javascriptdə dəyişən təyin edilmək üçün əsas üç açar söz var . let,var,const. Bu açar sözlərin vəzifələri arasındakı fərqlər nələrdir?
+### Javascriptdə dəyişən təyin edilmək üçün əsas üç açar söz var . let,var,const. Bu açar sözlərin vəzifələri arasındakı fərqlər nələrdir?
 - var scopa malik deyil, yeni funksiya icerisinde deyisen var vasitesile  teyin olunsa funksiya xaricinde de istifade olunacak.var vasitesile tekraren eyni deyisen teyin olunsa error olmayacak.
 - let vasitesile sonradan deyeri deyisile bilen deyisenler teyin olunur.local ve global scopa malikdir.
 - const vasitesile  teyin olunan deyisenlerin deyeri sonradan deyisilmir.local ve global scopa malikdir.
+  
 ### Proqramçı olaraq bir proqram yazarkən işi görmə addımlarımız necə olmalıdır?
 - output teyin olunur 
 - input teyin olunur
 - inputa catmaq ucun alqoritm qurulur
 
-##### Javascript
 
 ### Javascript kodları necə formada yazıla bilər?
 Script taginin icinde yazila biler html faylinin head ve ya body hissesinda ve ya ayrica fayl yaradib o fayli html-e import etmek olar.
+
 ### Javascript kodlarının script tagları daxilində yazmaqla ayrı fayl formatında yazıb import etmek arasında nə fərq var?
 Js kodlari azdisa script taginda yazila biler, lakin Js kodlari coxdusa ayrica fayla yazmaq daha meqsedeuygundu kodun oxunaqligi baximindan.
-### Madem mənim brauzerimdə V8-Engine yüklüdür niyə html kodu daxilində yazılan javascript kodları işləmir.
+
+### Mənim brauzerimdə V8-Engine yüklüdür niyə html kodu daxilində yazılan javascript kodları işləmir.
 cunki brauzer onlari js kimi yox html-in bir hissesi kimi qebul edir.
+
 ### ";" hansı hallarda istifadə edilir?
 bir statement bitende.istifadesi bezi hallarda mecburi deyil lakin her statement bitende qoymaq meslehet gorurlur.Bu halda brauzer terefinden kodun oxunaqligi artir.Bezi hallarda ise ; qoyulmamagi errora sebeb olur.meselen [] moterizelerin qabagina js ; avtomatik elave etmir bu da errora sebeb olur
+
 ### Javascript-də comment yazmaq üçün neçə üsul var.
 iki: bir setirli comment // vasitesile multiply lines comment ise /* */ vasitesile yazilir.
+
 ### let,var,const ifadələri arasında fərqlər nədir?
 - var scopa malik deyil, yeni funksiya icerisinde deyisen var vasitesile  teyin olunsa funksiya xaricinde de istifade olunacak.var vasitesile tekraren eyni deyisen teyin olunsa error olmayacak.
 - let vasitesile sonradan deyeri deyisile bilen deyisenler teyin olunur.local ve global scopa malikdir.
 - const vasitesile  teyin olunan deyisenlerin deyeri sonradan deyisilmir.local ve global scopa malikdir.
-### dəyişən təyin edərkən adlandırma qaydaları nələrdir?
-Deyisen bir reqemle baslaya bilmez." _ ", " $ ", ve herflerle baslaya biler.adlandirma zamani herf, reqem ve " _ ", " $ " isarelerinden istifade etmek olar.JS deyisenleri registra hessasdir.Meselen: var car ve var Car eyni deyisen qebul olunmur.en cox istifade olunan usullar CamelCase, lower CamelCase
+### Dəyişən təyin edərkən adlandırma qaydaları nələrdir?
+Deyisen bir reqemle baslaya bilmez. _ ,dollar isaresi ve herflerle baslaya biler.Adlandirma zamani herf, reqem ve " _ ", " $ " isarelerinden istifade etmek olar.JS deyisenleri registra hessasdir.Meselen: var car ve var Car eyni deyisen qebul olunmur.en cox istifade olunan usullar CamelCase, lower CamelCase
+
 ### let x=5;x=7 yazıldığı zaman nəticə 7 olur.Belə olan halda 5 dəyərinin aqibəti nə olur? Yaddaşda yer tutur mu 5 dəyəri yoxsa başqa proses mi gedir?
- yaddasdan silinir
+Yaddasdan silinir
+
 ### 5 dəyəri yaddasa yazılarkən 2-li say sisteminə çevrilir və ona görə yaddaşda tutduğu yer hesablanır.Bəs 5.34 dəyərinin yaddaşda tutduğu yeri necə hesablamaq olar?
+
 ### undefined, NaN və null dəyərlərinin yaddaşda nə qədər yer tutduğunu araşdırın
+
 ### let a; bu formada dəyişən təyin etmişəm.Bu dəyişən yaddaşda stack-da mı yoxsa heap-də mi yerləşir.Bu dəyişən yaddaşda yer tuturmu? Tutursa nə qədər yer tutur?
-primitiv deyerler stack yaddasda, obyekt ve funksiyalar ise heap yaddasda yer tutur.bu primit deyisen oldugu ucun stack yaddasda yer tutacaq.deyeri ise undefined oldugu ucun undefined ne qeder yer tutursa o qeder yer tutacaq.
+Primitiv deyerler stack yaddasda, obyekt ve funksiyalar ise heap yaddasda yer tutur.bu primit deyisen oldugu ucun stack yaddasda yer tutacaq.deyeri ise undefined oldugu ucun undefined ne qeder yer tutursa o qeder yer tutacaq.
+
 ### Ümumiyyətlə sizə görə bir məlumat növünü başqa məlumat növünə çevirmək nəyə lazımdır?
-bu meqsedimizden asilidi.Misal ucun prompt vaitesile string data tipinde  daxil olunan melumat uzerinde riyazi emel aparmaq isteyirikse onu mutleq numbere cevirmeliyik.
+Bu meqsedimizden asilidi.Misal ucun prompt vaitesile string data tipinde  daxil olunan melumat uzerinde riyazi emel aparmaq isteyirikse onu mutleq numbere cevirmeliyik.
+
 ### Type Conversion necə formada həyata keçirilir?
 Implicit Conversion - automatic type conversion
 Explicit Conversion - manual type conversion
 Implicit Conversion-avtomatik formada bas vere biler, misal ucun string ve numberi toplayanda number avtomatik stringe cevrilir.ve ya number ve boolean deyisenleri toplasaq, boolean avtomatik numbere cevrilecek.Explicit Conversion-ozumuz ceviririk.
+
 ### Type Conversion metodlarının siyahısını çıxarın
 Number()
 String()
 Boolean() 
-
-
-# 19 mart task
 
 ### Imperative and Declarative Approach in programming
 - Imperativ yanasma zamani yaddasa/melumata tesir etmek, onlarin veziyyetini deyismek ucun hereket alqoritmasi qurulur.Bu paradiqmaya esaslanan ilk proqramlasdirma dilleri masin kodlari ve assember olub.Yuksek dillere ise C, C++, Python, JavaScript, Java-ni misal getirmek olar.
@@ -224,9 +231,9 @@ Deklarativ yanasmada: axsama et yemeyi bisirilmelidi.
 
 Tutaq ki hazir metodlardan istifade edirik.Bu metodlar imperativ yanasma ile yazilib lakin biz onlari hazir metod seklinde istifade edirik ve qurdugumuz funksiya deklarativ yanasma ile qurulmus olur. 
 
-### imperative və deklarative yanaşmaya aid kod nümunələri yazın özünüz üçün. Düzgün olub olmadığını yoldaşlarınızla analiz edin
+### Imperative və deklarative yanaşmaya aid kod nümunələri yazın özünüz üçün. Düzgün olub olmadığını yoldaşlarınızla analiz edin
 
-function onlyOdd(array) {
+```function onlyOdd(array) {
   let result = []
 
   for (const element of array) {
@@ -237,29 +244,34 @@ function onlyOdd(array) {
 
   return result
 }
+```
 
 Bu imperativ yanasmadi.prosesin nece bas verdiyini xirdaliqlara qeder gosterilib.
 
-
+```
 function onlyOdd(array) {
   return array.filter((element) => element % 2 !== 0)
 }
+```
 
 Bu ise deklarativ yanasmadi. Hazir metoddan istifade etmisik. Arxada prosesin nece bas verdiyi hansi addimlar atildigi gosterilmeyib.
 
 
 ### Function necə formada təyin olunur?
-iki formada:function declaration ve function expression;
-function makePair(num1, num2) {
+
+Iki formada:function declaration ve function expression;
+```function makePair(num1, num2) {
     const arr = [];
     return arr.concat(nu++m1, num2)
 }
+```
 
 function expression ile funksiya yaradilan zaman bir deyisen yaradilir ve funksiya ona menimsenilir.
-
+```
 var a = function() { 
     return 10; 
 }
+```
 
 f.declaration vasitesile funksiya yaradilan zaman o kodun istenilen yerinde istifade oluna biler.F.expression ile yaradilan zaman ise yalniz teyin olunandan sonra istifade oluna biler.
 
@@ -273,50 +285,23 @@ amma eger f.expressiondan istifade olunsa evvelceden deyiseni elan edib sonra ko
 
 global scope-da teyin olunan deyisenler kodun her yerinde funksiya daxilinde de istifade oluna biler,hem globalda hem de funksiyada deyisile biler.Funksiya daxilinde teyin olunan deyisenler ise yalniz funksiya daxilinde istifade oluna biler ve deyisile biler.  
 
-### function ramdə necə yer tutur?
+### Function ramdə necə yer tutur?
 
-Funksiyalar, obyektler ve massivler heapde yer tutur.Onlarin tutdugu yer programm icra olunan zaman mueyyen ounur(kompilyasiya zamani yox),
+Funksiyalar, obyektler ve massivler heapde yer tutur.Onlarin tutdugu yer programm icra olunan zaman mueyyen ounur(kompilyasiya zamani yox)
 
-
-<!-- novbeti ders ucun
-Javascript kodlarının arxa planda işləmə prinsipi necədir?
-Allocate memory-use memory- release memory ifadələri nə deməkdir?
-Static allocation vs dynamic allocation
-garbage collection nədir?
-hoisting nədir?
-scope və hoisting ifadələri arasında fərq nədir? -->
-![https://felixgerschau.com/static/79486d91b22a7c1b4044fce88a4cae20/5a190/js-event-loop-explained.png]
+[https://felixgerschau.com/static/79486d91b22a7c1b4044fce88a4cae20/5a190/js-event-loop-explained.png]
 
 [Melumatlar bu saytdan goturulub](https://felixgerschau.com/javascript-memory-management/#the-memory-heap-and-stack)
 
 ## :heavy_check_mark:Call Stack
+
 ![](https://felixgerschau.com/static/79486d91b22a7c1b4044fce88a4cae20/5a190/js-event-loop-explained.png)
+
 Js biraxinli dildir.Yeni ki bir sefere ancaq bir isi gore biler cunki sadece bir call stack-e malikdir.Call stack mexanizmi  vasitesile Js intrepretatoru event-in cagirdigi funksiyalari izleye bilir.Her defe funksiya cagirilan zaman o call stack-in yuxari hissesine elave olunur.
 Her defe funksiya yekunlasanda o call stack-den silinir.Eger cagirilan funksiya sayi hedden artiq coxdursa `Uncaught RangeError: Maximum call stack size exceeded` erroru cixacaq.
-Heap-Куча JavaScript-это место, где хранятся объекты, когда мы определяем функции или переменные.
-
-Веб-API
-Выше я сказал, что JavaScript может делать только одну вещь за раз.
-
-Хотя это верно для самого языка JavaScript, вы все равно можете делать что-то одновременно в браузере. Как уже следует из названия, это возможно с помощью API, предоставляемых браузерами.
-
-Давайте посмотрим, как мы делаем запрос API, например. Если бы мы выполнили код в интерпретаторе JavaScript, мы не смогли бы сделать ничего другого, пока не получим ответ от сервера.
-
-Это в значительной степени сделает веб-приложения непригодными для использования.
-
-В качестве решения этой проблемы веб-браузеры предоставляют нам API, которые мы можем вызывать в нашем коде JavaScript. Однако выполнение обрабатывается самой платформой, поэтому она не блокирует стек вызовов.
-
-Еще одним преимуществом веб-API является то, что они написаны в коде более низкого уровня (например, C), что позволяет им делать то, что просто невозможно в обычном JavaScript.
-
-Они позволяют делать AJAX-запросы или манипулировать DOM, а также ряд других вещей, таких как гео-отслеживание, доступ к локальному хранилищу, сервисные работники и многое другое.
 
 
-Функция либо завершает работу через оператор return, либо достигает конца области видимости.
-
-Я создал эту небольшую визуализацию, чтобы облегчить понимание:
-
-
-## yaddsa
+## Yaddas
 В JavaScript, когда мы создаем переменные, функции или все, что вы можете придумать, движок JS выделяет память для этого и освобождает ее, как только она больше не нужна.
 
 Выделение памяти-это процесс резервирования места в памяти, в то время как освобождение памяти освобождает пространство, готовое к использованию для других целей.
@@ -337,7 +322,7 @@ JavaScript заботится об этом для нас: он выделяет
 
 Этот шаг также обрабатывается движком JavaScript. Как только выделенная память освобождается, ее можно использовать для новой цели.
 
-## Куча памяти и стекКуча памяти и стек
+## Куча памяти и стек
 Теперь мы знаем, что для всего, что мы определяем в JavaScript, движок выделяет память и освобождает ее, как только она нам больше не нужна.Теперь мы знаем, что для всего, что мы определяем в JavaScript, движок выделяет память и освобождает ее, как только она нам больше не нужна.
 
 Следующий вопрос, который пришел мне в голову: где это будет храниться?Следующий вопрос, который пришел мне в голову: где это будет храниться?
@@ -346,7 +331,7 @@ JavaScript заботится об этом для нас: он выделяет
 
 Кучи и стеки-это две структуры данных, которые движок использует для разных целей.Кучи и стеки-это две структуры данных, которые движок использует для разных целей.
 
-### stack
+### Stack
 Стек-это структура данных, которую JavaScript использует для хранения статических данных. Статические данные-это данные, размер которых движок знает во время компиляции. В JavaScript это включает в себя примитивные значения (строки, числа, логическиезначения, undefinedи null) и ссылки, которые указывают на объекты и функции.
 
 Поскольку движок знает, что размер не изменится, он выделит фиксированный объем памяти для каждого значения.
@@ -365,5 +350,3 @@ JavaScript заботится об этом для нас: он выделяет
 Выделение памяти таким образом также называется динамическим распределением памяти.
 
 Чтобы получить обзор, вот особенности двух хранилищ, сравниваемых бок о бок:
-::
-[](https://felixgerschau.com/static/b452488bd7eeac0405c48f164da6280d/5a190/stack-heap-pointers.png)
