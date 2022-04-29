@@ -26,22 +26,20 @@ body {
     top: 0;
 }
 
-
-
 h1 {
     padding: 25px 0;
     font-size: 1.8em;
     font-weight: 700;
 }
 
-.buttons-box {
+.buttons-container {
     display: flex;
-    margin-bottom: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-.buttons-box .btn {
+.btn {
     display: flex;
-    align-items: center;
     gap: 5px;
     padding: 10px 10px;
     border-radius: 3px;
@@ -54,20 +52,8 @@ h1 {
 }
 
 .checked {
-    background-color: #7fc4fa !important;
-    color: white !important;
-}
-
-.buttons-box .btn:not(:last-child) {
-    margin-right: 10px;
-}
-
-.buttons-box .btn i {
-    display: none;
-}
-
-.inline {
-    display: inline !important;
+    background-color: #7fc4fa;
+    color: white;
 }
 
 .tags-box {
@@ -82,19 +68,5 @@ h1 {
     border: 1px solid #cae2f4;
     border-radius: 3px;
     font-weight: 600;
-
-}
-
-.yeni {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    padding: 10px 10px;
-    border-radius: 3px;
-    background-color: #f7fdff;
-    border: 1px solid #cae2f4;
-    font-size: 1.4em;
-    font-weight: 600;
-    color: rgb(109, 109, 109);
 
 }

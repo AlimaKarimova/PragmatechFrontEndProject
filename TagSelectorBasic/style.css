@@ -26,22 +26,20 @@ body {
     top: 0;
 }
 
-
-
 h1 {
     padding: 25px 0;
     font-size: 1.8em;
     font-weight: 700;
 }
 
-.buttons-box {
+.buttons-container {
     display: flex;
-    margin-bottom: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-.buttons-box .btn {
+.buttons-container .btn {
     display: flex;
-    align-items: center;
     gap: 5px;
     padding: 10px 10px;
     border-radius: 3px;
@@ -53,30 +51,22 @@ h1 {
 
 }
 
-.checked{
+.checked {
     background-color: #7fc4fa !important;
-    color: white!important;
+    color: white !important;
 }
 
-.buttons-box .btn:not(:last-child) {
-    margin-right: 10px;
-}
-.buttons-box .btn i{
+.buttons-container .btn i {
     display: none;
 }
-.inline{
+
+.inline {
     display: inline !important;
 }
 
-.tags-box {
-    padding: 40px 0px;
-}
-
-.tags-box textarea {
+.tags-box input {
+    margin: 40px 0;
     width: 100%;
-    height: 40px;
-    resize:none;
-    overflow: hidden;
     padding: 12px 10px;
     background-color: white;
     border: 1px solid #cae2f4;

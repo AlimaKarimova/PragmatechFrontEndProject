@@ -1,42 +1,36 @@
 let btns = document.querySelectorAll('.btn');
-let icons = document.querySelectorAll('.btn i');
-// let box=document.querySelector('.buttons-box');
+let icon = document.createElement('i');
+icon.className = "fa-regular fa-circle-check";
 
 
 
-function btnChecked() {
-    for (let btn of btns) {
-        btn.addEventListener('click', () => {
-            btn.classList.toggle('checked');
-            for (let icon of icons) {
-                if (icon.parentNode == btn) {
-                    icon.classList.toggle('inline')
-                }
-            }
-        })
-    }
-
-}
-
-btnChecked()
-
-let newBtn = document.createElement('div');
-let input = document.querySelector('input');
-let box = document.querySelector('.buttons-box');
-newBtn.className = 'yeni';
-for(let btn of btns){
-    newBtn
-}
-
-function addMovie() {
-    input.addEventListener('change', () => {
-        let inputText = input.value;
-        newBtn.innerHTML = inputText;
-        box.append(newBtn);
+for (let btn of btns) {
+    btn.addEventListener('click', (e) => {
+        btn.classList.add('checked')
 
     })
 }
-addMovie()
+for (let btn of btns) {
+    btn.addEventListener('click', (e) => {
+        btn.append(icon)
+    })
+}
+
+
+let newBtn = document.createElement('div');
+let input = document.querySelector('input');
+let box = document.querySelector('.buttons-container');
+newBtn.className = 'btn';
+
+
+input.addEventListener('change', () => {
+    let inputText = input.value;
+    newBtn.innerHTML = inputText;
+    box.append(newBtn);
+
+})
+
+
 
 
 // yalniz bir defe elave olunur ve funksionalligi yoxdur
