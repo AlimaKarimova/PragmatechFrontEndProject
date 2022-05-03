@@ -33,23 +33,34 @@
             'the shawshank redemption', 'se7en', 'the dark knight', 'goodfellas', 'the matrix'
         ];
         const moviesList = document.querySelector('.movies-list'),
-              form = document.querySelector('form'),
-              input = document.querySelector('.input');
+            form = document.querySelector('form'),
+            input = document.querySelector('.input');
 
         form.addEventListener('submit', (event) => {
             event.preventDefault();
             const newMovie = input.value;
             movieNames.push(newMovie);
-        })
+            createMovieList(movieNames, moviesList)
+            event.target.reset();
+        });
 
-        function createMovieList(films, parent) {
+        function createMovieList(items, parent) {
             parent.innerHTML = '';
-            films.forEach((film) => {
-                parent.innerHTML += `<div class="movie">${film}</div>`
+            items.forEach((item) => {
+                parent.innerHTML += `<div class="movie">${item}</div>`
             });
 
         }
         createMovieList(movieNames, moviesList)
+
+        function changeStyle(item) {
+            item.classList.toggle('checked');
+        }
+        // changeStyle(e.target);
+
+        movieNames.forEach(item => {
+            item.addEventListener('click', changeStyle(e.target))
+        });
     </script>
 
 </body>
