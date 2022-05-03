@@ -32,13 +32,13 @@ h1 {
     font-weight: 700;
 }
 
-.buttons-container {
+.movies-list {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
 }
 
-.btn {
+.movie {
     display: flex;
     gap: 5px;
     padding: 10px 10px;
@@ -56,11 +56,11 @@ h1 {
     color: white;
 }
 
-.tags-box {
+.movie-tags {
     padding: 40px 0px;
 }
 
-.tags-box input {
+.movie-tags input {
     width: 100%;
     resize: none;
     padding: 12px 10px;
@@ -68,5 +68,4 @@ h1 {
     border: 1px solid #cae2f4;
     border-radius: 3px;
     font-weight: 600;
-
 }
