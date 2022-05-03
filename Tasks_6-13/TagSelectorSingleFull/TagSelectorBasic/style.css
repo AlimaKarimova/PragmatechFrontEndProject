@@ -56,11 +56,11 @@ h1 {
     color: white;
 }
 
-.movie-tags {
+form {
     padding: 40px 0px;
 }
 
-.movie-tags input {
+input {
     width: 100%;
     resize: none;
     padding: 12px 10px;

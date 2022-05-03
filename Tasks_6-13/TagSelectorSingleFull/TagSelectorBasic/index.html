@@ -17,11 +17,14 @@
 
     <div class="box">
         <h1>Select your favorite movies</h1>
-        <div class="movies-list">
-        </div>
-        <div class="movie-tags">
-            <input type="text" name="" id="" placeholder="Add your own movie tags" value="">
-        </div>
+        <div class="movies-list"></div>
+
+        <form action="">
+            <input type="text" class="input" id="" placeholder="Add your own movie tags" value="">
+        </form>
+
+
+    </div>
     </div>
 
 
@@ -29,20 +32,24 @@
         const movieNames = ['avengers', 'shutter island', 'kong:skull island', 'grand budapest hotel', 'inception',
             'the shawshank redemption', 'se7en', 'the dark knight', 'goodfellas', 'the matrix'
         ];
+        const moviesList = document.querySelector('.movies-list'),
+              form = document.querySelector('form'),
+              input = document.querySelector('.input');
 
-        const moviesList = document.querySelector('.movies-list');
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const newMovie = input.value;
+            movieNames.push(newMovie);
+        })
 
-        movieNames.forEach((film) => {
-            moviesList.innerHTML += `<div class="movie">${film}</div>`
-        });
-        let input=document.querySelector('input');
+        function createMovieList(films, parent) {
+            parent.innerHTML = '';
+            films.forEach((film) => {
+                parent.innerHTML += `<div class="movie">${film}</div>`
+            });
 
-        let newMovie=input.value;
-        movieNames.push(newMovie);
-    
-
-
-
+        }
+        createMovieList(movieNames, moviesList)
     </script>
 
 </body>
