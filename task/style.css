@@ -1,0 +1,67 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+.price-list {
+    margin: 100px auto;
+    width: 800px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: 1px solid blue;
+}
+
+.price-list-item {
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+    transition: all 0.9s ease;
+}
+
+
+button {
+    background-color: transparent;
+    border: 1px solid rgba(12, 77, 169, 0.9);
+    color: rgba(12, 77, 169, 0.9);
+    padding: 5px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.btn-checked {
+    background-color: rgba(12, 77, 169, 0.9);
+    color: white;
+}
+
+.tarif {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.price {
+    font-size: 4em;
+    font-weight: 700;
+    color: rgba(12, 77, 169, 0.9);
+}
+
+.time {
+    font-size: 1.2em;
+    margin-top: -15px;
+    margin-bottom: 20px;
+}
+
+ul {
+    font-size: 1.2em;
+}
+
+ul li:not(:last-child) {
+    margin-bottom: 12px;
+
+}
+.zoom{
+    transform: scale(1.5);
+}
