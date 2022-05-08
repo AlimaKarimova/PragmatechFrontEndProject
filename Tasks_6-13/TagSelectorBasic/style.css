@@ -56,13 +56,8 @@ h1 {
     color: white !important;
 }
 
-.buttons-container .btn i {
-    display: none;
-}
 
-.inline {
-    display: inline !important;
-}
+
 
 .tags-box input {
     margin: 40px 0;

@@ -1,24 +1,24 @@
 let lists = document.querySelectorAll('.price-list-item');
-let buttons = document.querySelectorAll('.price-list-item button');
 let commonList = document.querySelector('.price-list');
 
 
 function colorChange(e) {
-    for (let i of buttons) {
-        if (e) {
-            e.target.classList.add('btn-checked')
-        }else{
-            e.target.classList.remove('btn-checked')
+    if(e.target.closest('price-list-item')){
+        e.target.classList.add('btn-checked');
+    }
+}
 
-        }
-
+function zoom(e) {
+    if(e.target.closest('price-list-item')){
+        e.target.classList.add('zoom');
     }
 }
 
 
 
 
-// commonList.addEventListener("click", zoom);
+
+commonList.addEventListener("click", zoom);
 commonList.addEventListener("click", colorChange);
 
 

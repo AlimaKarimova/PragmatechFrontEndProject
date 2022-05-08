@@ -13,10 +13,9 @@ function btnChecked(e) {
 
 function changeColor(e) {
     for (let btn of btns) {
-        if(e.target){
-          e.target.classList.add('checked');  
-        }
-        
+        btn.classList.remove('checked');
+        e.target.classList.add('checked');
+
     }
 };
 
