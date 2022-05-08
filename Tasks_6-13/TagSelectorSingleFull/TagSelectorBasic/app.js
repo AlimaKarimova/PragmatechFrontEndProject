@@ -22,40 +22,35 @@ function createMovieList(items, parent) {
     });
 
 }
-createMovieList(movieNames, moviesList)
+createMovieList(movieNames, moviesList);
 
-function changeStyle(item) {
-    item.classList.toggle('checked');
+function btnChecked(e) {
+    e.target.classList.toggle('checked');
 }
 
-movieNames.forEach(item => {
-    item.addEventListener('click', changeStyle(e.target))
+moviesList.addEventListener('click', function (e) {
+    if (e.target.closest('.movie')){
+        btnChecked(e);
+    }
+})
+
+
+
+
+function addIcon(e) {
+    const icon = document.createElement('i');
+    icon.className = "fa-regular fa-circle-check";
+    if (e.target.childElementCount == 0) {
+        e.target.append(icon)
+
+    } else {
+        e.target.children[0].remove();
+    }
+};
+
+
+moviesList.addEventListener('click', function (e) {
+    if (e.target.closest('.movie')) {
+        addIcon(e);
+    }
 });
-
-
-
-// let icon = document.createElement('i');
-// icon.classList = "fa-regular fa-circle-check";
-
-
-
-// function btnChecked(e) {
-//     for (let movieName of movieNames) {
-//         e.target.appendChild(icon);
-
-//     }
-// };
-
-// function changeColor(e) {
-//     for (let movieName of movieNames) {
-//         if (e.target) {
-//             e.target.classList.add('checked');
-//         }
-
-//     }
-// };
-
-// for (let movieName of movieNames) {
-//     movieName.addEventListener('click', btnChecked);
-//     movieName.addEventListener('click', changeColor);
-// }
