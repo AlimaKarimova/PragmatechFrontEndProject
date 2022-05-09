@@ -1,7 +1,8 @@
 const input = document.querySelector('.input'),
-commentBox = document.querySelector('.comments-list'),
-form = document.querySelector('form'),
-commentsCount = document.querySelector('.comments-count span');
+    commentBox = document.querySelector('.comments-list'),
+    form = document.querySelector('form'),
+    commentsCount = document.querySelector('.comments-count span');
+let count = 0;
 
 
 
@@ -18,10 +19,21 @@ input.addEventListener('change', function (e) {
         <p class="serial-number">0x2a0d29...269BBb6</p>
         <p>${commentText}</p>
     </div>`;
+    count++;
+    commentsCount.innerHTML = `${count} comments`
     commentBox.prepend(comment);
-    e.preventDefault()
 });
 
 form.addEventListener('submit', function (e) {
     e.preventDefault();
 });
+
+commentBox.addEventListener('dblclick', function (e){
+    if (e.target.closest('.comment')) {
+        e.target.remove();
+
+    }
+})
+
+git config --global user.name "NewUser"
+git config --global user.email newuser@example.com
