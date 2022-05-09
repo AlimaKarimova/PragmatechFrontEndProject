@@ -2,6 +2,7 @@ const input = document.querySelector('.input'),
 commentBox = document.querySelector('.comments-list'),
 form = document.querySelector('form'),
 commentsCount = document.querySelector('.comments-count span');
+let count = 1;
 
 
 
@@ -18,6 +19,8 @@ input.addEventListener('change', function (e) {
         <p class="serial-number">0x2a0d29...269BBb6</p>
         <p>${commentText}</p>
     </div>`;
+    count++;
+    commentsCount.innerHTML = `${count} comments`
     commentBox.prepend(comment);
     e.preventDefault()
 });
