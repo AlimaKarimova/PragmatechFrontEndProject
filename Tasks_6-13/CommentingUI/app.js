@@ -1,15 +1,21 @@
-const input = document.querySelector('input'),
+const input = document.querySelector('.input'),
     image = document.querySelector('.new-comment .img'),
-    commentBox = document.querySelector('.comments-list');
-const comment = document.createElement('div');
+    commentBox = document.querySelector('.comments-list'),
+    form = document.querySelector('form'),
+    comment = document.createElement("div"),
+    commentText = input.value;
+
 
 
 
 
 input.addEventListener('change', function (e) {
-    input.value = "";
-    comment.innerHTML = `<p> ${input.value} </p>`;
-    commentBox.insertAdjacentHTML("afterbegin", comment);
+    comment.innerHTML = `${commentText}`;
+    commentBox.insertAdjacentHTML("afterbegin", comment)
     e.preventDefault();
 
+});
+
+form.addEventListener('submit', function (e) {
+    e.preventDefault();
 });
