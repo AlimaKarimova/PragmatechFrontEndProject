@@ -28,3 +28,11 @@ input.addEventListener('change', function (e) {
 form.addEventListener('submit', function (e) {
     e.preventDefault();
 });
+
+commentBox.addEventListener('click', function(e){
+    if(e.target.closest('.comment')){
+        e.target.remove();
+        Event.stopPropagation();
+    }
+        
+})
