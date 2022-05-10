@@ -5,9 +5,7 @@ html {
 
 .price-list {
     margin: 100px auto;
-    width: 800px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
     border: 1px solid blue;
 }
 

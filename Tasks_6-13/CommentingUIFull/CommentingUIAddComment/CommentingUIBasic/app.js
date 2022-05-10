@@ -1,7 +1,7 @@
 const input = document.querySelector('.input'),
-commentBox = document.querySelector('.comments-list'),
-form = document.querySelector('form'),
-commentsCount = document.querySelector('.comments-count span');
+    commentBox = document.querySelector('.comments-list'),
+    form = document.querySelector('form'),
+    commentsCount = document.querySelector('.comments-count span');
 let count = 1;
 
 
@@ -29,10 +29,13 @@ form.addEventListener('submit', function (e) {
     e.preventDefault();
 });
 
-commentBox.addEventListener('click', function(e){
-    if(e.target.closest('.comment')){
-        e.target.remove();
-        Event.stopPropagation();
-    }
-        
-})
+const commet = document.querySelector('.commet');
+commet.addEventListener('click', function (e) {
+    e.currentTarget.remove();
+    count--;
+    commentsCount.innerHTML = `${count} comments`;
+
+
+});
+// if (e.target.className == 'all-comments-content-item') {
+//     e.target.remove();
