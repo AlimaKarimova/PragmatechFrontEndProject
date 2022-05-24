@@ -27,11 +27,11 @@ input.addEventListener('change', function (e) {
 	const comments = document.querySelectorAll('.comment');
 	comments.forEach(comment => {
 		comment.addEventListener('dblclick', function (e) {
-			comment.remove();
 			e.stopPropagation();
-			count--;
+			comment.remove();
+
 		})
-	})
+	});
 });
 
 form.addEventListener('submit', function (e) {
@@ -43,8 +43,8 @@ form.addEventListener('submit', function (e) {
 const comments = document.querySelectorAll('.comment');
 comments.forEach(comment => {
 	comment.addEventListener('dblclick', function (e) {
-		comment.remove();
 		e.stopPropagation();
+		comment.remove();
 
 	})
 })

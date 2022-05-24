@@ -1,13 +1,6 @@
-const username = document.querySelector('#email');
+const formsBox = document.forms;
 
-function checkUsername(e) {
-    // e.preventDefault();
-    // if (username.value == null || username.value.indexOf('@') == -1 ||
-    //     username.value.indexOf('.') == -1) {
-    //     username.classList('red');
-
-    // }
-    username.value.innerHTML += 'salam';
-
+function hideForm(){
+    formsBox[1].style.display='none';
 }
-username.addEventListener('click', checkUsername);
+hideForm();
