@@ -38,6 +38,7 @@ const quizBox = document.querySelector('.quiz-box');
 const startBtn = document.getElementById('startBtn');
 const submitBtn = document.getElementById('submitBtn');
 const startBox = document.querySelector('.start-box');
+const answerElements = document.querySelectorAll('.answer');
 const questionElement = document.getElementById('question');
 const a_text = document.getElementById('a_text');
 const b_text = document.getElementById('b_text');
@@ -54,6 +55,22 @@ function firstQuiz() {
     c_text.innerText = currentQuizData.c;
 }
 
+function deselectAnswers() {
+    answerElements.forEach(answerEl => answerEl.checked = false)
+}
+
+function getSelected() {
+    let answer;
+
+    answerElements.forEach(answerEl => {
+        if (answerEl.checked) {
+            answer = answerEl.id;
+        }
+    });
+
+    return answer;
+}
+
 startBtn.addEventListener('click', () => {
     startBox.classList.add('hide');
 });
@@ -67,9 +84,19 @@ startBtn.addEventListener('click', () => {
 
 
 function nextQuestion() {
-    currentQuiz++;
-    if (currentQuiz < quizData.length) {
-        firstQuiz();
+    const answer = getSelected();
+
+    if (answer) {
+        if (answer === quizData[currentQuiz].correct) {
+            score++;
+        }
+        currentQuiz++;
+        if (currentQuiz < quizData.length) {
+            firstQuiz();
+        } else {
+            quizBox.innerHTML = `<h4>You answered correctly at ${score}/${quizData.length} questions</h4>
+        <div class="btn-container"><button class="btn">Reload</button></div>`;
+        }
     }
 }
 
