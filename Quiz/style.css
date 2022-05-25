@@ -33,7 +33,12 @@ h4 {
     font-weight: 700;
 }
 
-.btn {
+#startBtn {
+    padding: 5px 20px;
+    border-radius: 10px;
+    border: none;
+}
+#submitBtn{
     padding: 5px 20px;
     border-radius: 10px;
     border: none;
@@ -69,45 +74,5 @@ h4 {
     border: 1px solid transparent;
 }
 
-.quiz-box ul li:hover {
-    background-color: rgb(234, 183, 16);
-    transform: scale(1.05);
-    border: 1px solid rgb(174, 138, 20);
-    box-shadow: 1px 1px 1px 2px;
 
-}
-
-/* admin.html styles */
-
-.wrapper {
-    width: 600px;
-    margin: 20px auto;
-}
-
-h3 {
-    text-align: center;
-}
-
-form {
-    background-color: rgb(224, 129, 129);
-    padding: 20px 30px;
-}
-
-label,
-input,
-button {
-    width: 100%;
-}
-
-label {
-    color: rgb(245, 237, 237);
-}
-
-form div {
-    margin-bottom: 20px;
-}
-
-form button {
-    padding: 3px 8px;
-}
 

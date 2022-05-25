@@ -1,0 +1,31 @@
+.wrapper {
+    width: 600px;
+    margin: 20px auto;
+}
+
+h3 {
+    text-align: center;
+}
+
+form {
+    background-color: rgb(224, 129, 129);
+    padding: 20px 30px;
+}
+
+label,
+input,
+button {
+    width: 100%;
+}
+
+label {
+    color: rgb(245, 237, 237);
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+form button {
+    padding: 3px 8px;
+}
