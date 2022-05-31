@@ -5,9 +5,8 @@
 }
 
 body {
-  font-family: 'Jost', sans-serif;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+  box-sizing: border-box;
   background-color: #f7f8fd;
 }
 
@@ -28,13 +27,13 @@ ul {
   font: 700 20px/normal inherit;
 }
 
-.title-18, .list .list-text h4, .menu .menu-nav h3, .roadmap-board .row h3 {
+.title-18, .roadmap-board .row h3, .menu .menu-nav h3, .list .list-text h4 {
   font-weight: 700;
   font-size: 18px;
   color: #3a4374;
 }
 
-.text-16-400, .list .list-text p, .roadmap-board .row ul {
+.text-16-400, .roadmap-board .row ul, .list .list-text p {
   font-weight: 400;
   font-size: 16px;
   color: #647196;
@@ -45,7 +44,7 @@ ul {
   font-size: 16px;
 }
 
-.text-16-700, .list .comments span, .roadmap-board .row ol {
+.text-16-700, .roadmap-board .row ol, .list .comments span {
   font-weight: 700;
   font-size: 16px;
 }
@@ -55,12 +54,12 @@ ul {
   font-size: 15px;
 }
 
-.text-14-700, .button_purple, .form-box .button-box a:nth-child(2), .menu .menu-btn a, .button_blue, .button_grey, .form-box .button-box a:nth-child(1), .button_red, .go-back_transparent, .form-box .btn a, .form-box form h4 {
+.text-14-700, .form-box form h4, .go-back_transparent, .form-box .btn a, .button_red, .button_grey, .form-box .button-box a:nth-child(1), .button_blue, .button_purple, .menu .menu-btn a, .form-box .button-box a:nth-child(2) {
   font-weight: 700;
   font-size: 14px;
 }
 
-.text-14-400, .form-box form label, .menu .menu-nav span {
+.text-14-400, .menu .menu-nav span, .form-box form label {
   font-weight: 400;
   font-size: 14px;
 }
@@ -70,7 +69,7 @@ ul {
   font-size: 13px;
 }
 
-.text-13-700, .element, .list .count span, .list .list-text a, .roadmap-board .row a {
+.text-13-700, .roadmap-board .row a, .element, .list .list-text a, .list .count span {
   font-weight: 700;
   font-size: 13px;
 }
@@ -84,13 +83,13 @@ ul {
   font: 700 20px/normal inherit;
 }
 
-.title-18, .list .list-text h4, .menu .menu-nav h3, .roadmap-board .row h3 {
+.title-18, .roadmap-board .row h3, .menu .menu-nav h3, .list .list-text h4 {
   font-weight: 700;
   font-size: 18px;
   color: #3a4374;
 }
 
-.text-16-400, .list .list-text p, .roadmap-board .row ul {
+.text-16-400, .roadmap-board .row ul, .list .list-text p {
   font-weight: 400;
   font-size: 16px;
   color: #647196;
@@ -101,7 +100,7 @@ ul {
   font-size: 16px;
 }
 
-.text-16-700, .list .comments span, .roadmap-board .row ol {
+.text-16-700, .roadmap-board .row ol, .list .comments span {
   font-weight: 700;
   font-size: 16px;
 }
@@ -111,12 +110,12 @@ ul {
   font-size: 15px;
 }
 
-.text-14-700, .button_purple, .form-box .button-box a:nth-child(2), .menu .menu-btn a, .button_blue, .button_grey, .form-box .button-box a:nth-child(1), .button_red, .go-back_transparent, .form-box .btn a, .form-box form h4 {
+.text-14-700, .form-box form h4, .go-back_transparent, .form-box .btn a, .button_red, .button_grey, .form-box .button-box a:nth-child(1), .button_blue, .button_purple, .menu .menu-btn a, .form-box .button-box a:nth-child(2) {
   font-weight: 700;
   font-size: 14px;
 }
 
-.text-14-400, .form-box form label, .menu .menu-nav span {
+.text-14-400, .menu .menu-nav span, .form-box form label {
   font-weight: 400;
   font-size: 14px;
 }
@@ -126,22 +125,21 @@ ul {
   font-size: 13px;
 }
 
-.text-13-700, .element, .list .count span, .list .list-text a, .roadmap-board .row a {
+.text-13-700, .roadmap-board .row a, .element, .list .list-text a, .list .count span {
   font-weight: 700;
   font-size: 13px;
 }
 
-.button-basic, .button_purple, .form-box .button-box a:nth-child(2), .menu .menu-btn a, .button_blue, .button_grey, .form-box .button-box a:nth-child(1), .button_red {
+.button-basic, .button_red, .button_grey, .form-box .button-box a:nth-child(1), .button_blue, .button_purple, .menu .menu-btn a, .form-box .button-box a:nth-child(2) {
   padding: 12px 25px;
   border-radius: 10px;
 }
 
-.button_purple, .form-box .button-box a:nth-child(2), .menu .menu-btn a {
+.button_purple, .menu .menu-btn a, .form-box .button-box a:nth-child(2) {
   background-color: #ad1fea;
   color: white;
 }
-
-.button_purple:hover, .form-box .button-box a:hover:nth-child(2), .menu .menu-btn a:hover {
+.button_purple:hover, .menu .menu-btn a:hover, .form-box .button-box a:hover:nth-child(2) {
   background-color: #C75AF6;
 }
 
@@ -149,7 +147,6 @@ ul {
   background-color: #4661e6;
   color: white;
 }
-
 .button_blue:hover {
   background-color: #7C91F9;
 }
@@ -158,7 +155,6 @@ ul {
   background-color: #3a4374;
   color: white;
 }
-
 .button_grey:hover, .form-box .button-box a:hover:nth-child(1) {
   background-color: #656EA3;
 }
@@ -167,19 +163,17 @@ ul {
   background-color: #D73737;
   color: white;
 }
-
 .button_red:hover {
   background-color: #E98888;
 }
 
-.go-back_basic, .go-back_transparent, .form-box .btn a, .go-back_dark {
+.go-back_basic, .go-back_dark, .go-back_transparent, .form-box .btn a {
   border-radius: 10px;
 }
 
 .go-back_transparent, .form-box .btn a {
   color: #647196;
 }
-
 .go-back_transparent:hover, .form-box .btn a:hover {
   text-decoration: underline;
 }
@@ -188,12 +182,11 @@ ul {
   padding: 15px 40px 15px 60px;
   background-color: #373f68;
 }
-
 .go-back_dark:hover {
   text-decoration: underline;
 }
 
-.element, .list .count span, .list .list-text a {
+.element, .list .list-text a, .list .count span {
   min-width: 20px;
   display: inline-block;
   padding: 5px 10px;
@@ -202,17 +195,14 @@ ul {
   background-color: #F2F4FF;
   color: #4661e6;
 }
-
-.element i, .list .count span i, .list .list-text a i {
+.element i, .list .list-text a i, .list .count span i {
   color: #4661E6;
 }
-
-.element:hover, .list .count span:hover, .list .list-text a:hover {
+.element:hover, .list .list-text a:hover, .list .count span:hover {
   background-color: #CFD7FF;
   color: #4661e6;
 }
-
-.element:active, .list .count span:active, .list .list-text a:active {
+.element:active, .list .list-text a:active, .list .count span:active {
   background-color: #4661e6;
   color: white;
 }
@@ -223,17 +213,11 @@ ul {
   margin-bottom: 30px;
   border-radius: 10px;
 }
-
 .elements-board .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  justify-content: start;
   margin-bottom: 14px;
 }
-
 .elements-board .row a {
   margin-right: 8px;
 }
@@ -241,19 +225,17 @@ ul {
 .feedback-board {
   height: 137px;
   border-radius: 10px;
-  background: #28a7ed;
+  background: rgb(40, 167, 237);
   background: radial-gradient(128.88% 128.88% at 103.9% -10.39%, #E84D70 0%, #A337F6 53.09%, #28A7ED 100%);
   position: relative;
   margin-bottom: 30px;
 }
-
 .feedback-board h3 {
   color: white;
   position: absolute;
   left: 25px;
   bottom: 50px;
 }
-
 .feedback-board p {
   color: white;
   position: absolute;
@@ -269,19 +251,16 @@ ul {
   border-radius: 10px;
   position: relative;
 }
-
 .form-box .btn {
   position: absolute;
   top: -90px;
   left: -5px;
 }
-
 .form-box .btn a i {
   color: #4661e6;
 }
-
 .form-box::before {
-  content: "\002B";
+  content: "+";
   position: absolute;
   top: -28px;
   width: 56px;
@@ -293,20 +272,16 @@ ul {
   font-weight: 700;
   font-size: 35px;
 }
-
 .form-box h3 {
   color: #3a4374;
   margin-bottom: 40px;
 }
-
 .form-box form h4 {
   color: #3a4374;
 }
-
 .form-box form label {
   color: #647196;
 }
-
 .form-box form input,
 .form-box form textarea,
 .form-box form select {
@@ -319,25 +294,17 @@ ul {
   border-radius: 5px;
   resize: none;
 }
-
 .form-box form input:focus {
   border: 1px solid blue;
 }
-
 .form-box .button-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  justify-content: end;
   margin-top: 30px;
 }
-
 .form-box .button-box a:nth-child(1) {
   color: white;
 }
-
 .form-box .button-box a:nth-child(2) {
   color: white;
   margin-left: 15px;
@@ -349,149 +316,102 @@ ul {
   background-color: white;
   border-radius: 10px;
   padding: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .list .count span {
   color: #3A4374;
 }
-
 .list .list-text {
   margin-left: 30px;
 }
-
 .list .list-text h4 {
   margin-bottom: 8px;
 }
-
 .list .list-text p {
   margin-bottom: 8px;
 }
-
 .list .list-text a {
   display: inline-block;
 }
-
 .list .comments {
   position: absolute;
   right: 10px;
 }
-
 .list .comments i {
   color: #CDD2EE;
 }
-
 .menu {
   width: 825px;
   height: 72px;
   background-color: #373f68;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   border-radius: 10px;
 }
-
 .menu .menu-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   gap: 10px;
   margin-left: 30px;
 }
-
 .menu .menu-nav i {
   color: white;
   font-size: 14px;
 }
-
 .menu .menu-nav i:last-child {
   position: relative;
   top: 4px;
 }
-
 .menu .menu-nav h3 {
   color: white;
 }
-
 .menu .menu-nav span {
   color: white;
   position: relative;
   top: 2px;
 }
-
 .menu .menu-btn {
   margin-right: 15px;
 }
-
 .menu .menu-btn a {
   color: white;
 }
 
 .roadmap-board {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 25px;
   border-radius: 10px;
   background-color: white;
   padding: 25px;
 }
-
 .roadmap-board .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 .roadmap-board .row h3 {
   display: inline-block;
   color: #3A4374;
 }
-
 .roadmap-board .row a {
   color: #4661e6;
   text-decoration: underline;
 }
-
 .roadmap-board .row ul {
   display: inline-block;
   color: #647196;
 }
-
 .roadmap-board .row ul li {
   margin-bottom: 8px;
 }
-
 .roadmap-board .row ol {
   display: inline-block;
   list-style: none;
   color: #647196;
 }
-
 .roadmap-board .row ol li {
   margin-bottom: 8px;
 }

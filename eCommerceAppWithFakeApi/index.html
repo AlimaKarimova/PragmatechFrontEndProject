@@ -2,50 +2,90 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- css links -->
-    <link rel="stylesheet" href="./css/style.css">
-    <!-- fonts links -->
-    <!-- Jost -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- work sans -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital@1&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- icons link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- css links -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- fonts links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <header class="header">
-        <div class="container">
-            <nav class="nav">
-                <div class="nav-logo">
-                    <a href="">
-                        <img src="./icons/logo-light.png" alt=""></a>
-                </div>
-                <div class="nav-menu">
-                    <ul>
-                        <li>Home</li>
-                        <li>Shop</li>
-                        <li>Product</li>
-                        <li>pages</li>
-                        <li>Docs</li>
-                    </ul>
-                </div>
-            </nav>
-            <div class="info-bar">dnm dmng </div> 
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <div class="header-logo">
+          <img src="./icons/logo.png" alt="logo">
         </div>
-    </header>
-    <div class="wrapper">
-        <main class="main"></main>
-        <footer class="footer"></footer>
+        <nav class="header-nav">
+          <span class="header-nav-item">home</span>
+          <span class="header-nav-item">products</span>
+          <span class="header-nav-item">shop</span>
+          <span class="header-nav-item">blog</span>
+          <span class="header-nav-item">pages</span>
+          <span class="header-nav-item">contact</span>
+        </nav>
+        <div class="header-info">
+          <span class="header-info-item">login</span>
+          <span class="header-info-item">register</span>
+          <span class="header-info-item">cart(3)</span>
+          <span class="header-info-item"><i class="fa-solid fa-user"></i></span>
+          <span class="header-info-item"><i class="fa-solid fa-magnifying-glass"></i></span>
+        </div>
+      </div>
     </div>
-    
+  </header> <!-- header end -->
+
+
+  <div class="wrapper">
+
+    <div class="container">
+
+      <main class="main">
+        <section class="slideshow">
+
+          <div class="slideshow-container">
+
+            <div class="slide fade">
+              <img src="./images/slideshow-1.jpg" style="width:100%">
+              <div class="text">Caption Text</div>
+            </div>
+
+            <div class="slide fade">
+              <img src="./images/slideshow-2.jpg" style="width:100%">
+              <div class="text">Caption Text</div>
+            </div>
+
+            <div class="slide fade">
+              <img src="./images/slideshow-3.jpg" style="width:100%">
+              <div class="text">Caption Text</div>
+            </div>
+
+            <span class="slideshow-left-arrow"><i class="fa-solid fa-chevron-left"></i></i></span>
+            <span class="slideshow-right-arrow"><i class="fa-solid fa-chevron-right"></i></i></span>
+
+
+
+          </div> <!-- slideshow-container end -->
+
+        </section> <!-- slideshow end -->
+
+      </main> <!-- main end -->
+
+      <footer class="footer"></footer> <!-- footer end -->
+
+    </div> <!-- container end -->
+
+  </div> <!-- wrapper end -->
 
 
 
@@ -57,14 +97,7 @@
 
 
 
-
-
-
-
-
-
-
-
+  <script src="./js/index.js"></script>
 
 </body>
 

@@ -16,44 +16,35 @@ a {
   width: 1170px;
   margin: 0 auto;
   padding: 50px 0px;
-  display: -ms-grid;
   display: grid;
   place-items: center;
   text-align: center;
 }
-
 .container h2 {
   font: 700 30px/1 droid-sans, sans-serif;
   margin-bottom: 10px;
 }
-
 .container p {
-  font: 400 14px/1.42857143 'muli', sans-serif;
+  font: 400 14px/1.42857143 "muli", sans-serif;
   padding: 0px 17px 17px;
   margin-bottom: 10px;
   color: #333;
 }
-
 .container-items {
   margin-top: 60px;
-  display: -ms-grid;
   display: grid;
   place-items: center;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 50px;
 }
-
 .container-items .container-item {
   background-color: white;
   position: relative;
   padding: 15px 0px;
-  display: -ms-grid;
   display: grid;
   place-items: center;
   text-align: center;
 }
-
 .container-items .container-item .number {
   width: 100%;
   position: relative;
@@ -61,46 +52,37 @@ a {
   text-align: end;
   border-bottom: 1px solid #19d3ca;
 }
-
 .container-items .container-item .number span {
   position: relative;
   top: 35px;
   font-size: 72px;
   line-height: 72px;
   color: #e9e9e9;
-  -webkit-transition: all .3s ease-out;
-  transition: all .3s ease-out;
+  transition: all 0.3s ease-out;
 }
-
 .container-items .container-item:hover .number span {
   top: 10px;
 }
-
 .container-items .container-item h2 {
   padding: 13px 0px;
 }
-
 .container-items .container-item i {
   font-size: 52px;
   line-height: 120px;
   width: 130px;
   height: 130px;
   margin: 20px;
-  -webkit-transition: all .8s ease;
-  transition: all .8s ease;
+  transition: all 0.8s ease;
   color: #fff;
   border-radius: 10px;
   background: #19d3ca;
-  transition: all .8s ease;
+  transition: all 0.8s ease;
 }
-
 .container-items .container-item:hover i {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
-
 .container-items .container-item a {
-  font: 400 14px/1.42857143 'muli', sans-serif;
+  font: 400 14px/1.42857143 "muli", sans-serif;
   padding: 0px 17px 17px;
   margin-bottom: 10px;
   color: #333;
@@ -109,10 +91,8 @@ a {
   color: #fff;
   border-radius: 40px;
   background-color: #19d3ca;
-  -webkit-transition: all .4s ease;
-  transition: all .4s ease;
+  transition: all 0.4s ease;
 }
-
 .container-items .container-item a:hover {
   background-color: #14a59e;
 }
