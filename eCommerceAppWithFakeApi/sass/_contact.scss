@@ -1,0 +1,24 @@
+.contact-conteiner {
+    padding-top: 30px;
+    display: flex;
+
+    &-item {
+        flex-basis: 33%;
+        text-align: center;
+
+        span {
+            i {
+                background-color: black;
+                color: white;
+                font-size: 4.1rem;
+                padding: 50px;
+            }
+        }
+        h4{
+            @include text(inherit,500,2.5rem);
+            text-transform: capitalize;
+        }
+
+
+    }
+}
