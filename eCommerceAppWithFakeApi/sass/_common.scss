@@ -2,6 +2,7 @@
     width: 1140px;
     padding: 0 15px;
     margin: 0 auto;
+
 }
 
 .wrapper {
@@ -23,4 +24,11 @@ footer {
     font-family: $family;
     font-weight: $weight;
     font-size: $size;
+}
+
+.hidden{
+    display:none !important;
+}
+.active{
+    display: block !important;
 }

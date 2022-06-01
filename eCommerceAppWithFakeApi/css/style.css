@@ -89,6 +89,14 @@ footer {
   flex: 0 0 auto;
 }
 
+.hidden {
+  display: none !important;
+}
+
+.active {
+  display: block !important;
+}
+
 .header {
   padding-top: 40px;
 }
@@ -103,7 +111,16 @@ footer {
   font-family: inherit;
   font-weight: 500;
   font-size: 1.3rem;
+  display: inline-block;
   padding-right: 25px;
+  position: relative;
+}
+.header .header-nav-item .dropdown-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 30px;
+  left: 10px;
 }
 .header .header-info-item {
   font-family: inherit;
@@ -121,6 +138,17 @@ footer {
 .slideshow-container .slide {
   display: none;
 }
+.slideshow-container .slide img {
+  height: 700px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.slideshow-container .slide-text {
+  position: absolute;
+  top: 50%;
+  left: 90px;
+}
 .slideshow-container .slideshow-left-arrow,
 .slideshow-container .slideshow-right-arrow {
   position: absolute;
@@ -136,4 +164,56 @@ footer {
 }
 .slideshow-container .slideshow-right-arrow {
   right: 0;
+}
+
+.carousel {
+  padding-top: 70px;
+  width: 100%;
+  height: 460px;
+  overflow: hidden;
+}
+.carousel .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.carousel h3 {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  padding: 10px 0;
+}
+.carousel .next-back {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.carousel .next-back .horizontal {
+  border-right: 1px solid black;
+}
+.carousel-container {
+  width: 2220px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  position: relative;
+}
+.carousel-container .carousel-slider {
+  width: 1110px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.carousel-container .carousel-slider .product-box {
+  border: 1px solid rgba(50, 50, 50, 0.15);
+}
+.carousel-container .carousel-slider .product-box .product-image img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }

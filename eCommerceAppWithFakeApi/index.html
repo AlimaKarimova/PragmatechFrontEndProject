@@ -27,7 +27,7 @@
           <img src="./icons/logo.png" alt="logo">
         </div>
         <nav class="header-nav">
-          <span class="header-nav-item">home</span>
+          <span class="header-nav-item">home </span>
           <span class="header-nav-item">products</span>
           <span class="header-nav-item">shop</span>
           <span class="header-nav-item">blog</span>
@@ -56,28 +56,112 @@
           <div class="slideshow-container">
 
             <div class="slide fade">
-              <img src="./images/slideshow-1.jpg" style="width:100%">
-              <div class="text">Caption Text</div>
+              <img src="./images/slideshow-1.jpg">
+              <div class="slide-text">Caption Text</div>
             </div>
 
             <div class="slide fade">
-              <img src="./images/slideshow-2.jpg" style="width:100%">
-              <div class="text">Caption Text</div>
+              <img src="./images/slideshow-2.jpg">
+              <div class="slide-text">Caption Text</div>
             </div>
 
             <div class="slide fade">
-              <img src="./images/slideshow-3.jpg" style="width:100%">
-              <div class="text">Caption Text</div>
+              <img src="./images/slideshow-3.jpg">
+              <div class="slide-text">Caption Text</div>
             </div>
 
-            <span class="slideshow-left-arrow"><i class="fa-solid fa-chevron-left"></i></i></span>
-            <span class="slideshow-right-arrow"><i class="fa-solid fa-chevron-right"></i></i></span>
+            <span class="slideshow-left-arrow" onclick="plusSlides(-1)"><i
+                class="fa-solid fa-chevron-left"></i></i></span>
+            <span class="slideshow-right-arrow" onclick="plusSlides(1)"><i
+                class="fa-solid fa-chevron-right"></i></i></span>
 
 
 
           </div> <!-- slideshow-container end -->
 
         </section> <!-- slideshow end -->
+
+        <section class="carousel">
+          <div class="title">
+            <h3>offer arrival</h3>
+            <div class="next-back">
+              <span id="backBtn" onclick="backSlide()">Back</span>
+              <span class="horizontal"></span>
+              <span id="nextBtn" onclick="nextSlide()">Next</span>
+            </div>
+          </div>
+          <div class="carousel-container">
+            <div class="carousel-slider">
+              <div class="product-box">
+                <div class="product-image">
+                  <img src="./images/chair-1-1.jpg" alt="">
+                  <img src="./images/chair-1-2.jpg" alt="" style="display:none">
+                </div>
+                <h3></h3>
+                <div class="product-content"></div>
+              </div>
+              <div class="product-box">
+                <div class="product-image">
+                  <img src="./images/chair-1-1.jpg" alt="">
+                  <img src="./images/chair-1-2.jpg" alt="" style="display:none">
+                </div>
+                <h3></h3>
+                <div class="product-content"></div>
+              </div>
+              <div class="product-box">
+                <div class="product-image">
+                  <img src="./images/chair-1-1.jpg" alt="">
+                  <img src="./images/chair-1-2.jpg" alt="" style="display:none">
+                </div>
+                <h3></h3>
+                <div class="product-content"></div>
+              </div>
+              <div class="product-box">
+                <div class="product-image">
+                  <img src="./images/chair-1-1.jpg" alt="">
+                  <img src="./images/chair-1-2.jpg" alt="" style="display:none">
+                </div>
+                <h3></h3>
+                <div class="product-content"></div>
+              </div>
+            </div>
+            <div class="carousel-slider">
+              <div class="product-box">
+                <div class="product-image">
+                  <img src="./images/chair-1-1.jpg" alt="">
+                  <img src="./images/chair-1-2.jpg" alt="">
+                </div>
+                <h3>salam</h3>
+                <div class="product-content"></div>
+              </div>
+              <div class="product-box">
+                <div class="product-image">
+                  <img src="./images/chair-1-1.jpg" alt="">
+                  <img src="./images/chair-1-2.jpg" alt="" style="display:none">
+                </div>
+                <h3></h3>
+                <div class="product-content"></div>
+              </div>
+              <div class="product-box">
+                <div class="product-image">
+                  <img src="./images/chair-1-1.jpg" alt="">
+                  <img src="./images/chair-1-2.jpg" alt="" style="display:none">
+                </div>
+                <h3></h3>
+                <div class="product-content"></div>
+              </div>
+              <div class="product-box">
+                <div class="product-image">
+                  <img src="./images/chair-1-1.jpg" alt="">
+                  <img src="./images/chair-1-2.jpg" alt="" style="display:none">
+                </div>
+                <h3></h3>
+                <div class="product-content"></div>
+              </div>
+            </div>
+
+          </div>
+        </section>
 
       </main> <!-- main end -->
 
