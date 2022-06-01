@@ -1,0 +1,51 @@
+.header {
+    padding-top: 40px;
+
+    &-inner {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-transform: uppercase;
+    }
+
+    .header-nav-item {
+        @include text(inherit, 500, 1.3rem);
+        display: inline-block;
+        padding-right: 25px;
+        position: relative;
+
+        &:hover {
+            color: #fd7e14;
+        }
+
+        &:hover .submenu {
+            display: block;
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 50px;
+            left: 20px;
+            z-index: 10;
+            min-width: 230px;
+            transition: 0.3s;
+            background: #ffffff;
+            box-shadow: 0px 5px 8px rgb(106 106 106 / 40%);
+            border: 1px solid #ebebeb;
+
+            li {
+                border-bottom: 1px solid #b0c6c64d;
+                padding: 10px;
+            }
+        }
+
+    }
+
+    .header-info-item {
+        @include text(inherit, 400, 1.2rem);
+        padding-right: 25px;
+    }
+
+}
