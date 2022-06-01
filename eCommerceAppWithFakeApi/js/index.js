@@ -26,13 +26,3 @@ function showSlides(n) {
   }
   slides[slideIndex - 1].style.display = "block";
 };
-
-const carouselContainer = document.querySelector('.carousel-container');
-
-function backSlide() {
-  carouselContainer.style.left = "1110px";
-}
-
-function nextSlide() {
-  carouselContainer.style.right = "1110px";
-}
