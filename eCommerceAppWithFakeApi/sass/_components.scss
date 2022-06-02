@@ -6,14 +6,14 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        text-transform: uppercase;
     }
 
     .header-nav-item {
         padding-right: 25px;
         position: relative;
         display: inline-block;
-        @include text(inherit, 500, 1.3rem);
+        @extend %small-title;
+
 
         &:hover {
             color: #fd7e14;
