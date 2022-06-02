@@ -98,6 +98,16 @@ footer {
   display: block !important;
 }
 
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
 .title {
   text-transform: uppercase;
   font-size: 1.6rem;
@@ -111,14 +121,21 @@ footer {
   font-size: 3.3rem;
 }
 
-.row {
-  display: flex;
-  flex-direction: row;
+label {
+  font-size: 1.5rem;
 }
 
-.column {
-  display: flex;
-  flex-direction: column;
+input[type=text],
+input[type=password],
+input[type=email],
+textarea {
+  margin: 10px 0px;
+  padding: 0 0 0 10px;
+  height: 45px;
+  font-size: 1.5rem;
+  border: 1px solid #eaedff;
+  border-radius: 0;
+  color: #646363;
 }
 
 .required {
@@ -155,12 +172,12 @@ footer {
   text-transform: uppercase;
 }
 .header .header-nav-item {
+  padding-right: 25px;
+  position: relative;
+  display: inline-block;
   font-family: inherit;
   font-weight: 500;
   font-size: 1.3rem;
-  display: inline-block;
-  padding-right: 25px;
-  position: relative;
 }
 .header .header-nav-item:hover {
   color: #fd7e14;
@@ -169,11 +186,11 @@ footer {
   display: block;
 }
 .header .header-nav-item .submenu {
-  display: none;
   position: absolute;
   top: 50px;
   left: 20px;
   z-index: 10;
+  display: none;
   min-width: 230px;
   transition: 0.3s;
   background: #ffffff;
@@ -181,14 +198,14 @@ footer {
   border: 1px solid #ebebeb;
 }
 .header .header-nav-item .submenu li {
-  border-bottom: 1px solid rgba(176, 198, 198, 0.3019607843);
   padding: 10px;
+  border-bottom: 1px solid rgba(176, 198, 198, 0.3019607843);
 }
 .header .header-info-item {
+  padding-right: 25px;
   font-family: inherit;
   font-weight: 400;
   font-size: 1.2rem;
-  padding-right: 25px;
 }
 
 .footer {
@@ -196,28 +213,28 @@ footer {
   flex-direction: column;
 }
 .footer-nav {
+  padding: 80px 0px 30px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   border-bottom: 1px solid #e9e9e9;
-  padding: 80px 0px 30px;
 }
 .footer-nav-item h4 {
+  margin-bottom: 25px;
   font-family: inherit;
   font-weight: 500;
   font-size: 1.3rem;
   text-transform: uppercase;
-  margin-bottom: 25px;
 }
 .footer-nav-item ul li {
-  font-size: 1.3rem;
-  color: #888888;
-  text-transform: capitalize;
   padding: 6px 0px;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  color: #888888;
 }
 .footer-social {
+  padding: 30px 0px;
   display: flex;
   justify-content: space-between;
-  padding: 30px 0px;
 }
 .footer-social .copyright-text {
   font-size: 1.3rem;
@@ -263,13 +280,13 @@ footer {
 }
 .slideshow-container .slideshow-left-arrow,
 .slideshow-container .slideshow-right-arrow {
+  padding: 5px 15px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  font-size: 2rem;
   background-color: #abb7be;
   color: white;
-  padding: 5px 15px;
-  font-size: 2rem;
 }
 .slideshow-container .slideshow-left-arrow {
   left: 0;
@@ -279,8 +296,8 @@ footer {
 }
 
 .newsletter {
-  background: #f4f4f4;
   padding: 80px 0px;
+  background: #f4f4f4;
 }
 .newsletter-container {
   text-align: center;
@@ -292,29 +309,17 @@ footer {
   text-transform: uppercase;
 }
 .newsletter-container p {
-  font-size: 1.2rem;
-  color: #888888;
-  font-style: italic;
   margin: 17px 0 30px;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #888888;
 }
 .newsletter-container .newsletter-form input {
   padding: 10px;
   width: 40%;
-  color: #888888;
   font-size: 14px;
+  color: #888888;
   border: 1px solid #ececec;
-}
-.newsletter-container .newsletter-form button {
-  background: #000;
-  font-size: 12px;
-  text-transform: uppercase;
-  color: #ffffff;
-  padding: 15px 25px;
-  border: 1px solid #ececec;
-  font-weight: 500;
-  letter-spacing: 1px;
-  transition: 0.3s;
-  line-height: 15px;
 }
 
 .carousel {
@@ -383,14 +388,14 @@ footer {
   text-align: center;
 }
 .contact-conteiner-item span {
-  display: inline-block;
   margin-bottom: 30px;
+  display: inline-block;
 }
 .contact-conteiner-item span i {
+  padding: 50px 60px;
+  font-size: 4.1rem;
   background-color: black;
   color: white;
-  font-size: 4.1rem;
-  padding: 50px 60px;
 }
 .contact-conteiner-item h4 {
   font-family: inherit;
@@ -405,32 +410,148 @@ footer {
 }
 
 .contact-form {
-  width: 900px;
   margin: 0 auto;
   padding: 80px 0px 50px;
+  width: 900px;
 }
 .contact-form form {
   display: flex;
   flex-direction: column;
-}
-.contact-form form label {
-  font-size: 1.5rem;
-}
-.contact-form form input[type=text],
-.contact-form form input[type=password],
-.contact-form form input[type=email],
-.contact-form form textarea {
-  border: 1px solid #eaedff;
-  border-radius: 0;
-  color: #646363;
-  height: 45px;
-  padding: 0 0 0 10px;
-  margin: 10px 0px;
-  font-size: 15px;
 }
 
 .contact-map {
   height: 600px;
   width: 100%;
   overflow: hidden;
+}
+
+.login form {
+  margin: auto;
+  width: 500px;
+}
+.login form button:first-child {
+  margin-right: 10px;
+}
+.login form .checkbox {
+  margin-top: 20px;
+}
+.login form .checkbox span {
+  margin-left: 30px;
+  font-size: 1.5rem;
+}
+
+.slideshow {
+  padding-top: 70px;
+}
+.slideshow-container {
+  position: relative;
+}
+.slideshow-container .slide {
+  display: none;
+}
+.slideshow-container .slide img {
+  height: 700px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.slideshow-container .slide-text {
+  position: absolute;
+  top: 50%;
+  left: 90px;
+}
+.slideshow-container .slideshow-left-arrow,
+.slideshow-container .slideshow-right-arrow {
+  padding: 5px 15px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background-color: #abb7be;
+  color: white;
+}
+.slideshow-container .slideshow-left-arrow {
+  left: 0;
+}
+.slideshow-container .slideshow-right-arrow {
+  right: 0;
+}
+
+.newsletter {
+  padding: 80px 0px;
+  background: #f4f4f4;
+}
+.newsletter-container {
+  text-align: center;
+}
+.newsletter-container h4 {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+.newsletter-container p {
+  margin: 17px 0 30px;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #888888;
+}
+.newsletter-container .newsletter-form input {
+  padding: 10px;
+  width: 40%;
+  font-size: 14px;
+  color: #888888;
+  border: 1px solid #ececec;
+}
+
+.carousel {
+  padding-top: 70px;
+  width: 100%;
+  height: 460px;
+  overflow: hidden;
+}
+.carousel .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.carousel h3 {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  padding: 10px 0;
+}
+.carousel .next-back {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.carousel .next-back .horizontal {
+  border-right: 1px solid black;
+}
+.carousel-container {
+  width: 2220px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  position: relative;
+}
+.carousel-container .carousel-slider {
+  width: 1110px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.carousel-container .carousel-slider .product-box {
+  border: 1px solid rgba(50, 50, 50, 0.15);
+}
+.carousel-container .carousel-slider .product-box .product-image img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }

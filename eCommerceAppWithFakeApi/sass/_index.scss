@@ -1,4 +1,3 @@
-
 .slideshow {
     padding-top: 70px;
 
@@ -23,13 +22,14 @@
 
         .slideshow-left-arrow,
         .slideshow-right-arrow {
+            padding: 5px 15px;
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
+            font-size: 2rem;
             background-color: #abb7be;
             color: white;
-            padding: 5px 15px;
-            font-size: 2rem;
+
         }
 
         .slideshow-left-arrow {
@@ -43,8 +43,8 @@
 }
 
 .newsletter {
-    background: #f4f4f4;
     padding: 80px 0px;
+    background: #f4f4f4;
 
     &-container {
         text-align: center;
@@ -55,33 +55,23 @@
         }
 
         p {
-            font-size: 1.2rem;
-            color: #888888;
-            font-style: italic;
             margin: 17px 0 30px;
+            font-size: 1.2rem;
+            font-style: italic;
+            color: #888888;
+
         }
 
         .newsletter-form {
+
             input {
                 padding: 10px;
-                width: 40%;
-                color: #888888;
+                width: 40%;     
                 font-size: 14px;
+                color: #888888;
                 border: 1px solid #ececec;
             }
 
-            button {
-                background: #000;
-                font-size: 12px;
-                text-transform: uppercase;
-                color: #ffffff;
-                padding: 15px 25px;
-                border: 1px solid #ececec;
-                font-weight: 500;
-                letter-spacing: 1px;
-                transition: 0.3s;
-                line-height: 15px;
-            }
         }
 
     }
