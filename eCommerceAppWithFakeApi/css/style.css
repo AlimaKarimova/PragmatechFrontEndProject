@@ -111,6 +111,39 @@ footer {
   font-size: 3.3rem;
 }
 
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.required {
+  color: red;
+}
+
+.btn {
+  padding: 22px 50px;
+  display: inline-block;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 1.3rem;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transition: all 0.3s ease 0s;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+
+.black-btn {
+  background: #000000;
+  color: #fff;
+}
+
 .header {
   padding-top: 40px;
 }
@@ -342,22 +375,62 @@ footer {
 }
 
 .contact-conteiner {
-  padding-top: 30px;
+  padding: 30px 0px 60px;
   display: flex;
 }
 .contact-conteiner-item {
   flex-basis: 33%;
   text-align: center;
 }
+.contact-conteiner-item span {
+  display: inline-block;
+  margin-bottom: 30px;
+}
 .contact-conteiner-item span i {
   background-color: black;
   color: white;
   font-size: 4.1rem;
-  padding: 50px;
+  padding: 50px 60px;
 }
 .contact-conteiner-item h4 {
   font-family: inherit;
   font-weight: 500;
   font-size: 2.5rem;
   text-transform: capitalize;
+}
+.contact-conteiner-item p {
+  color: #888;
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+}
+
+.contact-form {
+  width: 900px;
+  margin: 0 auto;
+  padding: 80px 0px 50px;
+}
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-form form label {
+  font-size: 1.5rem;
+}
+.contact-form form input[type=text],
+.contact-form form input[type=password],
+.contact-form form input[type=email],
+.contact-form form textarea {
+  border: 1px solid #eaedff;
+  border-radius: 0;
+  color: #646363;
+  height: 45px;
+  padding: 0 0 0 10px;
+  margin: 10px 0px;
+  font-size: 15px;
+}
+
+.contact-map {
+  height: 600px;
+  width: 100%;
+  overflow: hidden;
 }
