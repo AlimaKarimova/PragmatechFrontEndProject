@@ -99,5 +99,89 @@
                 color: #666666;
             }
         }
+
+        .filter-bar {
+            margin-top: 60px;
+            margin-bottom: 100px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            ul {
+                display: flex;
+
+                li {
+                    margin-right: 10px;
+
+                    i {
+                        padding: 10px;
+                        font-size: 2.2rem;
+                        background-color: white;
+                        color: rgb(71, 71, 71);
+
+                    }
+
+                    .fa-th-large:before {
+                        content: "\f009";
+                    }
+
+                    .fa-list-ul:before {
+                        content: "\f0ca";
+                    }
+                }
+            }
+
+            select {
+                width: 100%;
+                color: #646363;
+                background: #ececec;
+                padding: 15px;
+                font-size: 1.3rem;
+            }
+
+            .product-showing {
+                padding: 11px 15px;
+                font-size: 1.3rem;
+                border: 1px solid #ddd;
+                color: #7e7e7e;
+            }
+
+        }
+
+        .tab-content {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 30px;
+
+            .product-item {
+                border: 1px solid rgba(50, 50, 50, 0.15);
+
+                .product-image img {
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                }
+
+                .product-info {
+                    text-align: center;
+                }
+            }
+
+        }
+
+        .tab-pane {
+            .shop-list {
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+                img{
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                }
+            }
+        }
     }
 }

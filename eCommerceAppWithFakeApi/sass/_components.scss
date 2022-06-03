@@ -14,8 +14,12 @@
         display: inline-block;
         @extend %small-title;
 
+        a{
+            padding-bottom: 25px;
+        }
 
-        &:hover {
+
+        a:hover {
             color: #fd7e14;
         }
 
@@ -46,6 +50,7 @@
     .header-info-item {
         padding-right: 25px;
         @include text(inherit, 400, 1.2rem);
+        text-transform: uppercase;
         
     }
 

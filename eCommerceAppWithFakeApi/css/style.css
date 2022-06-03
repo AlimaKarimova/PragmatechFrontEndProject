@@ -197,7 +197,10 @@ textarea {
   position: relative;
   display: inline-block;
 }
-.header .header-nav-item:hover {
+.header .header-nav-item a {
+  padding-bottom: 25px;
+}
+.header .header-nav-item a:hover {
   color: #fd7e14;
 }
 .header .header-nav-item:hover .submenu {
@@ -224,6 +227,7 @@ textarea {
   font-family: inherit;
   font-weight: 400;
   font-size: 1.2rem;
+  text-transform: uppercase;
 }
 
 .footer {
@@ -472,6 +476,74 @@ textarea {
 .shop .products-container .products-info p {
   font-size: 12px;
   color: #666666;
+}
+.shop .products-container .filter-bar {
+  margin-top: 60px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.shop .products-container .filter-bar ul {
+  display: flex;
+}
+.shop .products-container .filter-bar ul li {
+  margin-right: 10px;
+}
+.shop .products-container .filter-bar ul li i {
+  padding: 10px;
+  font-size: 2.2rem;
+  background-color: white;
+  color: rgb(71, 71, 71);
+}
+.shop .products-container .filter-bar ul li .fa-th-large:before {
+  content: "\f009";
+}
+.shop .products-container .filter-bar ul li .fa-list-ul:before {
+  content: "\f0ca";
+}
+.shop .products-container .filter-bar select {
+  width: 100%;
+  color: #646363;
+  background: #ececec;
+  padding: 15px;
+  font-size: 1.3rem;
+}
+.shop .products-container .filter-bar .product-showing {
+  padding: 11px 15px;
+  font-size: 1.3rem;
+  border: 1px solid #ddd;
+  color: #7e7e7e;
+}
+.shop .products-container .tab-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 30px;
+}
+.shop .products-container .tab-content .product-item {
+  border: 1px solid rgba(50, 50, 50, 0.15);
+}
+.shop .products-container .tab-content .product-item .product-image img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.shop .products-container .tab-content .product-item .product-info {
+  text-align: center;
+}
+.shop .products-container .tab-pane .shop-list {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.shop .products-container .tab-pane .shop-list img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .contact-conteiner {
