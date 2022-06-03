@@ -115,3 +115,17 @@
     }
 
 }
+
+.product-item {
+    border: 1px solid rgba(50, 50, 50, 0.15);
+
+    .product-image img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .product-info {
+        text-align: center;
+    }
+}
