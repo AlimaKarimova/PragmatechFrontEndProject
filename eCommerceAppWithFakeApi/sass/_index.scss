@@ -1,79 +1,3 @@
-.slideshow {
-    padding-top: 70px;
-
-    &-container {
-        position: relative;
-
-        .slide {
-            display: none;
-
-            img {
-                height: 700px;
-                width: 100%;
-                object-fit: cover;
-            }
-
-            &-text {
-                position: absolute;
-                top: 47%;
-                left: 100px;
-                transform: translateY(-50%);
-
-                h2 {
-                    font-size: 3rem;
-                    font-weight: 500;
-                    margin: 0 0 6px;
-                    text-transform: uppercase;
-                }
-
-                h3 {
-                    font-family: Oswald;
-                    font-weight: 200;
-                    font-size: 2.5rem;
-                    text-transform: uppercase;
-                    margin: 0 0 6px;
-                }
-
-                p {
-                    color: #888888;
-                    font-family: Poppins;
-                    font-size: 13px;
-                    margin: 0 0 25px;
-                }
-
-                a {
-                    color: white;
-                    padding: 12px 10px;
-                    color: #fff;
-                    transition: 0.3s;
-                    margin: 0 0px 8px;
-                    background: #6c757d;
-                }
-            }
-        }
-
-        .slideshow-left-arrow,
-        .slideshow-right-arrow {
-            padding: 5px 15px;
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            font-size: 2rem;
-            background-color: #abb7be;
-            color: white;
-
-        }
-
-        .slideshow-left-arrow {
-            left: 0;
-        }
-
-        .slideshow-right-arrow {
-            right: 0;
-        }
-    }
-}
-
 .newsletter {
     padding: 80px 0px;
     background: #f4f4f4;
@@ -115,9 +39,54 @@
     .carousel-container {
         .carousel-item {
             display: flex;
-            flex-direction:row;
+            flex-direction: row;
+            gap: 30px;
         }
 
 
     }
+}
+
+.carousel {
+    .carousel-list {
+        margin-bottom: 20px;
+        display: flex;
+        gap: 30px;
+
+    }
+}
+
+.categories {
+    display: flex;
+    gap: 30px;
+    img{
+        overflow: hidden;
+    }
+    img:hover{
+        transform: scale(1.2);
+    }
+
+    .lg-banner {
+        height: 420px;
+        img {
+            width: 100%;
+           
+        }
+        &:first-of-type{
+            margin-bottom: 30px;
+        }
+        &:nth-of-type(2){
+            margin-top: 30px;
+        }
+    }
+    
+    .midi-banner{
+        display: flex;
+        gap: 30px;
+        img {
+            width: 100%;
+            height: 100%px;  
+        }
+    }
+
 }

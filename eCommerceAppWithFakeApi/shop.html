@@ -18,7 +18,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -109,7 +109,7 @@
           <section class="filter">
             <h2 class="underline-title">CATEGORIES</h2>
             <div class="accordion">
-              <p class="accordion-title">collection <i class="fa-solid fa-plus"></i></p>
+              <p class="accordion-title" onclick="AccFunc(this)">collection <i class="fa-solid fa-plus"></i></p>
               <div class="panel">
                 <ul>
                   <li><a href="">golf</a> </li>
@@ -118,7 +118,7 @@
                 </ul>
               </div>
 
-              <p class="accordion-title">technology <i class="fa-solid fa-plus"></i></p>
+              <p class="accordion-title" onclick="AccFunc(this)">technology <i class="fa-solid fa-plus"></i></p>
               <div class="panel">
                 <ul>
                   <li> <a href="">macbook</a> </li>
@@ -127,7 +127,7 @@
                 </ul>
               </div>
 
-              <p class="accordion-title">furniture <i class="fa-solid fa-plus"></i></p>
+              <p class="accordion-title" onclick="AccFunc(this)">furniture <i class="fa-solid fa-plus"></i></p>
               <div class="panel">
                 <ul>
                   <li> <a href="">chairs</a> </li>
@@ -255,219 +255,182 @@
 
             </div>
             <div class="tab-list">
-              <div class="tab-content" id="tab1">
-                <div class="product-item">
+              <div class="tab-content hidden" id="tab1">
+                <div class="product-grid">
                   <div class="product-image">
-                    <a href="">
-
-                      <img class="pic-1" src="./images/men-1-2.jpg" alt="Product image">
-                      <img class="pic-2 hidden" src="assets/images/products/men-1-2.jpg" alt="Product image">
+                    <a href="configurable.html">
+                      <img class="pic-1" src="./images/men-1-1.jpg" alt="Product image">
+                      <img class="pic-2" src="./images/men-1-2.jpg" alt="Product image">
                     </a>
                     <ul class="social">
                       <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
-
                       <li><a href="#" data-tip="Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
-
                       <li><a href="#" data-tip="Compare"><i class="fas fa-exchange-alt"></i></a></li>
                     </ul>
                   </div>
-                  <div class="product-info">
-                    <h3 class="title">Lorem ipsum dolor</h3>
+                  <h3>Lorem ipsum dolor</h3>
+                  <div class="product-content">
                     <div class="price">$16.00
-                      <span>$20.00</span>
                     </div>
                     <a class="add-to-cart" href="cart.html">Add To Cart</a>
                   </div>
                 </div>
-                <div class="product-item">
+                <div class="product-grid">
                   <div class="product-image">
-                    <a href="">
-
-                      <img class="pic-1" src="./images/men-1-2.jpg" alt="Product image">
-                      <img class="pic-2 hidden" src="assets/images/products/men-1-2.jpg" alt="Product image">
+                    <a href="configurable.html">
+                      <img class="pic-1" src="./images/men-2-1.jpg" alt="Product image">
+                      <img class="pic-2" src="./images/men-2-2.jpg" alt="Product image">
                     </a>
                     <ul class="social">
                       <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
-
                       <li><a href="#" data-tip="Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
-
                       <li><a href="#" data-tip="Compare"><i class="fas fa-exchange-alt"></i></a></li>
                     </ul>
                   </div>
-                  <div class="product-info">
-                    <h3 class="title">Lorem ipsum dolor</h3>
+                  <h3>Lorem ipsum dolor</h3>
+                  <div class="product-content">
                     <div class="price">$16.00
-                      <span>$20.00</span>
                     </div>
                     <a class="add-to-cart" href="cart.html">Add To Cart</a>
                   </div>
                 </div>
-                <div class="product-item">
+                <div class="product-grid">
                   <div class="product-image">
-                    <a href="">
-
-                      <img class="pic-1" src="./images/men-1-2.jpg" alt="Product image">
-                      <img class="pic-2 hidden" src="assets/images/products/men-1-2.jpg" alt="Product image">
+                    <a href="configurable.html">
+                      <img class="pic-1" src="./images/men-3-1.jpg" alt="Product image">
+                      <img class="pic-2" src="./images/men-3-2.jpg" alt="Product image">
                     </a>
                     <ul class="social">
                       <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
-
                       <li><a href="#" data-tip="Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
-
                       <li><a href="#" data-tip="Compare"><i class="fas fa-exchange-alt"></i></a></li>
                     </ul>
                   </div>
-                  <div class="product-info">
-                    <h3 class="title">Lorem ipsum dolor</h3>
+                  <h3>Lorem ipsum dolor</h3>
+                  <div class="product-content">
                     <div class="price">$16.00
-                      <span>$20.00</span>
                     </div>
                     <a class="add-to-cart" href="cart.html">Add To Cart</a>
                   </div>
                 </div>
-                <div class="product-item">
+                <div class="product-grid">
                   <div class="product-image">
-                    <a href="">
-
-                      <img class="pic-1" src="./images/men-1-2.jpg" alt="Product image">
-                      <img class="pic-2 hidden" src="assets/images/products/men-1-2.jpg" alt="Product image">
+                    <a href="configurable.html">
+                      <img class="pic-1" src="./images/men-3-1.jpg" alt="Product image">
+                      <img class="pic-2" src="./images/men-3-2.jpg" alt="Product image">
                     </a>
                     <ul class="social">
                       <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
-
                       <li><a href="#" data-tip="Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
-
                       <li><a href="#" data-tip="Compare"><i class="fas fa-exchange-alt"></i></a></li>
                     </ul>
                   </div>
-                  <div class="product-info">
-                    <h3 class="title">Lorem ipsum dolor</h3>
+                  <h3>Lorem ipsum dolor</h3>
+                  <div class="product-content">
                     <div class="price">$16.00
-                      <span>$20.00</span>
                     </div>
                     <a class="add-to-cart" href="cart.html">Add To Cart</a>
                   </div>
                 </div>
-                <div class="product-item">
+                <div class="product-grid">
                   <div class="product-image">
-                    <a href="">
-
-                      <img class="pic-1" src="./images/men-1-2.jpg" alt="Product image">
-                      <img class="pic-2 hidden" src="assets/images/products/men-1-2.jpg" alt="Product image">
+                    <a href="configurable.html">
+                      <img class="pic-1" src="./images/men-3-1.jpg" alt="Product image">
+                      <img class="pic-2" src="./images/men-3-2.jpg" alt="Product image">
                     </a>
                     <ul class="social">
                       <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
-
                       <li><a href="#" data-tip="Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
-
                       <li><a href="#" data-tip="Compare"><i class="fas fa-exchange-alt"></i></a></li>
                     </ul>
                   </div>
-                  <div class="product-info">
-                    <h3 class="title">Lorem ipsum dolor</h3>
+                  <h3>Lorem ipsum dolor</h3>
+                  <div class="product-content">
                     <div class="price">$16.00
-                      <span>$20.00</span>
                     </div>
                     <a class="add-to-cart" href="cart.html">Add To Cart</a>
                   </div>
                 </div>
-                <div class="product-item">
+                <div class="product-grid">
                   <div class="product-image">
-                    <a href="">
-
-                      <img class="pic-1" src="./images/men-1-2.jpg" alt="Product image">
-                      <img class="pic-2 hidden" src="assets/images/products/men-1-2.jpg" alt="Product image">
+                    <a href="configurable.html">
+                      <img class="pic-1" src="./images/men-3-1.jpg" alt="Product image">
+                      <img class="pic-2" src="./images/men-3-2.jpg" alt="Product image">
                     </a>
                     <ul class="social">
                       <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
-
                       <li><a href="#" data-tip="Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
-
                       <li><a href="#" data-tip="Compare"><i class="fas fa-exchange-alt"></i></a></li>
                     </ul>
                   </div>
-                  <div class="product-info">
-                    <h3 class="title">Lorem ipsum dolor</h3>
+                  <h3>Lorem ipsum dolor</h3>
+                  <div class="product-content">
                     <div class="price">$16.00
-                      <span>$20.00</span>
                     </div>
                     <a class="add-to-cart" href="cart.html">Add To Cart</a>
                   </div>
                 </div>
-                <div class="product-item">
+                <div class="product-grid">
                   <div class="product-image">
-                    <a href="">
-
-                      <img class="pic-1" src="./images/men-1-2.jpg" alt="Product image">
-                      <img class="pic-2 hidden" src="assets/images/products/men-1-2.jpg" alt="Product image">
+                    <a href="configurable.html">
+                      <img class="pic-1" src="./images/men-3-1.jpg" alt="Product image">
+                      <img class="pic-2" src="./images/men-3-2.jpg" alt="Product image">
                     </a>
                     <ul class="social">
                       <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
-
                       <li><a href="#" data-tip="Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
-
                       <li><a href="#" data-tip="Compare"><i class="fas fa-exchange-alt"></i></a></li>
                     </ul>
                   </div>
-                  <div class="product-info">
-                    <h3 class="title">Lorem ipsum dolor</h3>
+                  <h3>Lorem ipsum dolor</h3>
+                  <div class="product-content">
                     <div class="price">$16.00
-                      <span>$20.00</span>
                     </div>
                     <a class="add-to-cart" href="cart.html">Add To Cart</a>
                   </div>
                 </div>
-                <div class="product-item">
+                <div class="product-grid">
                   <div class="product-image">
-                    <a href="">
-
-                      <img class="pic-1" src="./images/men-1-2.jpg" alt="Product image">
-                      <img class="pic-2 hidden" src="assets/images/products/men-1-2.jpg" alt="Product image">
+                    <a href="configurable.html">
+                      <img class="pic-1" src="./images/men-3-1.jpg" alt="Product image">
+                      <img class="pic-2" src="./images/men-3-2.jpg" alt="Product image">
                     </a>
                     <ul class="social">
                       <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
-
                       <li><a href="#" data-tip="Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
-
                       <li><a href="#" data-tip="Compare"><i class="fas fa-exchange-alt"></i></a></li>
                     </ul>
                   </div>
-                  <div class="product-info">
-                    <h3 class="title">Lorem ipsum dolor</h3>
+                  <h3>Lorem ipsum dolor</h3>
+                  <div class="product-content">
                     <div class="price">$16.00
-                      <span>$20.00</span>
                     </div>
                     <a class="add-to-cart" href="cart.html">Add To Cart</a>
                   </div>
                 </div>
-                <div class="product-item">
+                <div class="product-grid">
                   <div class="product-image">
-                    <a href="">
-
-                      <img class="pic-1" src="./images/men-1-2.jpg" alt="Product image">
-                      <img class="pic-2 hidden" src="assets/images/products/men-1-2.jpg" alt="Product image">
+                    <a href="configurable.html">
+                      <img class="pic-1" src="./images/men-3-1.jpg" alt="Product image">
+                      <img class="pic-2" src="./images/men-3-2.jpg" alt="Product image">
                     </a>
                     <ul class="social">
                       <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
-
                       <li><a href="#" data-tip="Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
-
                       <li><a href="#" data-tip="Compare"><i class="fas fa-exchange-alt"></i></a></li>
                     </ul>
                   </div>
-                  <div class="product-info">
-                    <h3 class="title">Lorem ipsum dolor</h3>
+                  <h3>Lorem ipsum dolor</h3>
+                  <div class="product-content">
                     <div class="price">$16.00
-                      <span>$20.00</span>
                     </div>
                     <a class="add-to-cart" href="cart.html">Add To Cart</a>
                   </div>
                 </div>
-
               </div>
             </div>
-            <div class="tab-pane hidden" id="tab2">
-              <div class="shop-list">
+            <div class="tab-pane" id="tab2">
+              <div class="product-grid">
                 <div class="product-image">
                   <a href="configurable.html">
                     <img class="pic-1" src="./images/men-1-2.jpg" alt="Product image">
@@ -496,7 +459,36 @@
                   </div>
                 </div>
               </div>
-              <div class="shop-list">
+              <div class="product-grid">
+                <div class="product-image">
+                  <a href="configurable.html">
+                    <img class="pic-1" src="./images/men-1-2.jpg" alt="Product image">
+                    <img class="pic-2" src="./images/men-1-2.jpg" alt="Product image">
+                  </a>
+                </div>
+                <div class="list-content">
+                  <h3><a href="configurable.html">Lorem ipsum dolor</a></h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <div class="price">$16.00
+                    <span>$20.00</span>
+                  </div>
+                  <div class="listcart-area">
+                    <div class="list-cart">
+                      <a class="add-to-cart" href="cart.html">Add To Cart</a>
+                    </div>
+                    <div class="social">
+                      <ul>
+                        <li><a href="#" title="Quick View"><i class="fa fa-eye"></i></a></li>
+                        <li><a href="#" title="Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href="#" title="Compare"><i class="fas fa-exchange-alt"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-grid">
                 <div class="product-image">
                   <a href="configurable.html">
                     <img class="pic-1" src="./images/men-1-2.jpg" alt="Product image">
@@ -525,7 +517,7 @@
                   </div>
                 </div>
               </div>
-              <div class="shop-list">
+              <div class="product-grid">
                 <div class="product-image">
                   <a href="configurable.html">
                     <img class="pic-1" src="./images/men-1-2.jpg" alt="Product image">
@@ -554,36 +546,7 @@
                   </div>
                 </div>
               </div>
-              <div class="shop-list">
-                <div class="product-image">
-                  <a href="configurable.html">
-                    <img class="pic-1" src="./images/men-1-2.jpg" alt="Product image">
-
-                  </a>
-                </div>
-                <div class="list-content">
-                  <h3><a href="configurable.html">Lorem ipsum dolor</a></h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                  <div class="price">$16.00
-                    <span>$20.00</span>
-                  </div>
-                  <div class="listcart-area">
-                    <div class="list-cart">
-                      <a class="add-to-cart" href="cart.html">Add To Cart</a>
-                    </div>
-                    <div class="social">
-                      <ul>
-                        <li><a href="#" title="Quick View"><i class="fa fa-eye"></i></a></li>
-                        <li><a href="#" title="Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
-                        <li><a href="#" title="Compare"><i class="fas fa-exchange-alt"></i></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="shop-list">
+              <div class="product-grid">
                 <div class="product-image">
                   <a href="configurable.html">
                     <img class="pic-1" src="./images/men-1-2.jpg" alt="Product image">
@@ -614,7 +577,6 @@
               </div>
 
             </div>
-
 
           </section>
         </section>
@@ -682,15 +644,6 @@
     </div> <!-- container end -->
 
   </div> <!-- wrapper end -->
-
-
-
-
-
-
-
-
-
 
 
   <script src="./js/shop.js"></script>
