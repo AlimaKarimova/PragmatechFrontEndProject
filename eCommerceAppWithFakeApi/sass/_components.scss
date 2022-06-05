@@ -9,7 +9,7 @@
     }
 
     .header-nav-item {
-        padding-right: 25px;
+        padding: 25px 15px 25px;
         position: relative;
         display: inline-block;
         @extend %small-title;
@@ -18,21 +18,20 @@
             padding-bottom: 25px;
         }
 
-
-        a:hover {
-            color: #fd7e14;
-        }
-
         &:hover .submenu {
             display: block;
         }
 
+        &:hover .megamenu {
+            display: block;
+        }
+
         .submenu {
+            display: none;
             position: absolute;
             top: 50px;
             left: 20px;
             z-index: 10;
-            display: none;
             min-width: 230px;
             transition: 0.3s;
             background: #ffffff;
@@ -51,11 +50,45 @@
         padding-right: 25px;
         @include text(inherit, 400, 1.2rem);
         text-transform: uppercase;
-
     }
 
 }
 
+
+.newsletter {
+    padding: 80px 0px;
+    background: #f4f4f4;
+
+    &-container {
+        text-align: center;
+
+        h4 {
+            @include text('Oswald', 400, 2.5rem);
+            text-transform: uppercase;
+        }
+
+        p {
+            margin: 17px 0 30px;
+            font-size: 1.2rem;
+            font-style: italic;
+            color: #888888;
+
+        }
+
+        .newsletter-form {
+
+            input {
+                padding: 10px;
+                width: 40%;
+                font-size: 14px;
+                color: #888888;
+                border: 1px solid #ececec;
+            }
+
+        }
+
+    }
+}
 
 .footer {
     display: flex;
@@ -75,11 +108,14 @@
 
             }
 
-            ul li {
-                padding: 6px 0px;
-                font-size: 1.3rem;
-                text-transform: capitalize;
-                color: #888888;
+            ul {
+
+                li {
+                    padding: 6px 0px;
+                    font-size: 1.3rem;
+                    text-transform: capitalize;
+                    color: #888888;
+                }
 
             }
         }
@@ -130,12 +166,14 @@
         transition: all 0.3s ease 0s;
 
     }
-    &:hover h3{
+
+    &:hover h3 {
         display: none;
         transition: all 0.5s ease 0s;
 
     }
-    &:hover .add-to-cart{
+
+    &:hover .add-to-cart {
         display: block;
         transition: all 0.5s ease 0s;
 
@@ -143,7 +181,7 @@
 
     .product-image {
         position: relative;
-        transition: all 0.3s ease 0s;
+        transition: all 0.2s ease 0s;
 
         img {
             width: 100%;
@@ -180,7 +218,7 @@
         position: absolute;
         top: 60%;
         left: 50%;
-        transform: translateY(-50%) translateX(-50%);  
+        transform: translateY(-50%) translateX(-50%);
         transition: all 0.3s ease 0s;
 
         li a {
@@ -234,7 +272,7 @@
         font-weight: 400;
         letter-spacing: 0.6px;
         margin-bottom: 6px;
-        text-align: center; 
+        text-align: center;
     }
 
     .add-to-cart {
@@ -245,6 +283,6 @@
         font-weight: 400;
         letter-spacing: 0.6px;
         margin-bottom: 6px;
-        text-align: center; 
+        text-align: center;
     }
 }

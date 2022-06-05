@@ -1,4 +1,3 @@
-
 .shop {
     padding-top: 70px;
     display: grid;
@@ -130,95 +129,51 @@
                     .fa-list-ul:before {
                         content: "\f0ca";
                     }
+
+
                 }
             }
+        }
 
-            select {
+        select {
+            width: 100%;
+            color: #646363;
+            background: #ececec;
+            padding: 15px;
+            font-size: 1.3rem;
+        }
+
+        .product-showing {
+            padding: 11px 15px;
+            font-size: 1.3rem;
+            border: 1px solid #ddd;
+            color: #7e7e7e;
+        }
+
+    }
+
+    .tab-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 30px;
+
+    }
+
+    .tab-pane {
+
+        // display: none;
+        .product-grid {
+            margin-bottom: 25px;
+            display: flex;
+            flex-direction: row;
+
+            img {
                 width: 100%;
-                color: #646363;
-                background: #ececec;
-                padding: 15px;
-                font-size: 1.3rem;
-            }
+                height: auto;
+                object-fit: cover;
+                border: 1px solid rgba(0, 0, 0, 0.1);
 
-            .product-showing {
-                padding: 11px 15px;
-                font-size: 1.3rem;
-                border: 1px solid #ddd;
-                color: #7e7e7e;
-            }
-
-        }
-
-        .tab-content {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(3, 1fr);
-            gap: 30px;
-
-        }
-
-        .tab-pane {
-            .shop-list {
-                margin-bottom: 25px;
-                display: flex;
-                flex-direction: row;
-                gap: 30px;
-
-
-                img {
-                    width: 100%;
-                    height: auto;
-                    object-fit: cover;
-                    border: 1px solid rgba(0, 0, 0, 0.1);
-
-                }
-
-                .list-content {
-                    h3 a {
-                        margin-bottom: 10px;
-                        font-size: 1.6rem;
-                        color: #444444;
-                    }
-
-                    p {
-                        margin: 0 0 16px;
-                        font-size: 1.4rem;
-                        color: #888888;
-                    }
-
-                    .price {
-                        margin-bottom: 15px;
-                        font-size: 1.8rem;
-                        letter-spacing: 0.6px;
-                        color: #333;
-                    }
-
-                    .listcart-area {
-                        display: flex;
-
-                        .list-cart {
-                            margin-right: 20px;
-                            font-size: 1.5rem;
-
-                        }
-
-                        .social {
-                            font-size: 1.5rem;
-
-                            ul {
-                                display: flex;
-
-                                li {
-                                    margin-right: 15px;
-                                }
-
-                            }
-                        }
-                    }
-
-
-                }
             }
         }
     }

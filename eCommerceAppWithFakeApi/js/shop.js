@@ -1,4 +1,4 @@
-const allItems=document.querySelectorAll(".panel");
+const allItems = document.querySelectorAll(".panel");
 let acar = false;
 
 function hideAllParagraphs() {
@@ -22,4 +22,19 @@ function AccFunc(e) {
     e.querySelector('i').className = "fa-solid fa-minus"
     acar = true
   }
+};
+
+
+const tabContent = document.querySelector('.tab-content');
+const tabPane = document.querySelector('.tab-pane');
+
+function openList() {
+  tabContent.classList.add('active');
+  tabPane.classList.add('hidden');
+
+}
+
+function openSingle() {
+  tabPane.classList.add('active');
+  tabContent.classList.add('hidden');
 }

@@ -1,4 +1,10 @@
 // layout css
+a{
+    transition: color 0.3s linear;
+}
+a:hover{
+    color: #dd7e2e;  
+}
 
 .container {
     width: 1140px;
@@ -34,6 +40,7 @@
 }
 
 //text css
+
 %small-title {
     font-size: 1.3rem;
     font-weight: 500;
@@ -116,4 +123,8 @@ textarea {
 .black-btn {
     background: #000000;
     color: #fff;
+    transition: 0.3s;
+}
+.black-btn:hover{
+    background: #84b77c;
 }
