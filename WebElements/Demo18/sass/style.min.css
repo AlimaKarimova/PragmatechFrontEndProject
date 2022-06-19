@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: muli, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  width: 1140px;
+  text-align: center;
+  margin: 0% auto;
+  padding: 80px 0px;
+}
+.container-header h2 {
+  font: 700 30px/1 droid-sans, sans-serif;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.container-header p {
+  font: 400 14px/1.42857143 muli, sans-serif;
+  color: #333;
+  margin-bottom: 60px;
+}
+.container-items {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.container-items .container-item {
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+.container-items .container-item:hover p {
+  display: inline-block;
+}
+.container-items .container-item:hover a {
+  display: inline-block;
+}
+.container-items .container-item:hover::after {
+  height: 100%;
+}
+.container-items .container-item::before {
+  position: absolute;
+  background: rgba(66, 65, 16, 0.44);
+  transform: translateY(0);
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: all 0.4s ease;
+  z-index: 0;
+}
+.container-items .container-item::after {
+  position: absolute;
+  content: "";
+  background: rgba(66, 65, 16, 0.66);
+  height: 0%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: all 0.4s ease;
+  z-index: 0;
+}
+.container-items .container-item img {
+  width: 100%;
+  height: auto;
+}
+.container-items .container-item .info {
+  position: absolute;
+  z-index: 1;
+  bottom: 20px;
+  color: #fff;
+  padding: 0px 20px;
+}
+.container-items .container-item h2 {
+  display: block;
+  color: white;
+  font: 700 30px/1 droid-sans, sans-serif;
+  margin-bottom: 20px;
+}
+.container-items .container-item p {
+  display: none;
+  color: white !important;
+  font: 400 14px/1.42857143 muli, sans-serif;
+  margin-bottom: 20px;
+}
+.container-items .container-item a {
+  display: none;
+  font: 400 14px/1.42857143 muli, sans-serif;
+  padding: 10px 35px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 40px;
+  transition: all 0.5s ease;
+}
+.container-items .container-item a:hover {
+  background-color: white;
+  color: #333;
+}

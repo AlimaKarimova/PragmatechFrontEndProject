@@ -1,0 +1,430 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+  box-sizing: border-box;
+  background-color: #f7f8fd;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.title-24, .form-box h3 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.title-20, .feedback-board h3 {
+  font: 700 20px/normal inherit;
+}
+
+.title-18, .roadmap-board .row h3, .menu .menu-nav h3, .list .list-text h4 {
+  font-weight: 700;
+  font-size: 18px;
+  color: #3a4374;
+}
+
+.text-16-400, .roadmap-board .row ul, .list .list-text p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #647196;
+}
+
+.text-16-600 {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.text-16-700, .roadmap-board .row ol, .list .comments span {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.text-15-400, .feedback-board p {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.text-14-700, .form-box form h4, .go-back_transparent, .form-box .btn a, .button_red, .button_grey, .form-box .button-box a:nth-child(1), .button_blue, .button_purple, .menu .menu-btn a, .form-box .button-box a:nth-child(2) {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.text-14-400, .menu .menu-nav span, .form-box form label {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.text-13-600 {
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.text-13-700, .roadmap-board .row a, .element, .list .list-text a, .list .count span {
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.title-24, .form-box h3 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.title-20, .feedback-board h3 {
+  font: 700 20px/normal inherit;
+}
+
+.title-18, .roadmap-board .row h3, .menu .menu-nav h3, .list .list-text h4 {
+  font-weight: 700;
+  font-size: 18px;
+  color: #3a4374;
+}
+
+.text-16-400, .roadmap-board .row ul, .list .list-text p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #647196;
+}
+
+.text-16-600 {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.text-16-700, .roadmap-board .row ol, .list .comments span {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.text-15-400, .feedback-board p {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.text-14-700, .form-box form h4, .go-back_transparent, .form-box .btn a, .button_red, .button_grey, .form-box .button-box a:nth-child(1), .button_blue, .button_purple, .menu .menu-btn a, .form-box .button-box a:nth-child(2) {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.text-14-400, .menu .menu-nav span, .form-box form label {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.text-13-600 {
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.text-13-700, .roadmap-board .row a, .element, .list .list-text a, .list .count span {
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.button-basic, .button_red, .button_grey, .form-box .button-box a:nth-child(1), .button_blue, .button_purple, .menu .menu-btn a, .form-box .button-box a:nth-child(2) {
+  padding: 12px 25px;
+  border-radius: 10px;
+}
+
+.button_purple, .menu .menu-btn a, .form-box .button-box a:nth-child(2) {
+  background-color: #ad1fea;
+  color: white;
+}
+.button_purple:hover, .menu .menu-btn a:hover, .form-box .button-box a:hover:nth-child(2) {
+  background-color: #C75AF6;
+}
+
+.button_blue {
+  background-color: #4661e6;
+  color: white;
+}
+.button_blue:hover {
+  background-color: #7C91F9;
+}
+
+.button_grey, .form-box .button-box a:nth-child(1) {
+  background-color: #3a4374;
+  color: white;
+}
+.button_grey:hover, .form-box .button-box a:hover:nth-child(1) {
+  background-color: #656EA3;
+}
+
+.button_red {
+  background-color: #D73737;
+  color: white;
+}
+.button_red:hover {
+  background-color: #E98888;
+}
+
+.go-back_basic, .go-back_dark, .go-back_transparent, .form-box .btn a {
+  border-radius: 10px;
+}
+
+.go-back_transparent, .form-box .btn a {
+  color: #647196;
+}
+.go-back_transparent:hover, .form-box .btn a:hover {
+  text-decoration: underline;
+}
+
+.go-back_dark {
+  padding: 15px 40px 15px 60px;
+  background-color: #373f68;
+}
+.go-back_dark:hover {
+  text-decoration: underline;
+}
+
+.element, .list .list-text a, .list .count span {
+  min-width: 20px;
+  display: inline-block;
+  padding: 5px 10px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #F2F4FF;
+  color: #4661e6;
+}
+.element i, .list .list-text a i, .list .count span i {
+  color: #4661E6;
+}
+.element:hover, .list .list-text a:hover, .list .count span:hover {
+  background-color: #CFD7FF;
+  color: #4661e6;
+}
+.element:active, .list .list-text a:active, .list .count span:active {
+  background-color: #4661e6;
+  color: white;
+}
+
+.elements-board {
+  background-color: white;
+  padding: 24px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+.elements-board .row {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 14px;
+}
+.elements-board .row a {
+  margin-right: 8px;
+}
+
+.feedback-board {
+  height: 137px;
+  border-radius: 10px;
+  background: rgb(40, 167, 237);
+  background: radial-gradient(128.88% 128.88% at 103.9% -10.39%, #E84D70 0%, #A337F6 53.09%, #28A7ED 100%);
+  position: relative;
+  margin-bottom: 30px;
+}
+.feedback-board h3 {
+  color: white;
+  position: absolute;
+  left: 25px;
+  bottom: 50px;
+}
+.feedback-board p {
+  color: white;
+  position: absolute;
+  left: 25px;
+  bottom: 30px;
+}
+
+.form-box {
+  width: 540px;
+  background-color: white;
+  margin: 180px auto;
+  padding: 50px 40px 40px;
+  border-radius: 10px;
+  position: relative;
+}
+.form-box .btn {
+  position: absolute;
+  top: -90px;
+  left: -5px;
+}
+.form-box .btn a i {
+  color: #4661e6;
+}
+.form-box::before {
+  content: "+";
+  position: absolute;
+  top: -28px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: radial-gradient(128.88% 128.88% at 103.9% -10.39%, #E84D70 0%, #A337F6 53.09%, #28A7ED 100%);
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  font-size: 35px;
+}
+.form-box h3 {
+  color: #3a4374;
+  margin-bottom: 40px;
+}
+.form-box form h4 {
+  color: #3a4374;
+}
+.form-box form label {
+  color: #647196;
+}
+.form-box form input,
+.form-box form textarea,
+.form-box form select {
+  width: 100%;
+  padding: 15px 0px 15px 25px;
+  background-color: #f7f8fd;
+  margin-top: 15px;
+  margin-bottom: 24px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  resize: none;
+}
+.form-box form input:focus {
+  border: 1px solid blue;
+}
+.form-box .button-box {
+  display: flex;
+  justify-content: end;
+  margin-top: 30px;
+}
+.form-box .button-box a:nth-child(1) {
+  color: white;
+}
+.form-box .button-box a:nth-child(2) {
+  color: white;
+  margin-left: 15px;
+}
+
+.list {
+  position: relative;
+  margin-top: 30px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+}
+.list .count span {
+  color: #3A4374;
+}
+.list .list-text {
+  margin-left: 30px;
+}
+.list .list-text h4 {
+  margin-bottom: 8px;
+}
+.list .list-text p {
+  margin-bottom: 8px;
+}
+.list .list-text a {
+  display: inline-block;
+}
+.list .comments {
+  position: absolute;
+  right: 10px;
+}
+.list .comments i {
+  color: #CDD2EE;
+}
+.menu {
+  width: 825px;
+  height: 72px;
+  background-color: #373f68;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+}
+.menu .menu-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-left: 30px;
+}
+.menu .menu-nav i {
+  color: white;
+  font-size: 14px;
+}
+.menu .menu-nav i:last-child {
+  position: relative;
+  top: 4px;
+}
+.menu .menu-nav h3 {
+  color: white;
+}
+.menu .menu-nav span {
+  color: white;
+  position: relative;
+  top: 2px;
+}
+.menu .menu-btn {
+  margin-right: 15px;
+}
+.menu .menu-btn a {
+  color: white;
+}
+
+.roadmap-board {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  border-radius: 10px;
+  background-color: white;
+  padding: 25px;
+}
+.roadmap-board .row {
+  display: flex;
+  justify-content: space-between;
+}
+.roadmap-board .row h3 {
+  display: inline-block;
+  color: #3A4374;
+}
+.roadmap-board .row a {
+  color: #4661e6;
+  text-decoration: underline;
+}
+.roadmap-board .row ul {
+  display: inline-block;
+  color: #647196;
+}
+.roadmap-board .row ul li {
+  margin-bottom: 8px;
+}
+.roadmap-board .row ol {
+  display: inline-block;
+  list-style: none;
+  color: #647196;
+}
+.roadmap-board .row ol li {
+  margin-bottom: 8px;
+}
+
+.wrapper {
+  width: 1110px;
+  margin: 50px auto;
+  display: flex;
+  gap: 30px;
+}
+.wrapper .side-boxs {
+  width: 255px;
+}
+.wrapper .main-boxs {
+  width: 825px;
+}

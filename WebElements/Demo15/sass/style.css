@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: muli, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+@-webkit-keyframes hinge {
+  0%, 100% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+}
+
+@keyframes hinge {
+  0%, 100% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+}
+@keyframes hinge {
+  0%, 100% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+}
+.container {
+  width: 1170px;
+  margin: 100px auto;
+  text-align: center;
+}
+.container h2 {
+  font: 700 30px/1 droid-sans, sans-serif;
+}
+.container p {
+  font: 400 14px/1.42857143 muli, sans-serif;
+  color: #333;
+  margin-top: 20px;
+}
+.container-items {
+  margin-top: 80px;
+  text-align: center;
+  display: flex;
+  gap: 30px;
+}
+.container-items .container-item {
+  padding: 15px;
+  position: relative;
+}
+.container-items .container-item::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #DDF9FF;
+  transform: rotateX(90deg) translateY(100%);
+  transition: all 0.7s ease;
+  z-index: -1;
+}
+.container-items .container-item:hover::before {
+  transform: rotateX(0) translateY(0);
+}
+.container-items .container-item:hover i {
+  -webkit-animation: hinge 1.4s infinite forwards;
+          animation: hinge 1.4s infinite forwards;
+}
+.container-items .container-item i {
+  font-size: 50px;
+}
+.container-items .container-item h2 {
+  margin: 20px 0px 10px;
+}
+.container-items .container-item a {
+  font: 400 14px/1.42857143 muli, sans-serif;
+  color: #333;
+  border: 2px solid;
+  margin: 20px;
+  padding: 10px 20px;
+  color: #000;
+  display: inline-block;
+  border-radius: 4px;
+}
